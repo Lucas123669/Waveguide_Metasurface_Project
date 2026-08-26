@@ -1,0 +1,27 @@
+{
+  "wavelength_um": 1.55,
+  "waveguide_width_um": 0.6,
+  "waveguide_height_um": 0.22,
+  "real_neff_sorted": [
+    2.5307139340013505,
+    1.6560063529054285,
+    1.4372327588546066,
+    1.4076006674395698,
+    1.40379220956664,
+    1.3586785227287552
+  ],
+  "imag_neff_sorted": [
+    -2.3027233977928164e-14,
+    -4.902107043996236e-07,
+    -0.00015211771644886536,
+    -0.0054769943721872634,
+    -0.006202761517273022,
+    -0.01508044255183887
+  ],
+  "selected_te00_neff": 2.5307139340013505,
+  "target_reported_angle_deg": 45.0,
+  "phase_matching_period_um": 0.4787170558052502,
+  "phase_matching_internal_angle_deg": -44.99999999999999,
+  "phase_matching_reported_angle_deg": 44.99999999999999,
+  "equation": "sin(theta_internal)=neff-lambda0/Lambda; theta_reported=-theta_internal"
+}

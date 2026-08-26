@@ -6,3 +6,10 @@ ehthumbs.db
 
 # 日志
 *.log
+
+# Python / COMSOL 工作流
+__pycache__/
+*.pyc
+.pytest_cache/
+*.class
+*_solved.mph

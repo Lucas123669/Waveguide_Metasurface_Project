@@ -1,0 +1,10 @@
+{
+  "supercell_count": 12,
+  "atom_count": 36,
+  "layer_block_count": 108,
+  "array_length_um": 6.8999999999999995,
+  "device_length_um": 10.899999999999999,
+  "physics_added": true,
+  "mesh_built": false,
+  "phase_seed_status": "figure_estimate; recalibrate with the single-atom sweep"
+}

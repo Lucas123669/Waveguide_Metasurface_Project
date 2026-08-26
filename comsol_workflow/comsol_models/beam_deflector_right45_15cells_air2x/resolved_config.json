@@ -1,0 +1,137 @@
+{
+  "metadata": {
+    "citation": "X. Guo et al., Science Advances 6, eabb4142 (2020)",
+    "doi": "10.1126/sciadv.abb4142",
+    "target_figures": [
+      "Fig. 2",
+      "Fig. 3"
+    ],
+    "scope": "passive straight-waveguide beam deflection"
+  },
+  "design": {
+    "task": "beam_deflector",
+    "wavelength_um": 1.55,
+    "effective_index_initial": 2.4,
+    "reported_angle_sign": -1.0,
+    "waveguide_width_um": 0.6,
+    "waveguide_height_um": 0.22,
+    "box_thickness_um": 3.0,
+    "substrate_thickness_um": 0.4,
+    "port_buffer_um": 1.5,
+    "computational_width_um": 2.0,
+    "air_height_um": 3.6,
+    "monitor_height_um": 2.5,
+    "supercell_period_um": 0.8973309975091556,
+    "atoms_per_supercell": 3,
+    "atom_pitch_um": 0.29911033250305186,
+    "supercell_count": 15,
+    "metal_thickness_um": 0.03,
+    "dielectric_thickness_um": 0.03,
+    "gold_n_initial": 0.55,
+    "gold_k_initial": 11.5,
+    "metal_mesh_max_um": 0.02,
+    "meta_atom_sweep": {
+      "lx_um": [
+        0.09,
+        0.13,
+        0.002
+      ],
+      "ly_um": [
+        0.1,
+        0.4,
+        0.01
+      ]
+    },
+    "phase_library": [
+      {
+        "id": "phase_plus_2pi_3_seed",
+        "lx_um": 0.11,
+        "ly_um": 0.19,
+        "phase_rad": 2.0943951024,
+        "status": "figure_estimate"
+      },
+      {
+        "id": "phase_zero_seed",
+        "lx_um": 0.1,
+        "ly_um": 0.275,
+        "phase_rad": 0.0,
+        "status": "figure_estimate"
+      },
+      {
+        "id": "phase_minus_2pi_3_seed",
+        "lx_um": 0.11,
+        "ly_um": 0.295,
+        "phase_rad": -2.0943951024,
+        "status": "figure_estimate"
+      }
+    ],
+    "include_substrate": false,
+    "bulk_mesh_max_um": 0.25,
+    "dielectric_mesh_max_um": 0.15,
+    "silicon_mesh_max_um": 0.055
+  },
+  "materials": {
+    "air": {
+      "n": 1.0,
+      "status": "assumption"
+    },
+    "silicon": {
+      "n": 3.48,
+      "k": 0.0,
+      "status": "assumption"
+    },
+    "silica": {
+      "n": 1.444,
+      "k": 0.0,
+      "status": "assumption"
+    },
+    "gold": {
+      "model": "COMSOL optical material or imported tabulation",
+      "status": "calibration_required"
+    }
+  },
+  "simulation": {
+    "physics": "Wave Optics / Electromagnetic Waves, Frequency Domain",
+    "element_order": 3,
+    "mesh": {
+      "elements_per_wavelength_min": 10,
+      "interpretation": "use local material wavelength and refine metal gaps/edges"
+    },
+    "paper_metal_efficiency_limit": 0.09,
+    "comsol": {
+      "template_model": "",
+      "study_tag": "std1",
+      "command": "\"{python}\" \"{project_root}\\scripts\\comsol_adapter.py\" --candidate \"{workspace}\\candidate.json\"",
+      "parameter_map": {
+        "wavelength_um": {
+          "tag": "lambda0",
+          "unit": "um"
+        },
+        "waveguide_width_um": {
+          "tag": "wg_w",
+          "unit": "um"
+        },
+        "waveguide_height_um": {
+          "tag": "wg_h",
+          "unit": "um"
+        },
+        "supercell_period_um": {
+          "tag": "Lambda",
+          "unit": "um"
+        }
+      },
+      "expressions": [
+        {
+          "name": "reported_angle_deg",
+          "expr": "gwm_theta_deg",
+          "unit": "deg"
+        },
+        {
+          "name": "extraction_efficiency",
+          "expr": "gwm_eta",
+          "unit": "1"
+        }
+      ]
+    }
+  }
+}

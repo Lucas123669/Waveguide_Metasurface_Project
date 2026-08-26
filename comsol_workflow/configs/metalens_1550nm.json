@@ -1,0 +1,81 @@
+{
+  "metadata": {
+    "citation": "X. Guo et al., Science Advances 6, eabb4142 (2020)",
+    "doi": "10.1126/sciadv.abb4142",
+    "target_figures": ["Fig. 4A"],
+    "scope": "passive 5 um focal-length numerical metalens"
+  },
+  "design": {
+    "task": "metalens",
+    "wavelength_um": 1.55,
+    "effective_index_initial": 3.1,
+    "waveguide_width_um": 1.5,
+    "waveguide_height_um": 0.5,
+    "box_thickness_um": 3.0,
+    "focal_length_um": 5.0,
+    "aperture_um": 8.0,
+    "atom_pitch_um": 0.2,
+    "metal_thickness_um": 0.03,
+    "dielectric_thickness_um": 0.03,
+    "meta_atom_sweep": {
+      "lx_um": [0.09, 0.13, 0.002],
+      "ly_um": [0.10, 0.40, 0.01]
+    },
+    "phase_library": [
+      {
+        "id": "phase_plus_2pi_3_seed",
+        "lx_um": 0.11,
+        "ly_um": 0.19,
+        "phase_rad": 2.0943951024,
+        "status": "figure_estimate"
+      },
+      {
+        "id": "phase_zero_seed",
+        "lx_um": 0.10,
+        "ly_um": 0.275,
+        "phase_rad": 0.0,
+        "status": "figure_estimate"
+      },
+      {
+        "id": "phase_minus_2pi_3_seed",
+        "lx_um": 0.11,
+        "ly_um": 0.295,
+        "phase_rad": -2.0943951024,
+        "status": "figure_estimate"
+      }
+    ]
+  },
+  "materials": {
+    "air": {"n": 1.0, "status": "assumption"},
+    "silicon": {"n": 3.48, "k": 0.0, "status": "assumption"},
+    "silica": {"n": 1.444, "k": 0.0, "status": "assumption"},
+    "gold": {
+      "model": "COMSOL optical material or imported tabulation",
+      "status": "calibration_required"
+    }
+  },
+  "simulation": {
+    "physics": "Wave Optics / Electromagnetic Waves, Frequency Domain",
+    "element_order": 3,
+    "mesh": {
+      "elements_per_wavelength_min": 10,
+      "interpretation": "use local material wavelength and refine metal gaps/edges"
+    },
+    "paper_metal_efficiency_limit": 0.09,
+    "comsol": {
+      "template_model": "",
+      "study_tag": "std1",
+      "command": "\"{python}\" \"{project_root}\\scripts\\comsol_adapter.py\" --candidate \"{workspace}\\candidate.json\"",
+      "parameter_map": {
+        "wavelength_um": {"tag": "lambda0", "unit": "um"},
+        "waveguide_width_um": {"tag": "wg_w", "unit": "um"},
+        "waveguide_height_um": {"tag": "wg_h", "unit": "um"},
+        "focal_length_um": {"tag": "f", "unit": "um"}
+      },
+      "expressions": [
+        {"name": "focal_z_um", "expr": "gwm_focal_z", "unit": "um"},
+        {"name": "focusing_efficiency", "expr": "gwm_eta_focus", "unit": "1"}
+      ]
+    }
+  }
+}
