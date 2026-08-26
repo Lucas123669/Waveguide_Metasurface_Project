@@ -1,0 +1,129 @@
+{
+  "schema_version": 1,
+  "project": {
+    "name": "Waveguide_Metasurface_Radiation_Control",
+    "objective": "Design and fabricate a waveguide-integrated metasurface to control radiated light (direction, polarization, phase/wavefront, efficiency).",
+    "status": "phase_2_simulation_started",
+    "created": "2026-08-04",
+    "primary_paper": {
+      "title": "Leaky-wave metasurfaces for integrated photonics",
+      "journal": "Nature Nanotechnology 18, 580-588 (2023)",
+      "doi": "10.1038/s41565-023-01360-z",
+      "authors": "Huang, Overvig, Xu, Malek, Tsai, Alu, Yu",
+      "note_file": "literature/阅读笔记_L01_Huang_2023.md"
+    },
+  "auxiliary_papers": [
+      {
+        "title": "Molding free-space light with guided wave-driven metasurfaces",
+        "journal": "Science Advances 6, eabb4142 (2020)",
+        "doi": "10.1126/sciadv.abb4142",
+        "authors": "Guo, Ding, Chen, Duan, Ni",
+        "note_file": "literature/阅读笔记_L02_Guo_2020.md"
+      },
+      {
+        "title": "Silicon Nitride Integrated Photonics from Visible to Mid-Infrared Spectra",
+        "journal": "Laser & Photonics Reviews 18(12), 2400508 (2024)",
+        "doi": "10.1002/lpor.202400508",
+        "authors": "Buzaverov, Baburin, Sergeev, Avdeev, Lotkov, Bukatin, Stepanov, Kramarenko, Amiraslanov, Kushnev, Ryzhikov, Rodionov",
+        "note_file": "literature/阅读笔记_L03_Buzaverov_2024.md",
+        "note": "Fabrication review; PDF stored in fabrication/"
+      },
+      {
+        "title": "Accessible, All-Polymer Metasurfaces: Low Effort, High Quality Factor",
+        "journal": "ACS Nano 20(8), 6722-6731 (2026)",
+        "doi": "10.1021/acsnano.5c15415",
+        "authors": "Hirler, Antonov, Bau, Aigner, Heimig, Hu, Tittl",
+        "note_file": "literature/阅读笔记_L04_Hirler_2026.md",
+        "note": "All-polymer qBIC metasurface in PMMA; PMMA 950K recipe"
+      },
+      {
+        "title": "A review of polymethyl methacrylate (PMMA) as a versatile lithographic resist - With emphasis on UV exposure",
+        "journal": "Microelectronic Engineering 224, 111238 (2020)",
+        "doi": "10.1016/j.mee.2020.111238",
+        "authors": "Rahman, Carbaugh, Wright, Rajan, Pandya, Kaya",
+        "note_file": "literature/阅读笔记_L05_Rahman_2020.md",
+        "note": "PMMA lithographic resist review"
+      }
+    ]
+  },
+  "q1_papers": {
+    "description": "Q1-tier papers strongly related to L01 (design & fabrication theory); stored separately in literature/Q1_L01相关/",
+    "folder": "literature/Q1_L01相关",
+    "papers": [
+      {"id": "Q1-01", "title": "Bound states in the continuum", "journal": "Nature Reviews Materials 1, 16048 (2016)", "doi": "10.1038/natrevmats.2016.48", "role": "BIC physics review", "pdf": "Q1_01_Hsu_2016_BIC_Review_Nature_Reviews_Materials.pdf", "note_file": "literature/Q1_L01相关/阅读笔记_Q1_01_Hsu_2016.md"},
+      {"id": "Q1-02", "title": "Photonic Bound States in the Continuum: From Basics to Applications", "journal": "Advanced Optical Materials 9, 2001469 (2021)", "doi": "10.1002/adom.202001469", "role": "BIC review (applications)", "pdf": "Q1_02_Azzam_2021_BIC_Basics_Applications_Adv_Opt_Mater.pdf (PENDING SJTU)", "note_file": "literature/Q1_L01相关/阅读笔记_Q1_02_Azzam_2021.md"},
+      {"id": "Q1-03", "title": "Observation of trapped light within the radiation continuum", "journal": "Nature 499, 188 (2013)", "doi": "10.1038/nature12289", "role": "BIC first experiment", "pdf": "Q1_03_Hsu_2013_Trapped_Light_Radiation_Continuum_Nature.pdf", "note_file": "literature/Q1_L01相关/阅读笔记_Q1_03_Hsu_2013.md"},
+      {"id": "Q1-04", "title": "Merging bound states in the continuum by harnessing higher-order topological charges", "journal": "Light: Science & Applications 11, 228 (2022)", "doi": "10.1038/s41377-022-00923-4", "role": "Merged BIC robustness design", "pdf": "Q1_04_Kang_2022_Merging_BICs_Topological_Charges_Light_Sci_Appl.pdf", "note_file": "literature/Q1_L01相关/阅读笔记_Q1_04_Kang_2022.md"},
+      {"id": "Q1-05", "title": "Asymmetric metasurfaces with high-Q resonances governed by bound states in the continuum", "journal": "Physical Review Letters 121, 193903 (2018)", "doi": "10.1103/PhysRevLett.121.193903", "role": "qBIC Q~alpha^-2 law", "pdf": "Q1_05_Koshelev_2018_Asymmetric_Metasurfaces_HighQ_BIC_PRL.pdf (arXiv 1809.00330)", "note_file": "literature/Q1_L01相关/阅读笔记_Q1_05_Koshelev_2018.md"},
+      {"id": "Q1-06", "title": "Selection rules for quasi-bound states in the continuum", "journal": "Physical Review B 102, 035434 (2020)", "doi": "10.1103/PhysRevB.102.035434", "role": "Selection rules catalog; basis of L01 S.5", "pdf": "Q1_06_Overvig_2020_Selection_Rules_Quasibound_BIC_PRB.pdf (arXiv 1903.11125)", "note_file": "literature/Q1_L01相关/阅读笔记_Q1_06_Overvig_2020.md"},
+      {"id": "Q1-07", "title": "On-chip metasurfaces based on guided-mode radiation control: progress and challenges", "journal": "Opto-Electronic Engineering 53(2), 250230 (2026)", "doi": "10.12086/oee.2026.250230", "role": "Chinese review of on-chip metasurfaces incl. L01", "pdf": "Q1_07_Lu_Zou_2026_Onchip_Metasurfaces_Guided_Mode_Radiation_OEE.pdf", "note_file": "literature/Q1_L01相关/阅读笔记_Q1_07_Lu_Zou_2026.md"},
+      {"id": "Q1-08", "title": "The Fundamental Physics of Directive Beaming at Microwave and Optical Frequencies and the Role of Leaky Waves", "journal": "Proceedings of the IEEE 99(10), 1780 (2011)", "doi": "10.1109/JPROC.2010.2103530", "role": "Leaky-wave theory", "pdf": "Q1_08_Jackson_2011_Directive_Beaming_Leaky_Waves_Proc_IEEE.pdf", "note_file": "literature/Q1_L01相关/阅读笔记_Q1_08_Jackson_2011.md"},
+      {"id": "Q1-09", "title": "Inverse design in nanophotonics", "journal": "Nature Photonics 12, 659 (2018)", "doi": "10.1038/s41566-018-0246-9", "role": "Inverse design review", "pdf": "Q1_09_Molesky_2018_Inverse_Design_Nanophotonics_Nat_Photonics.pdf", "note_file": "literature/Q1_L01相关/阅读笔记_Q1_09_Molesky_2018.md"},
+      {"id": "Q1-10", "title": "Diffractive Nonlocal Metasurfaces", "journal": "Laser & Photonics Reviews 16(8), 2100633 (2022)", "doi": "10.1002/lpor.202100633", "role": "Nonlocal metasurface perspective", "pdf": "Q1_10_Overvig_Alu_2022_Diffractive_Nonlocal_Metasurfaces_Laser_Photonics_Rev.pdf (PENDING SJTU)", "note_file": "literature/Q1_L01相关/阅读笔记_Q1_10_Overvig_Alu_2022.md"},
+      {"id": "Q1-11", "title": "Fabrication robustness in BIC metasurfaces", "journal": "Nanophotonics 10(17), 4305 (2021)", "doi": "10.1515/nanoph-2021-0391", "role": "Fabrication robustness model; ellipse most robust", "pdf": "Q1_11_Kuehne_2021_Fabrication_Robustness_BIC_Nanophotonics.pdf", "note_file": "literature/Q1_L01相关/阅读笔记_Q1_11_Kuehne_2021.md"}
+    ]
+  },
+  "q1_fabrication_papers": {
+    "description": "Q1-tier nanofabrication-process papers strongly related to L01; stored separately in literature/Q1_工艺_L01相关/",
+    "folder": "literature/Q1_工艺_L01相关",
+    "papers": [
+      {"id": "F-01", "title": "Wafer-Scale All-Dielectric Quasi-BIC Metasurfaces: Bridging High-Throughput Deep-UV Lithography with Nanophotonic Applications", "journal": "Nano Letters 26(6), 2059 (2026)", "doi": "10.1021/acs.nanolett.5c05226", "role": "DUV wafer-scale qBIC fabrication", "pdf": "F_01_Yesilkoy_2026_WaferScale_qBIC_DUV_NanoLetters.pdf", "note_file": "literature/Q1_工艺_L01相关/阅读笔记_F_01_Yesilkoy_2026.md"},
+      {"id": "F-02", "title": "An achromatic metasurface waveguide for augmented reality displays", "journal": "Light: Science & Applications 14, 94 (2025)", "doi": "10.1038/s41377-025-01761-w", "role": "Waveguide+metasurface fabrication flow", "pdf": "F_02_2025_Achromatic_Metasurface_Waveguide_AR_LightSciAppl.pdf", "note_file": "literature/Q1_工艺_L01相关/阅读笔记_F_02_Tian_2025.md"},
+      {"id": "F-03", "title": "Defect-insensitive bound states in the continuum in antisymmetric trapezoid metasurfaces in the visible range", "journal": "Nanophotonics 14(22), 3681 (2025)", "doi": "10.1515/nanoph-2025-0406", "role": "Defect-insensitive BIC design", "pdf": "F_03_2025_DefectInsensitive_BIC_Trapezoid_Nanophotonics.pdf", "note_file": "literature/Q1_工艺_L01相关/阅读笔记_F_03_Liao_2025.md"},
+      {"id": "F-04", "title": "Dynamically tunable robust ultrahigh-Q merging bound states in the continuum in phase-change materials metasurface", "journal": "Nanophotonics 14(3), 343 (2025)", "doi": "10.1515/nanoph-2024-0557", "role": "Merged BIC robustness vs defects", "pdf": "F_04_Ren_2025_Robust_Merging_BIC_PCM_Nanophotonics.pdf", "note_file": "literature/Q1_工艺_L01相关/阅读笔记_F_04_Ren_2025.md"},
+      {"id": "F-05", "title": "Establishing exhaustive metasurface robustness against fabrication uncertainties through deep learning", "journal": "Nanophotonics 10(18), 4497 (2021)", "doi": "10.1515/nanoph-2021-0428", "role": "Worst-case fabrication robustness (ML)", "pdf": "F_05_Campbell_2021_Robustness_Fabrication_Uncertainty_Nanophotonics.pdf", "note_file": "literature/Q1_工艺_L01相关/阅读笔记_F_05_Campbell_2021.md"},
+      {"id": "F-06", "title": "Direct electron beam writing of electro-optic polymer microring resonators", "journal": "Optics Express 16(9), 6592 (2008)", "doi": "10.1364/OE.16.006592", "role": "PMMA direct EBL waveguide writing", "pdf": "F_06_2008_Direct_EBL_PMMA_Microring_OptExpress.pdf", "note_file": "literature/Q1_工艺_L01相关/阅读笔记_F_06_Sun_2008.md"},
+      {"id": "F-07", "title": "Overcoming Si3N4 film stress limitations for high quality factor ring resonators", "journal": "Optics Express 21(19), 22829 (2013)", "doi": "10.1364/OE.21.022829", "role": "Si3N4 stress / high-Q waveguide fabrication", "pdf": "F_07_Luke_2013_Si3N4_Stress_HighQ_Ring_OptExpress.pdf (arXiv 1306.2994)", "note_file": "literature/Q1_工艺_L01相关/阅读笔记_F_07_Luke_2013.md"},
+      {"id": "F-08", "title": "Advanced manufacturing of dielectric meta-devices", "journal": "Photonics Insights 3(2), R04 (2024)", "doi": "10.3788/PI.2024.R04", "role": "Metasurface manufacturing review", "pdf": "F_08_Yang_2024_Advanced_Manufacturing_Metadevices_PhotonicsInsights.pdf", "note_file": "literature/Q1_工艺_L01相关/阅读笔记_F_08_Yang_2024.md"},
+      {"id": "F-09", "title": "All-Glass, Large Metalens at Visible Wavelength Using Deep-Ultraviolet Projection Lithography", "journal": "Nano Letters 19(12), 8673 (2019)", "doi": "10.1021/acs.nanolett.9b03333", "role": "DUV mass production metalens", "pdf": "F_09_Park_2019_AllGlass_Large_Metalens_DUV_NanoLetters.pdf", "note_file": "literature/Q1_工艺_L01相关/阅读笔记_F_09_Park_2019.md"},
+      {"id": "F-10", "title": "On-Chip Meta-Optics for Engineering Arbitrary Trajectories with Longitudinal Polarization Variation", "journal": "Nano Letters 24(6), 2063 (2024)", "doi": "10.1021/acs.nanolett.3c04739", "role": "Waveguide-integrated metasurface fabrication", "pdf": "F_10_Shi_2024_OnChip_MetaOptics_Arbitrary_Trajectories_NanoLetters.pdf", "note_file": "literature/Q1_工艺_L01相关/阅读笔记_F_10_Shi_2024.md"}
+    ]
+  },
+  "roadmap": [
+    {"phase": 0, "title": "Project framework & literature collection", "status": "completed"},
+    {"phase": 1, "title": "Read primary paper; extract structure, principle, key parameters", "status": "completed"},
+    {"phase": 2, "title": "Minimal simulation model (unit cell, ideal excitation); reproduce key phenomena", "status": "in_progress"},
+    {"phase": 3, "title": "Waveguide design: modes, coupling, loss, evanescent coupling to metasurface", "status": "pending"},
+    {"phase": 4, "title": "Metasurface unit-cell design: phase/amplitude/polarization control, parameter sweep", "status": "pending"},
+    {"phase": 5, "title": "Integrated waveguide+metasurface simulation and optimization", "status": "pending"},
+    {"phase": 6, "title": "Fabrication process design and manufacturability constraints", "status": "pending"},
+    {"phase": 7, "title": "Sample fabrication and characterization", "status": "pending"},
+    {"phase": 8, "title": "Iteration, summary, documentation", "status": "pending"}
+  ],
+  "directory_layout": {
+    "literature": "Papers (PDF) and reading notes",
+    "notes": "Dated design/decision notes",
+    "simulations": "Simulation projects and scripts",
+    "fabrication": "Layouts, process flows, test records"
+  },
+  "environment": {
+    "system_python": "3.13.5 (no scientific packages)",
+    "bundled_python": "3.12.13 with numpy 2.3.5, openpyxl; no scipy/matplotlib/meep",
+    "em_simulation_software": "COMSOL Multiphysics 6.3 installed at D:\\comsol.6.3\\bin\\win64\\comsol.exe (with comsolbatch.exe for command-line runs); Lumerical FDTD and MEEP not installed",
+    "primary_simulation_route": "COMSOL FEM (eigenmode, frequency-domain periodic unit cells, device-level)"
+  },
+  "prepared_assets": [
+    "literature/文献清单.md",
+    "literature/Q1_L01相关/README_本文件夹说明.md",
+    "literature/Q1_工艺_L01相关/README_本文件夹说明.md",
+    "reports/2026-08-25_L01超表面波导综合分析与初步结构.md",
+    "literature/阅读笔记模板.md",
+    "notes/决策记录模板.md",
+    "notes/2026-08-04_仿真环境检查.md",
+    "notes/2026-08-04_技术基线_波导超表面入门.md",
+    "notes/2026-08-24_L01_微纳加工细节与注意事项.md",
+    "notes/2026-08-24_PMMA胶材与剂量建议.md",
+    "simulations/README.md",
+    "simulations/参数模板.md"
+  ],
+  "simulation_cases": [
+    {"id": "case_001", "title": "Slab waveguide mode analysis (TM0/TE0 effective index)", "status": "completed"}
+  ],
+  "handoff_instructions": [
+    "Read README.md and this file completely before working.",
+    "Check the latest literature notes and decision notes before continuing.",
+    "Continue from the earliest unfinished roadmap phase.",
+    "Record important decisions in dated files under notes/ and update README status.",
+    "Communicate in Chinese; keep technical terms in English."
+  ]
+}

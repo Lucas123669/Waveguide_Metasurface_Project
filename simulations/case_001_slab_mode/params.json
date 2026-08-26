@@ -1,0 +1,13 @@
+{
+  "case": "case_001_slab_mode",
+  "purpose": "Compute effective indices of the L01 waveguide stack as a mode baseline",
+  "lambda0_um": 1.55,
+  "stack_top_to_bottom": [
+    {"name": "air",    "n": 1.00, "thickness_um": null},
+    {"name": "PMMA",   "n": 1.48, "thickness_um": 0.30},
+    {"name": "Si3N4",  "n": 2.00, "thickness_um": 0.30},
+    {"name": "SiO2",   "n": 1.44, "thickness_um": null}
+  ],
+  "method": "1D multilayer transfer-matrix slab mode solver (TE/TM)",
+  "notes": "Fixed refractive indices (no dispersion) as a first approximation; refine with material dispersion later."
+}
