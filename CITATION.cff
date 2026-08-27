@@ -1,0 +1,28 @@
+cff-version: 1.2.0
+message: "If you use this repository in your research, please cite it as below."
+title: "Waveguide Metasurface Project"
+date-released: "2026-08-27"
+authors:
+  - family-names: "Lucas123669"
+    given-names: ""
+preferred-citation:
+  - type: article
+    authors:
+      - family-names: "Huang"
+        given-names: "Tianwei"
+    title: "Leaky-wave metasurfaces for integrated photonics"
+    journal: "Nature Nanotechnology"
+    volume: 18
+    pages: "580-588"
+    year: 2023
+    doi: "10.1038/s41565-023-01360-z"
+  - type: article
+    authors:
+      - family-names: "Guo"
+        given-names: "Xuexue"
+    title: "Molding free-space light with guided wave-driven metasurfaces"
+    journal: "Science Advances"
+    volume: 6
+    article: "eabb4142"
+    year: 2020
+    doi: "10.1126/sciadv.abb4142"

@@ -1,100 +1,94 @@
-# 波导 + 超表面：辐射光控制项目（长期任务）
+# Waveguide Metasurface Project（波导 + 超表面：辐射光控制）
 
-> **本文件是本项目的“总配置”。任何接手此任务的 AI 助手（无论模型版本）以及用户本人，都应先完整阅读本文件，再继续工作。**
+> 本文件是项目入口。机器可读的单一状态源是 `project_config.json`；本文中的状态表由人工同步维护，若不一致以 `project_config.json` 为准。
 
 ## 1. 项目目标
 
-在波导结构上集成超表面（metasurface），实现对辐射光（radiated light）的调控，包括：
+在波导结构上集成超表面（metasurface），实现对辐射光（radiated light）的调控：辐射方向（出射角度）、偏振状态、相位/波前整形、辐射效率。任务最终包含两部分：实现（设计 + 仿真）与制备（实验）。
 
-- 辐射方向（出射角度）
-- 偏振状态
-- 相位 / 波前整形
-- 辐射效率
+## 2. 两条实验轨道（结构分轨）
 
-任务最终包含两部分：
+仓库按论文复现路线分轨，物理模型、材料体系与仿真目标互不混淆：
 
-1. **实现（设计 + 仿真）**：用电磁仿真验证结构设计。
-2. **制备（实验）**：结合微纳加工工艺做出样品并测试。
+| 轨道 | 论文 | 材料体系 | 目标 | 当前状态 |
+| --- | --- | --- | --- | --- |
+| `experiments/l01_huang_2023/` | Huang et al., Nat. Nanotechnol. 18, 580 (2023) | PMMA / Si₃N₄ 双层波导 + qBIC 椭圆孔 | 片上漏波超表面（LWM）全参量辐射控制 | case_001 平板模分析完成；下一动作 case_002 元胞库 |
+| `experiments/l02_guo_2020/` | Guo et al., Sci. Adv. 6, eabb4142 (2020) | Si 波导 + Au/SiO₂/Au meta-atom | beam deflector + metalens（COMSOL 自动化复现） | 45° 偏转结果已接受（见 run_manifest）；metalens 待复现 |
 
-## 2. 当前状态（2026-08-25）
+## 3. 当前状态（2026-08-27）
 
-- 阶段：**阶段 1 已完成（精读主论文），阶段 2 进行中（第一个仿真 case_001 已完成）**
-- 主要依据论文：Huang et al., *Leaky-wave metasurfaces for integrated photonics*, Nat. Nanotechnol. 18, 580–588 (2023)（`literature\`，含补充材料）
-- 辅助文献：Guo et al. (2020)、Buzaverov et al. (2024，Si₃N₄ 工艺综述)、Hirler et al. (2026，全 PMMA qBIC 超表面)、Rahman et al. (2020，PMMA 光刻胶综述)——全部已精读并归档（见 `literature\阅读笔记_*.md`）
-- 一区/强相关文献（Q1 系列）：11 篇 BIC 物理、qBIC 选择定则、泄漏波/片上超表面、逆设计与制造鲁棒性文献，独立存放于 `literature\Q1_L01相关\`（9 篇 PDF 已下载；Q1-02/Q1-10 待上海交大认证下载）
-- 一区/微纳加工工艺文献（F 系列）：10 篇 DUV 晶圆级 qBIC、波导+超表面加工流程、缺陷不敏感设计、PMMA/Si₃N₄ 材料工艺文献，独立存放于 `literature\Q1_工艺_L01相关\`（10 篇 PDF 全部下载完毕，笔记全部完成）
-- 综合分析与初步结构：`reports\2026-08-25_L01超表面波导综合分析与初步结构.md`（实现波导问题、加工问题、下一步初步结构）
-- 下一动作：case_002——FDTD 元胞仿真，复现论文元胞库响应与 Q ∝ 1/δ²
-- 首个数值结果：TM₀ n_eff ≈ 1.5507、TE₀ n_eff ≈ 1.6759（@1.55 μm，见 `simulations\case_001_slab_mode\`）
-- 仿真环境：**COMSOL Multiphysics 6.3 已安装**（`D:\comsol.6.3\bin\win64\comsol.exe`，含命令行批处理）；本机 Python 3.13（无科学计算包）；Codex 自带 Python 3.12 含 numpy；Lumerical/MEEP 未安装（详见 `notes\2026-08-04_仿真环境检查.md`）
-- 加工关键结论：PMMA 采用 **950K**（如 Allresist AR-P 679.04），300 nm；100 keV 剂量 750 μC/cm² 合理；显影 3:1 IPA:去离子水；需电荷泄放层（详见 `notes\2026-08-24_PMMA胶材与剂量建议.md`）
-- 仿真规范：`simulations\README.md` 与 `simulations\参数模板.md`
-- 加工笔记：`notes\2026-08-24_L01_微纳加工细节与注意事项.md`
+- L01 轨道：case_001 平板模分析已完成（TM₀ n_eff≈1.5507、TE₀ n_eff≈1.6759 @1.55 μm，见 `experiments/l01_huang_2023/case_001_slab_mode/`）；下一动作 case_002（元胞库：δ/α/D₀ 扫描 + 容差展宽）。
+- L02 轨道：Guo 2020 COMSOL 工作流已并入；45° 右上偏转结果已接受（15 supercell、897.331 nm 周期、模拟角谱峰 45.0147°，配置见 `configs/calibrated/`，结果见 `experiments/l02_guo_2020/beam_deflector/right45_15cells_air2x/`）。
+- 综合分析与初步结构报告：`docs/reports/2026-08-25_L01超表面波导综合分析与初步结构.md`。
 
-## 3. 阶段路线图（由简入深）
+## 4. 目录结构
 
-| 阶段 | 内容 | 状态 |
-| --- | --- | --- |
-| 0 | 项目框架与文献收集 | 已完成 |
-| 1 | 精读主论文：结构、原理、关键参数（材料、波长、周期、几何） | 已完成 |
-| 2 | 建立最小仿真模型（单周期单元、理想激励），复现论文基本现象 | **进行中**（case_001 导模分析已完成） |
-| 3 | 波导设计：模式、耦合、损耗、倏逝波到超表面的耦合 | 未开始 |
-| 4 | 超表面单元设计：相位/振幅/偏振调控、参数扫描 | 未开始 |
-| 5 | 波导 + 超表面整体集成仿真与优化 | 未开始 |
-| 6 | 制备流程设计（光刻/刻蚀/镀膜等）与可制造性约束 | 未开始（工艺文献 L03/L04/L05 已就位） |
-| 7 | 样品制备与测试表征 | 未开始 |
-| 8 | 迭代优化、总结与文档归档 | 未开始 |
-
-## 4. 目录约定
-
-```
-E:\Waveguide_Metasurface_Project\
-├── README.md           ← 本文件：项目总配置（必读）
-├── project_config.json ← 机器可读配置（与 README 同步更新）
-├── literature\         ← 论文 PDF、论文阅读笔记
-│   └── Q1_L01相关\     ← 一区/顶级期刊、与 L01 强相关的设计与工艺文献（独立存放）
-│   └── Q1_工艺_L01相关\ ← 一区/顶级期刊、与 L01 强相关的微纳加工工艺文献（独立存放）
-├── reports\            ← 综合分析与汇报文档（带日期）
-├── notes\              ← 设计笔记、决策记录（带日期，如 2026-08-04_设计决策.md）
-├── simulations\        ← 仿真项目文件与脚本
-└── fabrication\        ← 版图（layout）、工艺流程文件、测试记录
+```text
+Waveguide_Metasurface_Project/
+├── README.md                  # 项目入口（本文）
+├── project_config.json        # 机器可读单一状态源
+├── pyproject.toml             # Python 包（src/gwm_workflow）与依赖
+├── LICENSE / NOTICE.md        # 代码许可与第三方资产边界
+├── CITATION.cff               # 引用信息
+├── src/gwm_workflow/          # L02 复现核心模块（config/backend/workspace 流水线）
+├── configs/
+│   ├── schemas/               # 仿真配置 JSON Schema
+│   ├── seeds/                 # 论文种子参数（paper_exact / figure_estimate）
+│   └── calibrated/            # 已校准配置（最终接受结果所用）
+├── experiments/
+│   ├── l01_huang_2023/        # L01 轨道（case_001…）
+│   └── l02_guo_2020/          # L02 轨道（beam_deflector / metalens）
+├── scripts/                   # CLI：建模、求解、后处理
+├── tests/
+│   ├── unit/                  # 纯 Python 单元测试
+│   ├── regression/            # 已知解回归测试
+│   └── integration/           # 集成测试（占位）
+├── docs/
+│   ├── architecture.md        # 架构说明
+│   ├── decisions/             # 决策与工艺记录（原 notes/）
+│   ├── reports/               # 综合分析与结果报告
+│   ├── literature-notes/      # 文献笔记索引
+│   └── references/            # 参数模板等
+├── references/
+│   ├── references.bib         # 论文 BibTeX
+│   └── README.md              # 论文与资产策略
+├── literature/                # 论文 PDF 与阅读笔记（大资产，策略见 references/README.md）
+├── artifacts/                 # 大型产物的索引与策略说明
+└── fabrication/               # 工艺参考资料
 ```
 
-## 5. 给未来 AI 助手的接手指引
+## 5. 快速开始
 
-1. 先完整阅读本文件（README.md）与 project_config.json。
-2. 阅读 `literature\` 中最新版本的论文阅读笔记，了解当前对文献的理解。
-3. 阅读 `notes\` 中日期最新的决策记录，掌握已确定的参数与未决问题。
-4. 从路线图中**最早尚未完成**的阶段继续；用户给出新文献时，先更新文献表与笔记，再继续技术工作。
-5. 重要决策（材料、波长、几何参数、工艺路线）必须记录到 `notes\` 下带日期的文件中，并同步更新 README 的“当前状态”。
-6. 与用户交流时使用中文；技术术语保留英文原文（如 metasurface、waveguide、FDTD）。
-7. 不确定时先做合理假设并明确说明，不要擅自偏离已确定的设计参数。
+```bash
+# 安装 Python 包（src/gwm_workflow）
+pip install -e .
 
-## 6. 技术背景速览（用于快速恢复上下文）
+# 无 COMSOL 时验证流水线/理论逻辑（mock backend）
+python scripts/run_single.py --config configs/seeds/guo2020_beam_deflector_paper_seed.json --backend mock
 
-- **波导（waveguide）**：把光限制在薄膜/脊形结构中传播，常见材料如 SiN、Si、SOI 等。
-- **超表面（metasurface）**：亚波长周期排列的纳米结构（纳米柱、狭缝、圆盘等），通过几何参数调控光的相位、振幅、偏振。
-- **集成方式**：波导中的导模通过倏逝波（evanescent wave）耦合到上方/侧方的超表面；超表面将光“取出”并整形为所需的辐射场。
-- **关键物理量**：工作波长、材料折射率（实部/虚部）、波导厚度与宽度、超表面单元周期、结构高度与横向尺寸、相位覆盖范围、辐射效率、出射角度。
-- **常用仿真手段**：FDTD（如 Lumerical、MEEP）、RCWA、COMSOL；后续视用户条件选定。
-- **常见工艺**：电子束光刻（EBL）、紫外光刻、干法/湿法刻蚀、镀膜（PECVD/ALD/溅射）、剥离（lift-off）等。
+# L01 平板模（纯 Python，无需 COMSOL）
+python experiments/l01_huang_2023/case_001_slab_mode/scripts/slab_mode_solver.py \
+  --config experiments/l01_huang_2023/case_001_slab_mode/params.json \
+  --output experiments/l01_huang_2023/case_001_slab_mode/results/result.json
 
-## 7. 待用户提供
+# 运行测试
+pytest tests/
+```
 
-- 可用的仿真软件与计算条件
-- 可用的加工设备与材料（洁净室、EBL、PECVD/LPCVD 等）
+## 6. 复现证据链（run_manifest）
 
-## 8. 变更记录
+每个已接受的结果目录包含 `run_manifest.json`，记录：输入配置 SHA、Git commit、运行环境/版本、结果校验和。任何已接受结果都可追溯到配置、代码提交与输入资产（见 `experiments/l02_guo_2020/beam_deflector/right45_15cells_air2x/run_manifest.json`）。
 
-| 日期 | 变更内容 |
-| --- | --- |
-| 2026-08-04 | 创建项目框架与配置文档；立项“波导+超表面辐射光控制”长期任务 |
-| 2026-08-04 | 补充文献清单、论文阅读笔记模板、决策记录模板；完成仿真环境检查并记录 |
-| 2026-08-04 | 补充技术基线笔记、仿真工作区使用约定与参数模板 |
-| 2026-08-04 | 用户提供主论文+补充材料；完成精读与阅读笔记；完成 case_001 导模分析（TM₀ n_eff≈1.55） |
-| 2026-08-04 | 用户提供辅助文献 L02（Guo 2020）+补充材料；完成精读与阅读笔记（含重点、难点、目标拆分） |
-| 2026-08-04 | 更正环境记录：确认 COMSOL Multiphysics 6.3 已安装，仿真路线确定为 COMSOL（FEM）为主 |
-| 2026-08-24 | 完成 L01 微纳加工细节与注意事项梳理（`notes\2026-08-24_L01_微纳加工细节与注意事项.md`） |
-| 2026-08-24 | 用户提供工艺综述 L03（Buzaverov 2024，PDF 在 `fabrication\`）；完成精读与阅读笔记，登记入文献清单与配置 |
-| 2026-08-24 | 解决 L01 待确认项“PMMA 型号/剂量”：建议 PMMA 950K（AR-P 679.04），见 `notes\2026-08-24_PMMA胶材与剂量建议.md` |
-| 2026-08-25 | 用户提供三篇文献（Buzaverov 2024 / Hirler 2026 / Rahman 2020）；新增 L04、L05 精读笔记，PDF 归档至 `literature\` |
+## 7. 资产与许可策略
+
+- 普通 Git 保存源代码、配置、文档与轻量数据。
+- 大型二进制（`.mph`、`.npz`、论文 PDF）当前随仓库保存；如需瘦身可迁移至 Git LFS / Release（策略见 `artifacts/README.md` 与 `references/README.md`）。
+- 第三方论文与 COMSOL 许可约束的资产不随代码授权，边界见 `NOTICE.md`。
+
+## 8. 给未来 AI 助手的接手指引
+
+1. 先读本文件与 `project_config.json`（单一状态源）。
+2. 按实验轨道进入：L01 看 `experiments/l01_huang_2023/`，L02 看 `experiments/l02_guo_2020/`。
+3. 读 `docs/decisions/` 最新决策记录与 `docs/reports/` 综合报告。
+4. 重要决策记录到 `docs/decisions/` 下带日期文件中，并同步更新 `project_config.json` 与本文状态表。
+5. 中文交流；技术术语保留英文。

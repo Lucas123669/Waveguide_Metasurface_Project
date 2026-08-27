@@ -1,0 +1,63 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "Guided-wave metasurface simulation config",
+  "type": "object",
+  "required": ["metadata", "design", "materials", "simulation"],
+  "properties": {
+    "metadata": {
+      "type": "object",
+      "required": ["citation", "doi"],
+      "properties": {
+        "citation": {"type": "string"},
+        "doi": {"type": "string"},
+        "target_figures": {"type": "array", "items": {"type": "string"}},
+        "scope": {"type": "string"}
+      }
+    },
+    "design": {
+      "type": "object",
+      "required": ["task", "wavelength_um"],
+      "properties": {
+        "task": {"enum": ["beam_deflector", "metalens"]},
+        "wavelength_um": {"type": "number"},
+        "effective_index_initial": {"type": "number"},
+        "supercell_period_um": {"type": "number"},
+        "supercell_count": {"type": "integer"},
+        "focal_length_um": {"type": "number"}
+      }
+    },
+    "materials": {
+      "type": "object",
+      "additionalProperties": {
+        "type": "object",
+        "properties": {
+          "n": {"type": "number"},
+          "k": {"type": "number"},
+          "status": {"enum": ["assumption", "paper_exact", "figure_estimate", "derived", "calibration_required"]},
+          "model": {"type": "string"}
+        }
+      }
+    },
+    "simulation": {
+      "type": "object",
+      "required": ["physics"],
+      "properties": {
+        "physics": {"type": "string"},
+        "element_order": {"type": "integer"},
+        "mesh": {"type": "object"},
+        "paper_metal_efficiency_limit": {"type": "number"},
+        "comsol": {
+          "type": "object",
+          "properties": {
+            "template_model": {"type": "string"},
+            "study_tag": {"type": "string"},
+            "command": {"type": "string"},
+            "timeout_seconds": {"type": "integer"},
+            "parameter_map": {"type": "object"},
+            "expressions": {"type": "array"}
+          }
+        }
+      }
+    }
+  }
+}

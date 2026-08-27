@@ -13,3 +13,10 @@ __pycache__/
 .pytest_cache/
 *.class
 *_solved.mph
+.out/
+workspaces/
+*.status
+*.recovery
+
+# 重构后遗留的空壳目录（内容已迁移）
+comsol_workflow/

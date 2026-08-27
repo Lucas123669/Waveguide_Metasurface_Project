@@ -1,0 +1,31 @@
+{
+  "result_id": "beam_deflector_right45_air2x_v1",
+  "created": "2026-08-27",
+  "config": {
+    "path": "configs/calibrated/guo2020_right45_air2x_v1.json",
+    "sha256": "42a4816a78a25b1c3e996c84124fbc58d41d43a9859ccce539c6eeaf94f4632a"
+  },
+  "git_commit": "aada831241d648fa446904a90c3779228c943dd3",
+  "result_git_commit_at_run": "e7f8df1",
+  "environment": {
+    "python": "3.x (see requirements.txt)",
+    "comsol": "COMSOL Multiphysics 6.3 (local)",
+    "mph": ">=1.2",
+    "note": "Run performed before repository restructure; artifacts migrated 2026-08-27."
+  },
+  "input_artifacts": {
+    "resolved_config.json": {
+      "path": "experiments/l02_guo_2020/beam_deflector/right45_15cells_air2x/resolved_config.json",
+      "sha256": "9a8519c1c1fe8495cbf9c2098d4bc2792a0ab2bef571e3451a546c9973a31ce4"
+    },
+    "monitor_field_complex.csv": {
+      "path": "experiments/l02_guo_2020/beam_deflector/right45_15cells_air2x/monitor_field_complex.csv",
+      "sha256": "4324d38366e6264dbeabfa56d207a703205c63598c92acec9a1edb82ae0c104e"
+    },
+    "simulation_result.json": {
+      "path": "experiments/l02_guo_2020/beam_deflector/right45_15cells_air2x/simulation_result.json",
+      "sha256": "b182eb2afb6dcb79ab7827cf4ad889fa44f76fc46b3b86d758a82e67bde4559e"
+    }
+  },
+  "summary": "Angular-spectrum peak +45.0147 deg; 15 supercells; period 897.331 nm; air height 3.6 um."
+}
