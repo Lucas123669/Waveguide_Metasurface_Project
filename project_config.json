@@ -30,21 +30,23 @@
         "doi": "10.1002/lpor.202400508",
         "authors": "Buzaverov et al.",
         "note_file": "literature/阅读笔记_L03_Buzaverov_2024.md",
-        "note": "Fabrication review; PDF stored in fabrication/"
+        "note": "SiN fabrication reference; PDF in literature/"
       },
       {
         "title": "Accessible, All-Polymer Metasurfaces: Low Effort, High Quality Factor",
         "journal": "ACS Nano 20(8), 6722-6731 (2026)",
         "doi": "10.1021/acsnano.5c15415",
         "authors": "Hirler et al.",
-        "note_file": "literature/阅读笔记_L04_Hirler_2026.md"
+        "note_file": "literature/阅读笔记_L04_Hirler_2026.md",
+        "note": "PMMA reference: all-polymer qBIC metasurface; PMMA 950K recipe"
       },
       {
         "title": "A review of polymethyl methacrylate (PMMA) as a versatile lithographic resist",
         "journal": "Microelectronic Engineering 224, 111238 (2020)",
         "doi": "10.1016/j.mee.2020.111238",
         "authors": "Rahman et al.",
-        "note_file": "literature/阅读笔记_L05_Rahman_2020.md"
+        "note_file": "literature/阅读笔记_L05_Rahman_2020.md",
+        "note": "PMMA reference: lithographic resist review"
       }
     ]
   },

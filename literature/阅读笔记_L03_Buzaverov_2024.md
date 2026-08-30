@@ -7,7 +7,7 @@
 - 作者：Kirill A. Buzaverov, Aleksandr S. Baburin, Evgeny V. Sergeev, ... Ilya A. Rodionov*（莫斯科鲍曼国立技术大学 FMN 实验室等）
 - 期刊：Laser & Photonics Reviews 18(12), 2400508 (2024)
 - DOI：https://doi.org/10.1002/lpor.202400508
-- 类型：辅助文献（制造工艺综述，PDF 存放于 `fabrication\`）
+- 类型：辅助文献（制造工艺综述 · **SiN 加工参考**，PDF 存放于 `literature\L03_Buzaverov_2024_Silicon_Nitride_Integrated_Photonics.pdf`）
 
 ## 2. 一句话总结
 
