@@ -53,6 +53,7 @@ Waveguide_Metasurface_Project/
 │   ├── references.bib         # 论文 BibTeX
 │   └── README.md              # 论文与资产策略
 ├── literature/                # 论文 PDF 与阅读笔记（大资产，策略见 references/README.md）
+│   └── 材料体系分类/          # 按顶层材料体系（Si/SiN/PMMA/TiO₂）分类的文献索引
 ├── artifacts/                 # 大型产物的索引与策略说明
 └── fabrication/               # 工艺参考资料
 ```

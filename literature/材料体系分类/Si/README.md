@@ -1,0 +1,32 @@
+# 体系：Si（顶层超表面 = 硅）
+
+## 体系定位
+
+顶层超表面材料为硅（a-Si / m-Si / p-Si）。硅具有高折射率（n≈3.5）、CMOS 兼容、可见-NIR 低损耗，是超表面最常用的材料体系。本体系的任务：Si 波导 + Si 顶层超表面的设计、仿真与加工。
+
+## 主文献
+
+| 编号 | 标题 | 在本体系中的角色 | PDF / 笔记 |
+| --- | --- | --- | --- |
+| L02 | Molding free-space light with guided wave–driven metasurfaces | Si 波导 + Au/SiO₂/Au 顶层复现基准（45° 偏转已复现） | `literature/L02_Guo_2020_Molding_Free-Space_Light.pdf`；`阅读笔记_L02_Guo_2020.md` |
+| Q1-05 | Asymmetric metasurfaces with high-Q resonances governed by BIC | qBIC 理论（Q∝α⁻²），示例为 Si 结构 | `literature/Q1_L01相关/Q1_05_Koshelev_2018_*.pdf`；`阅读笔记_Q1_05_Koshelev_2018.md` |
+| Q1-11 | Fabrication robustness in BIC metasurfaces | a-Si qBIC 制造鲁棒性（椭圆最稳、σ 预算） | `literature/Q1_L01相关/Q1_11_Kuehne_2021_*.pdf`；`阅读笔记_Q1_11_Kuehne_2021.md` |
+| F-03 | Defect-insensitive BIC in antisymmetric trapezoid metasurfaces | Si 梯形柱缺陷不敏感设计（磁偶极主导） | `literature/Q1_工艺_L01相关/F_03_*.pdf`；`阅读笔记_F_03_Liao_2025.md` |
+| F-05 | Exhaustive metasurface robustness via deep learning | Si/SiO₂ 示例的穷尽容差方法 | `literature/Q1_工艺_L01相关/F_05_*.pdf`；`阅读笔记_F_05_Campbell_2021.md` |
+| F-10 | On-chip meta-optics for arbitrary trajectories | α-Si 顶层 + Si₃N₄ 波导的片上轨迹整形 | `literature/Q1_工艺_L01相关/F_10_*.pdf`；`阅读笔记_F_10_Shi_2024.md` |
+
+## 相关文献（跨体系引用）
+
+- Q1-06 Overvig 2020（选择定则，示例 Si 柱）
+- Q1-07 Lu & Zou 2026（片上超表面综述，含 Si 案例）
+- F-08 Yang 2024（制造综述，Si 工艺）
+
+## 关键要点
+
+- Si 高折射率对比 → 共振强，但对加工误差更敏感（Q1-11：σ≤1–2 nm 预算）。
+- 可见光短波段 Si 有吸收；必要时加折射率匹配层或转 TiO₂。
+- 刻蚀工艺（RIE/Bosch）是 Si 体系的核心加工手段。
+
+## 待补充文献
+
+- Si 波导 + Si 顶层超表面的专项集成文献（如 SOI 平台漏波超表面）。
