@@ -10,3 +10,7 @@
 | reproduction_plan.md | 复现计划 |
 | comsol_model_tree.md | COMSOL 模型树说明 |
 | comsol_structure_program.md | COMSOL 结构程序说明 |
+| 2026-08-30_项目汇报提纲_微纳加工技术整理.md | 微纳加工技术整理汇报提纲 |
+| 2026-08-30_项目汇报稿_微纳加工技术整理.md | 微纳加工技术整理汇报讲稿 |
+| 2026-08-31_PPT精炼版汇报稿.md | PPT 精炼版汇报讲稿 |
+| 2026-09-02_F08制造案例统计与汇报.md | F08 综述制造案例统计汇报（72 例；统计口径与全清单见文内；由 `scripts/gen_f08_case_stats.py` 自动生成） |
