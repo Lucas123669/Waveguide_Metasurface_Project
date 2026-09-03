@@ -10,13 +10,13 @@
 
 | 编号 | 标题 | 在本体系中的角色 | PDF / 笔记 |
 | --- | --- | --- | --- |
-| F-11 | Broadband high-efficiency dielectric metasurfaces for the visible spectrum | EBL 反向结构 + ALD 填 TiO₂ + 平面化 RIE；粗糙度 <1 nm、可见全息 82/81/78%（F08 案例 C04） | `pdfs/F_11_*.pdf`；`阅读笔记_F_11_Devlin_2016.md` |
-| F-21 | Single-step manufacturing of hierarchical dielectric metalens in the visible | TiO₂ 纳米颗粒树脂（PER）一步 UV-NIL（F08 案例 C48） | `pdfs/F_21_*.pdf`；`阅读笔记_F_21_Yoon_2020.md` |
-| F-22 | High aspect ratio metalenses by NIL with water-soluble stamps | PVA 水溶模湿法脱模高深宽比 PER metalens（F08 案例 C50） | `pdfs/F_22_*.pdf`；`阅读笔记_F_22_Choi_2023.md` |
-| F-25 | Observation of intrinsic chiral bound states in the continuum | 倾斜扰动 TiO₂ 固有手性 BIC：CD 0.93、Q>2663（F08 案例 C67） | `pdfs/F_25_*.pdf`；`阅读笔记_F_25_Chen_2023.md` |
-| F-26 | High-efficiency broadband achromatic metalens for near-IR biological imaging | 1.5 μm 高深宽比 TiO₂ 消色差 metalens（F08 案例 C69） | `pdfs/F_26_*.pdf`；`阅读笔记_F_26_Wang_2021.md` |
+| F-11 | Broadband high-efficiency dielectric metasurfaces for the visible spectrum | EBL 反向结构 + ALD 填 TiO₂ + 平面化 RIE；粗糙度 <1 nm、可见全息 82/81/78%（F08 案例 C04） | [PDF](pdfs/F_11_Devlin_2016_TiO2_ALD_Metasurface_PNAS.pdf) · [笔记](阅读笔记_F_11_Devlin_2016.md) |
+| F-21 | Single-step manufacturing of hierarchical dielectric metalens in the visible | TiO₂ 纳米颗粒树脂（PER）一步 UV-NIL（F08 案例 C48） | [PDF](pdfs/F_21_Yoon_2020_TiO2PER_SingleStep_Metalens_NatCommun.pdf) · [笔记](阅读笔记_F_21_Yoon_2020.md) |
+| F-22 | High aspect ratio metalenses by NIL with water-soluble stamps | PVA 水溶模湿法脱模高深宽比 PER metalens（F08 案例 C50） | [PDF](pdfs/F_22_Choi_2023_PVA_WaterSoluble_NIL_HighAR_Metalens_PhotoniX.pdf) · [笔记](阅读笔记_F_22_Choi_2023.md) |
+| F-25 | Observation of intrinsic chiral bound states in the continuum | 倾斜扰动 TiO₂ 固有手性 BIC：CD 0.93、Q>2663（F08 案例 C67） | [PDF](pdfs/F_25_Chen_2023_Intrinsic_Chiral_BIC_Nature.pdf) · [笔记](阅读笔记_F_25_Chen_2023.md) |
+| F-26 | High-efficiency broadband achromatic metalens for near-IR biological imaging | 1.5 μm 高深宽比 TiO₂ 消色差 metalens（F08 案例 C69） | [PDF](pdfs/F_26_Wang_2021_HighAR_TiO2_Achromatic_Metalens_NatCommun.pdf) · [笔记](阅读笔记_F_26_Wang_2021.md) |
 
-> 另：F-08 综述 §4.4（TiO₂ ALD/蒸发/RIE 工艺）仍为 TiO₂ 工艺总参照。
+> F-08 制造综述（含 TiO₂ ALD/蒸发/RIE 工艺总参照）：[PDF](../../Q1_工艺_L01相关/F_08_Yang_2024_Advanced_Manufacturing_Metadevices_PhotonicsInsights.pdf) · [笔记](../../Q1_工艺_L01相关/阅读笔记_F_08_Yang_2024.md)
 
 ## 关键要点（来自主文献）
 

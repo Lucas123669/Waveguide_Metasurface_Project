@@ -8,10 +8,10 @@
 
 | 编号 | 标题 | 在本体系中的角色 | PDF / 笔记 |
 | --- | --- | --- | --- |
-| L01 | Leaky-wave metasurfaces for integrated photonics | 主论文：PMMA 椭圆孔 qBIC + Si₃N₄ 波导，单层 PMMA 无刻蚀工艺 | `literature/L01_Huang_2023_Leaky-Wave_Metasurfaces.pdf`（+ 补充材料）；`阅读笔记_L01_Huang_2023.md` |
-| L04 | Accessible, All-Polymer Metasurfaces: Low Effort, High Quality Factor | PMMA 直接做 qBIC 谐振材料（三步工艺，Q 最高 523）；配方与 L01 一一对应 | `literature/L04_Hirler_2026_All-Polymer_Metasurfaces.pdf`（+ 补充材料）；`阅读笔记_L04_Hirler_2026.md` |
-| L05 | A review of PMMA as a versatile lithographic resist | PMMA 光刻胶机制综述（曝光/显影/剂量标定） | `literature/L05_Rahman_2020_PMMA_Lithographic_Resist.pdf`；`阅读笔记_L05_Rahman_2020.md` |
-| F-06 | Direct electron beam writing of electro-optic polymer microring resonators | PMMA 直接 EBL 写入波导（30 kV/700 μC/cm²） | `literature/Q1_工艺_L01相关/F_06_*.pdf`；`阅读笔记_F_06_Sun_2008.md` |
+| L01 | Leaky-wave metasurfaces for integrated photonics | 主论文：PMMA 椭圆孔 qBIC + Si₃N₄ 波导，单层 PMMA 无刻蚀工艺 | [PDF](../../L01_Huang_2023_Leaky-Wave_Metasurfaces.pdf) · [SI](../../L01_Huang_2023_补充材料.pdf) · [笔记](../../阅读笔记_L01_Huang_2023.md) |
+| L04 | Accessible, All-Polymer Metasurfaces: Low Effort, High Quality Factor | PMMA 直接做 qBIC 谐振材料（三步工艺，Q 最高 523）；配方与 L01 一一对应 | [PDF](../../L04_Hirler_2026_All-Polymer_Metasurfaces.pdf) · [SI](../../L04_Hirler_2026_补充材料.pdf) · [笔记](../../阅读笔记_L04_Hirler_2026.md) |
+| L05 | A review of PMMA as a versatile lithographic resist | PMMA 光刻胶机制综述（曝光/显影/剂量标定） | [PDF](../../L05_Rahman_2020_PMMA_Lithographic_Resist.pdf) · [笔记](../../阅读笔记_L05_Rahman_2020.md) |
+| F-06 | Direct electron beam writing of electro-optic polymer microring resonators | PMMA 直接 EBL 写入波导（30 kV/700 μC/cm²） | [PDF](../../Q1_工艺_L01相关/F_06_2008_Direct_EBL_PMMA_Microring_OptExpress.pdf) · [笔记](../../Q1_工艺_L01相关/阅读笔记_F_06_Sun_2008.md) |
 
 ## 相关文献（跨体系引用）
 

@@ -73,10 +73,13 @@
 | F-26 Wang 2021 | TiO₂ | — | 1.5 μm 高深宽比 TiO₂ 消色差 metalens（F08 案例 C69；F08 正文 [101]） |
 | F-27 Kamali 2016 | Si | — | 共形柔性 a-Si/PDMS 超表面（F08 案例 C65） |
 
-> F-11~F-27 为 2026-09-02 自 F08 综述案例论文下载（PDF 在本目录对应体系 `pdfs/`，笔记在同体系目录）。F-19/F-20 出版社反爬暂无法脚本下载，落地页 URL 见 `scripts/f08_download_manifest.json`。
+> F-11~F-27 为 2026-09-02 自 F08 综述案例论文下载（PDF 在本目录对应体系 `pdfs/`，笔记在同体系目录，均可点击跳转）。F-19/F-20 出版社反爬暂无法脚本下载，落地页 URL 见 [scripts/f08_download_manifest.json](../../scripts/f08_download_manifest.json)。
 
 ## 使用建议
 
+- **文献 PDF/笔记均可点击直达**：下方 5 个体系 README 的"主文献"表里，每篇文献都带 **[PDF]** 与 **[笔记]** 链接（相对本仓库路径，GitHub/本地预览均可点击跳转）。顶层归属总表只做归类概览。
+- 快速入口：
+  - [Si 体系（含 pdfs/）](Si/README.md) ｜ [SiN 体系](SiN/README.md) ｜ [PMMA 体系](PMMA/README.md) ｜ [TiO₂ 体系（含 pdfs/）](TiO2/README.md) ｜ [通用交叉（含 pdfs/）](通用交叉/README.md)
 - 按"我要做哪个体系的顶层超表面"进入对应子文件夹查文献与笔记。
 - 工艺/物理基础问题（BIC、泄漏波、逆设计、制造）先看"通用交叉"。
 - 各体系 README 中列出"待补充文献"，可指导后续文献收集。
