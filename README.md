@@ -15,11 +15,12 @@
 | `experiments/l01_huang_2023/` | Huang et al., Nat. Nanotechnol. 18, 580 (2023) | PMMA / Si₃N₄ 双层波导 + qBIC 椭圆孔 | 片上漏波超表面（LWM）全参量辐射控制 | case_001 平板模分析完成；下一动作 case_002 元胞库 |
 | `experiments/l02_guo_2020/` | Guo et al., Sci. Adv. 6, eabb4142 (2020) | Si 波导 + Au/SiO₂/Au meta-atom | beam deflector + metalens（COMSOL 自动化复现） | 45° 偏转结果已接受（见 run_manifest）；metalens 待复现 |
 
-## 3. 当前状态（2026-08-27）
+## 3. 当前状态（2026-09-02）
 
 - L01 轨道：case_001 平板模分析已完成（TM₀ n_eff≈1.5507、TE₀ n_eff≈1.6759 @1.55 μm，见 `experiments/l01_huang_2023/case_001_slab_mode/`）；下一动作 case_002（元胞库：δ/α/D₀ 扫描 + 容差展宽）。
 - L02 轨道：Guo 2020 COMSOL 工作流已并入；45° 右上偏转结果已接受（15 supercell、897.331 nm 周期、模拟角谱峰 45.0147°，配置见 `configs/calibrated/`，结果见 `experiments/l02_guo_2020/beam_deflector/right45_15cells_air2x/`）。
 - 综合分析与初步结构报告：`docs/reports/2026-08-25_L01超表面波导综合分析与初步结构.md`。
+- 文献：2026-09-02 新增 F-11~F-27（F08 制造综述案例论文 17 篇），按顶层材料体系收纳于 `literature/材料体系分类/<体系>/`（`pdfs/` + 阅读笔记）；15 篇已下载并精读，F-19/F-20 出版社反爬待浏览器下载。F08 案例统计汇报见 `docs/reports/2026-09-02_F08制造案例统计与汇报.md`。
 
 ## 4. 目录结构
 

@@ -6,19 +6,25 @@
 
 ## 当前状态
 
-**暂无专属文献**。现有文献库中 TiO₂ 相关内容主要出现在 F-08 制造综述的工艺案例中：
+**2026-09-02 起已有专属文献**（原为空缺，本轮自 F08 案例补入 5 篇）：
 
-| 编号 | 相关工艺内容 | PDF / 笔记 |
-| --- | --- | --- |
-| F-08 | TiO₂ ALD 反向填充（粗糙度 <1 nm、效率 86%）、EB 蒸发 + lift-off（粗糙度 0.66 nm）、RIE 高深宽比 TiO₂（1.5 μm、89–90° 侧壁、效率 77.1–88.5%） | `literature/Q1_工艺_L01相关/F_08_*.pdf`；`阅读笔记_F_08_Yang_2024.md` |
+| 编号 | 标题 | 在本体系中的角色 | PDF / 笔记 |
+| --- | --- | --- | --- |
+| F-11 | Broadband high-efficiency dielectric metasurfaces for the visible spectrum | EBL 反向结构 + ALD 填 TiO₂ + 平面化 RIE；粗糙度 <1 nm、可见全息 82/81/78%（F08 案例 C04） | `pdfs/F_11_*.pdf`；`阅读笔记_F_11_Devlin_2016.md` |
+| F-21 | Single-step manufacturing of hierarchical dielectric metalens in the visible | TiO₂ 纳米颗粒树脂（PER）一步 UV-NIL（F08 案例 C48） | `pdfs/F_21_*.pdf`；`阅读笔记_F_21_Yoon_2020.md` |
+| F-22 | High aspect ratio metalenses by NIL with water-soluble stamps | PVA 水溶模湿法脱模高深宽比 PER metalens（F08 案例 C50） | `pdfs/F_22_*.pdf`；`阅读笔记_F_22_Choi_2023.md` |
+| F-25 | Observation of intrinsic chiral bound states in the continuum | 倾斜扰动 TiO₂ 固有手性 BIC：CD 0.93、Q>2663（F08 案例 C67） | `pdfs/F_25_*.pdf`；`阅读笔记_F_25_Chen_2023.md` |
+| F-26 | High-efficiency broadband achromatic metalens for near-IR biological imaging | 1.5 μm 高深宽比 TiO₂ 消色差 metalens（F08 案例 C69） | `pdfs/F_26_*.pdf`；`阅读笔记_F_26_Wang_2021.md` |
 
-## 关键要点（来自 F-08 案例）
+> 另：F-08 综述 §4.4（TiO₂ ALD/蒸发/RIE 工艺）仍为 TiO₂ 工艺总参照。
 
-- TiO₂ 制造高度依赖 ALD（慢、厚度 <600 nm、深宽比 <15）；EB 蒸发为更快替代。
-- 直接刻蚀 TiO₂ 的 RIE 配方需专用工艺（旧配方侧壁 <75°）。
-- 高折射率 → 强共振，加工误差影响与 Si 类似（需严格容差预算）。
+## 关键要点（来自主文献）
+
+- TiO₂ 制造高度依赖 ALD（慢、厚度 <600 nm、深宽比 <15，F-11 证明反向填充可达 600 nm 高、间隙 6 nm）；EB 蒸发为更快替代（F-26：1500 nm、0.6 Å/s）。
+- 直接刻蚀 TiO₂ 需专用 RIE 配方（F-26：SF₆/CHF₃/O₂、侧壁 89–90°、AR≥37.5）；F-11 走"负结构 + 保形填充 + 回刻"免直刻路线。
+- 低缺陷量产：UV-NIL + TiO₂ 纳米颗粒树脂（F-21 一步成型、F-22 PVA 水溶模免脱模应力）。
+- 手性升级路线：斜刻蚀 + 面内/面外联合破缺 → 固有手性 BIC（F-25，CD 0.93、Q>2663）。
 
 ## 待补充文献（建议优先收集）
 
-- TiO₂ 金属透镜/超表面专项文献（如 Khorasaninejad et al. 2016 Science；Capasso 组 TiO₂ metalens）。
-- TiO₂ 高深宽比刻蚀专项工艺文献。
+- TiO₂ 更宽波段（蓝紫/UV）专项 metalens 效率数据与 NIL 母版长期稳定性。
