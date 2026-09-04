@@ -5,7 +5,7 @@
 - **题目**:Two dimensional beam forming and steering based on silicon nitride 1×32 optical phased array
 - **期刊 / 年份**:*Optics Express* **32**(25), 43778–43787 (2024)
 - **DOI**:[10.1364/OE.534684](https://doi.org/10.1364/OE.534684)
-- **本地原文**:待补档(OA)
+- **本地原文**:[PDF](pdfs/A5_Arsanjani_2024_SiN_1x32_OPA.pdf)(Optica/OE 出版版,32(25),2024)
 - **定位**:A 组;全 SiN 商用平台 OPA 的最新指标。
 
 ## 一句话总结

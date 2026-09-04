@@ -5,7 +5,7 @@
 - **题目**:Broadband transparent and CMOS-compatible flat optics with silicon nitride metasurfaces [Invited]
 - **期刊 / 年份**:*Optical Materials Express* **8**(8), 2330–2344 (2018)
 - **DOI**:[10.1364/OME.8.002330](https://doi.org/10.1364/OME.8.002330)
-- **本地原文**:待补档(OA)
+- **本地原文**:[PDF](pdfs/C2_Colburn_2018_SiN_flat_optics.pdf)(Optica/OME 出版版,8(8),2018)
 - **定位**:C 组;SiN 超表面平台综述(设计方法视角)。
 
 ## 一句话总结

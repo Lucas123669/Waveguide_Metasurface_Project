@@ -5,7 +5,7 @@
 - **题目**:All-pass Si₃N₄ metasurface filter for advanced photonic applications: metalenses, vortex beams, and holography
 - **期刊 / 年份**:*Journal of Optics* **28**(1), 015102 (2026)
 - **DOI**:[10.1088/2040-8986/ae292f](https://doi.org/10.1088/2040-8986/ae292f)
-- **本地原文**:待补档
+- **本地原文**:[PDF](pdfs/D4_MekonnenBerhe_2026_SiN_allpass_metasurface.pdf)(IOP/J. Opt. 28(1),2026)
 - **定位**:D 组;SiN 全通型超表面设计研究(数值为主,注意波段)。
 
 ## 一句话总结
