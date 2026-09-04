@@ -5,7 +5,7 @@
 - **题目**:Dispersive silicon–nitride optical phased array incorporating arrayed waveguide delay lines for passive line beam scanning
 - **期刊 / 年份**:*Scientific Reports* **12**, 18759 (2022)
 - **DOI**:[10.1038/s41598-022-23456-7](https://doi.org/10.1038/s41598-022-23456-7)
-- **本地原文**:待补档(OA)
+- **本地原文**:[PDF](pdfs/A4_Bhandari_2022_SiN_OPA_line_scan.pdf)(Scientific Reports OA,已补档)
 - **定位**:A 组;无源色散扫描 SiN OPA。
 
 ## 一句话总结

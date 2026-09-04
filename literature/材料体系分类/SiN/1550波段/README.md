@@ -49,7 +49,7 @@
 | --- | --- | --- | --- | --- |
 | ★D1 | **2018 · Optica 5(7), 825–831** | Colburn *et al.*, *Varifocal zoom imaging with large area focal length adjustable metalenses*;[DOI](https://doi.org/10.1364/OPTICA.5.000825) | 待补档 | [阅读笔记](阅读笔记_D1_Colburn_2018.md) |
 | D2 | **2020 · Microsystems & Nanoengineering 6, 79** | Han *et al.*, *MEMS-actuated metasurface Alvarez lens*;[DOI](https://doi.org/10.1038/s41378-020-00190-6) | 待补档 | [阅读笔记](阅读笔记_D2_Han_2020.md) |
-| D3 | **2022 · Scientific Reports 12, 5385** | Han *et al.*, *Millimeter-scale focal length tuning with MEMS-integrated meta-optics employing high-throughput fabrication*;[DOI](https://doi.org/10.1038/s41598-022-09277-8) | 待补档 | [阅读笔记](阅读笔记_D3_Han_2022.md) |
+| D3 | **2022 · Scientific Reports 12, 5385** | Han *et al.*, *Millimeter-scale focal length tuning with MEMS-integrated meta-optics employing high-throughput fabrication*;[DOI](https://doi.org/10.1038/s41598-022-09277-8) | [PDF](pdfs/D3_Han_2022_MEMS_metaoptics_tuning.pdf) | [阅读笔记](阅读笔记_D3_Han_2022.md) |
 | D4 | **2026 · Journal of Optics 28(1), 015102** | Mekonnen Berhe *et al.*, *All-pass Si₃N₄ metasurface filter for advanced photonic applications: metalenses, vortex beams, and holography*;[DOI](https://doi.org/10.1088/2040-8986/ae292f) | 待补档 | [阅读笔记](阅读笔记_D4_MekonnenBerhe_2026.md) |
 
 ## 与 Si 专题的对照要点
@@ -63,4 +63,4 @@
 1. 优先研读 ★A1(项目主文献 L01)、★B1、★C1(项目已有 L03)、★D1;它们分别对应漏波辐射机制、BIC 发光增强、SiN 工艺平台、SiN 相位型超表面设计。
 2. 做 SiN 元胞设计时,把 A3 的弱扰动漏波天线、B3/B5 的低对比高 Q、A1 的 qBIC 漏波超表面放在同一坐标系比较(扰动强度 vs Q vs 方向性)。
 3. 所有"待补档"条目在补入原文前,预备笔记中的数值不可直接写入仿真规格或立项结论。
-4. PDF 批量补档时优先开放获取版本:A2(Poulton, MIT 开放稿)、B3(arXiv)、D2(PMC8433358)、D3(Sci Rep OA)、A4/A6(OA)。
+4. PDF 批量补档优先开放获取版本;**2026-09-04 已补档 A2(MIT 开放稿)、A4(Sci Rep OA)、D2(Microsystems & Nanoengineering OA)、D3(Sci Rep OA)**。B3 已交叉引用项目 F-01(不重复入库);A6(APL Photonics,CC BY OA)因 AIP 站点反爬暂未直下,需浏览器手动补。

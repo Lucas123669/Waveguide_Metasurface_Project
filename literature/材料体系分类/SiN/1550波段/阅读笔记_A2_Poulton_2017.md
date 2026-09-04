@@ -5,7 +5,7 @@
 - **题目**:Large-scale silicon nitride nanophotonic phased arrays at infrared and visible wavelengths
 - **期刊 / 年份**:*Optics Letters* **42**(1), 21–24 (2017)
 - **DOI**:[10.1364/OL.42.000021](https://doi.org/10.1364/OL.42.000021)
-- **本地原文**:待补档(MIT 有开放稿)
+- **本地原文**:[PDF](pdfs/A2_Poulton_2017_SiN_phased_array.pdf)(MIT 开放稿,已补档)
 - **定位**:A 组;SiN 大口径 OPA 的里程碑。
 
 ## 一句话总结
