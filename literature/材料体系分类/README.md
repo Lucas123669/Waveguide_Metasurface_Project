@@ -73,7 +73,7 @@
 | F-26 Wang 2021 | TiO₂ | — | 1.5 μm 高深宽比 TiO₂ 消色差 metalens（F08 案例 C69；F08 正文 [101]） |
 | F-27 Kamali 2016 | Si | — | 共形柔性 a-Si/PDMS 超表面（F08 案例 C65） |
 
-> F-11~F-27 为 2026-09-02 自 F08 综述案例论文下载（PDF 在本目录对应体系 `pdfs/`，笔记在同体系目录，均可点击跳转）。F-19/F-20 出版社反爬暂无法脚本下载，落地页 URL 见 [scripts/f08_download_manifest.json](../../scripts/f08_download_manifest.json)。
+> F-11~F-27 为 2026-09-02 自 F08 综述案例论文下载（PDF 在本目录对应体系 `pdfs/`，笔记在同体系目录，均可点击跳转）。F-19/F-20 出版社反爬暂无法脚本下载，落地页 URL 见 [下载清单](../../scripts/literature/manifests/f08_download_manifest.json)。
 
 ## 使用建议
 

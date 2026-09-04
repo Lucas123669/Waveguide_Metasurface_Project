@@ -2,3 +2,4 @@ mph>=1.2
 jpype1>=1.4
 numpy>=1.24
 pytest>=7
+matplotlib>=3.7

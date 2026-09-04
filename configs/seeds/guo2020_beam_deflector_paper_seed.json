@@ -75,7 +75,7 @@
     "comsol": {
       "template_model": "",
       "study_tag": "std1",
-      "command": "\"{python}\" \"{project_root}\\scripts\\comsol_adapter.py\" --candidate \"{workspace}\\candidate.json\"",
+      "command": "\"{python}\" \"{project_root}\\scripts\\simulation\\comsol_adapter.py\" --candidate \"{workspace}\\candidate.json\"",
       "parameter_map": {
         "wavelength_um": {"tag": "lambda0", "unit": "um"},
         "waveguide_width_um": {"tag": "wg_w", "unit": "um"},

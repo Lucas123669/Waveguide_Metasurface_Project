@@ -2,6 +2,19 @@
 
 > 本文件是项目入口。机器可读的单一状态源是 `project_config.json`；本文中的状态表由人工同步维护，若不一致以 `project_config.json` 为准。
 
+## 快速导航
+
+| 我要做什么 | 入口 |
+| --- | --- |
+| 接手项目 / 找下一步 | [AI 接手指南](docs/guides/AI_接手指南.md) |
+| 了解文档体系 | [文档中心](docs/README.md) |
+| 运行仿真或后处理 | [脚本入口](scripts/README.md) |
+| 选择 seed / calibrated 参数 | [配置说明](configs/README.md) |
+| 进入论文复现轨道 | [实验轨道](experiments/README.md) |
+| 查论文、笔记和材料体系 | [文献库](literature/README.md) |
+
+项目主链路为：**文献依据 → 决策 → 配置 → 代码/脚本 → 实验结果 → 报告 → 制备**。每类信息只在一个主目录维护，其余位置使用链接。
+
 ## 1. 项目目标
 
 在波导结构上集成超表面（metasurface），实现对辐射光（radiated light）的调控：辐射方向（出射角度）、偏振状态、相位/波前整形、辐射效率。任务最终包含两部分：实现（设计 + 仿真）与制备（实验）。
@@ -15,12 +28,13 @@
 | `experiments/l01_huang_2023/` | Huang et al., Nat. Nanotechnol. 18, 580 (2023) | PMMA / Si₃N₄ 双层波导 + qBIC 椭圆孔 | 片上漏波超表面（LWM）全参量辐射控制 | case_001 平板模分析完成；下一动作 case_002 元胞库 |
 | `experiments/l02_guo_2020/` | Guo et al., Sci. Adv. 6, eabb4142 (2020) | Si 波导 + Au/SiO₂/Au meta-atom | beam deflector + metalens（COMSOL 自动化复现） | 45° 偏转结果已接受（见 run_manifest）；metalens 待复现 |
 
-## 3. 当前状态（2026-09-02）
+## 3. 当前状态（2026-09-03）
 
 - L01 轨道：case_001 平板模分析已完成（TM₀ n_eff≈1.5507、TE₀ n_eff≈1.6759 @1.55 μm，见 `experiments/l01_huang_2023/case_001_slab_mode/`）；下一动作 case_002（元胞库：δ/α/D₀ 扫描 + 容差展宽）。
 - L02 轨道：Guo 2020 COMSOL 工作流已并入；45° 右上偏转结果已接受（15 supercell、897.331 nm 周期、模拟角谱峰 45.0147°，配置见 `configs/calibrated/`，结果见 `experiments/l02_guo_2020/beam_deflector/right45_15cells_air2x/`）。
-- 综合分析与初步结构报告：`docs/reports/2026-08-25_L01超表面波导综合分析与初步结构.md`。
-- 文献：2026-09-02 新增 F-11~F-27（F08 制造综述案例论文 17 篇），按顶层材料体系收纳于 `literature/材料体系分类/<体系>/`（`pdfs/` + 阅读笔记）；15 篇已下载并精读，F-19/F-20 出版社反爬待浏览器下载。F08 案例统计汇报见 `docs/reports/2026-09-02_F08制造案例统计与汇报.md`。
+- 综合分析与初步结构报告：`docs/reports/design/2026-08-25_L01超表面波导综合分析与初步结构.md`。
+- 文献：2026-09-02 新增 F-11~F-27（F08 制造综述案例论文 17 篇），按顶层材料体系收纳于 `literature/材料体系分类/<体系>/`（`pdfs/` + 阅读笔记）；15 篇已下载并精读，F-19/F-20 出版社反爬待浏览器下载。F08 案例统计汇报见 `docs/reports/literature/2026-09-02_F08制造案例统计与汇报.md`。
+- Si 1550 nm 专题：29 篇已完成年份/期刊标注与逐篇项目笔记；本地 PDF 26 篇（专题目录 25 篇 + 复用 L02 1 篇），A7、B6、B7 待补档。专题索引见 `literature/材料体系分类/Si/1550波段/README.md`。
 
 ## 4. 目录结构
 
@@ -39,21 +53,26 @@ Waveguide_Metasurface_Project/
 ├── experiments/
 │   ├── l01_huang_2023/        # L01 轨道（case_001…）
 │   └── l02_guo_2020/          # L02 轨道（beam_deflector / metalens）
-├── scripts/                   # CLI：建模、求解、后处理
+├── scripts/
+│   ├── simulation/            # 建模与求解 CLI
+│   ├── postprocess/           # 结果重处理与绘图
+│   └── literature/            # 文献下载、manifest 与统计
 ├── tests/
 │   ├── unit/                  # 纯 Python 单元测试
 │   ├── regression/            # 已知解回归测试
 │   └── integration/           # 集成测试（占位）
 ├── docs/
+│   ├── README.md              # 文档导航与边界
 │   ├── architecture.md        # 架构说明
-│   ├── decisions/             # 决策与工艺记录（原 notes/）
-│   ├── reports/               # 综合分析与结果报告
-│   ├── literature-notes/      # 文献笔记索引
-│   └── references/            # 参数模板等
+│   ├── guides/                # 接手与文献库指南
+│   ├── decisions/             # 带日期的决策与工艺记录
+│   ├── reports/               # design/simulation/fabrication/literature
+│   ├── templates/             # 仿真与记录模板
+│   └── archive/               # 失效但需追溯的旧约定
 ├── references/
 │   ├── references.bib         # 论文 BibTeX
 │   └── README.md              # 论文与资产策略
-├── literature/                # 论文 PDF 与阅读笔记（大资产，策略见 references/README.md）
+├── literature/                # 论文 PDF、阅读笔记与专题索引
 │   └── 材料体系分类/          # 按顶层材料体系（Si/SiN/PMMA/TiO₂）分类的文献索引
 ├── artifacts/                 # 大型产物的索引与策略说明
 └── fabrication/               # 工艺参考资料
@@ -66,7 +85,7 @@ Waveguide_Metasurface_Project/
 pip install -e .
 
 # 无 COMSOL 时验证流水线/理论逻辑（mock backend）
-python scripts/run_single.py --config configs/seeds/guo2020_beam_deflector_paper_seed.json --backend mock
+python scripts/simulation/run_single.py --config configs/seeds/guo2020_beam_deflector_paper_seed.json --backend mock
 
 # L01 平板模（纯 Python，无需 COMSOL）
 python experiments/l01_huang_2023/case_001_slab_mode/scripts/slab_mode_solver.py \
@@ -91,6 +110,6 @@ pytest tests/
 
 1. 先读本文件与 `project_config.json`（单一状态源）。
 2. 按实验轨道进入：L01 看 `experiments/l01_huang_2023/`，L02 看 `experiments/l02_guo_2020/`。
-3. 读 `docs/decisions/` 最新决策记录与 `docs/reports/` 综合报告。
+3. 读 `docs/README.md`，再按任务进入 `docs/decisions/` 或 `docs/reports/*/`。
 4. 重要决策记录到 `docs/decisions/` 下带日期文件中，并同步更新 `project_config.json` 与本文状态表。
 5. 中文交流；技术术语保留英文。

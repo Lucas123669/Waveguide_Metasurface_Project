@@ -13,6 +13,7 @@ dependencies = [
   "jpype1>=1.4",
   "mph>=1.2",
   "pytest>=7",
+  "matplotlib>=3.7",
 ]
 
 [tool.setuptools]

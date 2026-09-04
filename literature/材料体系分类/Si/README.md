@@ -18,10 +18,17 @@
 | F-13 | Chiral visible light metasurface patterned in m-Si by FIB | FIB 直写 m-Si 手性超表面（F08 案例 C09） | [PDF](pdfs/F_13_Gorkunov_2018_FIB_Chiral_mSi_SciRep.pdf) · [笔记](阅读笔记_F_13_Gorkunov_2018.md) |
 | F-17 | Synthetic aperture metalens | a-Si 合成孔径 metalens（EBL+光刻，F08 案例 C35） | [PDF](pdfs/F_17_Zhao_2021_Synthetic_Aperture_Metalens_PhotonicsRes.pdf) · [笔记](阅读笔记_F_17_Zhao_2021.md) |
 | F-18 | Dielectric Mie voids: confining light in air | Si 中 FIB 灰度 Mie void 彩印（F08 案例 C31） | [PDF](pdfs/F_18_Hentschel_2023_Dielectric_Mie_Voids_LSA.pdf) · [笔记](阅读笔记_F_18_Hentschel_2023.md) |
-| F-19 | CMOS-compatible all-Si metasurface polarizing bandpass filters on 12-inch wafers | 12 in ArF DUV 偏振滤波（F08 案例 C42） | PDF 待浏览器下载（落地页见 [下载清单](../../../scripts/f08_download_manifest.json)）· 笔记待补 |
-| F-20 | CMOS-compatible a-Si metalenses on a 12-inch glass wafer for fingerprint imaging | 12 in a-Si 940 nm metalens（F08 案例 C44） | PDF 待浏览器下载（落地页见 [下载清单](../../../scripts/f08_download_manifest.json)）· 笔记待补 |
+| F-19 | CMOS-compatible all-Si metasurface polarizing bandpass filters on 12-inch wafers | 12 in ArF DUV 偏振滤波（F08 案例 C42） | PDF 待浏览器下载（落地页见 [下载清单](../../../scripts/literature/manifests/f08_download_manifest.json)）· 笔记待补 |
+| F-20 | CMOS-compatible a-Si metalenses on a 12-inch glass wafer for fingerprint imaging | 12 in a-Si 940 nm metalens（F08 案例 C44） | PDF 待浏览器下载（落地页见 [下载清单](../../../scripts/literature/manifests/f08_download_manifest.json)）· 笔记待补 |
 | F-23 | Large-scale metasurfaces based on grayscale nanosphere lithography | DMD 灰度纳米球大面积 metalens（F08 案例 C54） | [PDF](pdfs/F_23_Zheng_2021_Grayscale_Nanosphere_Lithography_ACSPhotonics.pdf) · [笔记](阅读笔记_F_23_Zheng_2021.md) |
 | F-27 | Decoupling optical function and geometrical form using conformal flexible metasurfaces | 共形柔性 a-Si/PDMS（F08 案例 C65） | [PDF](pdfs/F_27_Kamali_2016_Conformal_Flexible_Metasurface_NatCommun.pdf) · [笔记](阅读笔记_F_27_Kamali_2016.md) |
+
+## 1550 nm 专题文献
+
+- 专题入口：[1550波段/README.md](1550波段/README.md)。
+- 2026-09-03 候选 29 篇：已完成统一年份/期刊标注与 29 份阅读笔记；本地 PDF 26 篇（专题目录 25 篇、A8/L02 复用 1 篇），A7/B6/B7 待补档。
+- 覆盖 Si 波导集成与片上辐射、高 Q/qBIC/BIC、综述与制造平台、自由空间 Si metalens 四组。
+- 下载来源、补入文件及 SHA-256 审计见 [1550波段/download_manifest.json](1550波段/download_manifest.json)。
 
 ## 相关文献（跨体系引用）
 

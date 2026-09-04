@@ -1,9 +1,0 @@
-.out/
-workspaces/
-__pycache__/
-*.pyc
-*.class
-*_solved.mph
-*.status
-*.recovery
-.pytest_cache/

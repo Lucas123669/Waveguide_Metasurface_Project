@@ -17,6 +17,3 @@ __pycache__/
 workspaces/
 *.status
 *.recovery
-
-# 重构后遗留的空壳目录（内容已迁移）
-comsol_workflow/

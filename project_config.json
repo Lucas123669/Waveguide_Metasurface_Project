@@ -1,11 +1,12 @@
 {
   "schema_version": 2,
+  "layout_version": 3,
   "project": {
     "name": "Waveguide_Metasurface_Radiation_Control",
     "objective": "Design and fabricate a waveguide-integrated metasurface to control radiated light (direction, polarization, phase/wavefront, efficiency).",
     "status": "phase_2_simulation_started",
     "created": "2026-08-04",
-    "updated": "2026-09-02",
+    "updated": "2026-09-03",
     "single_source_of_truth": true,
     "primary_paper": {
       "title": "Leaky-wave metasurfaces for integrated photonics",
@@ -123,7 +124,7 @@
     "description": "Waveguide-metasurface tasks by top-layer material system; classified in literature/材料体系分类/. 2026-09-02 update: this folder also stores downloaded F08 case-reference PDFs (pdfs/ subfolders) and reading notes (convention revised from 'indexes only').",
     "folder": "literature/材料体系分类",
     "systems": [
-      {"id": "Si", "top_layer": "Silicon", "primary_papers": ["L02", "Q1-05", "Q1-11", "F-03", "F-05", "F-10", "F-12", "F-13", "F-17", "F-18", "F-19", "F-20", "F-23", "F-27"], "related_papers": ["Q1-06", "Q1-07", "F-08"]},
+      {"id": "Si", "top_layer": "Silicon", "primary_papers": ["L02", "Q1-05", "Q1-11", "F-03", "F-05", "F-10", "F-12", "F-13", "F-17", "F-18", "F-19", "F-20", "F-23", "F-27"], "related_papers": ["Q1-06", "Q1-07", "F-08"], "literature_collections": [{"id": "si_1550nm_2026-09-03", "path": "literature/材料体系分类/Si/1550波段", "candidate_count": 29, "local_pdf_in_collection": 25, "existing_project_pdf": 1, "supplied_local": 8, "pending_local_pdf": 3, "notes_completed": 29, "priority_local_or_existing": 9, "priority_total": 9}]},
       {"id": "SiN", "top_layer": "Silicon Nitride", "primary_papers": ["L03", "Q1-03", "Q1-04", "F-01", "F-02", "F-04", "F-07"], "related_papers": ["L01", "F-10"]},
       {"id": "PMMA", "top_layer": "PMMA", "primary_papers": ["L01", "L04", "L05", "F-06"], "related_papers": ["F-08"]},
       {"id": "TiO2", "top_layer": "Titanium Dioxide", "primary_papers": ["F-11", "F-21", "F-22", "F-25", "F-26"], "related_papers": ["F-08"], "note": "Dedicated TiO2 papers added 2026-09-02 (F08 cases: ALD/PER-NIL/slanted-BIC/high-AR metalens)"},
@@ -145,17 +146,17 @@
     "src": "L02 reproduction core modules (config/backend/workspace pipeline)",
     "configs": "schemas / seeds / calibrated",
     "experiments": "Per-paper tracks (l01_huang_2023, l02_guo_2020)",
-    "scripts": "CLI: modeling, solving, post-processing",
+    "scripts": "CLI grouped by responsibility: simulation / postprocess / literature",
     "tests": "unit / regression / integration",
-    "docs": "architecture, decisions, reports, literature-notes, references",
+    "docs": "README hub; architecture; guides; decisions; categorized reports; templates; archive",
     "references": "references.bib and paper/asset policy",
     "literature": "Papers (PDF) and reading notes",
     "artifacts": "Large artifact index and storage policy",
     "fabrication": "Layouts, process flows, test records"
   },
   "environment": {
-    "system_python": "3.13.5 (no scientific packages)",
-    "bundled_python": "3.12.13 with numpy 2.3.5, openpyxl; no scipy/matplotlib/meep",
+    "python_requirement": ">=3.10; dependencies are declared in pyproject.toml and requirements.txt",
+    "validated_environment": "Python 3.13.12 with numpy 2.5.2, pytest 9.1.1, matplotlib 3.11.1, jpype 1.7.1, mph 1.4.0 (verified 2026-09-03)",
     "em_simulation_software": "COMSOL Multiphysics 6.3 installed at D:\\comsol.6.3\\bin\\win64\\comsol.exe (with comsolbatch.exe for command-line runs); Lumerical FDTD and MEEP not installed",
     "primary_simulation_route": "COMSOL FEM (eigenmode, frequency-domain periodic unit cells, device-level)"
   },
@@ -174,7 +175,7 @@
     "docs/architecture.md",
     "docs/decisions/2026-08-24_L01_微纳加工细节与注意事项.md",
     "docs/decisions/2026-08-24_PMMA胶材与剂量建议.md",
-    "docs/reports/2026-08-25_L01超表面波导综合分析与初步结构.md",
+    "docs/reports/design/2026-08-25_L01超表面波导综合分析与初步结构.md",
     "literature/文献清单.md",
     "references/references.bib",
     "artifacts/README.md"
@@ -186,7 +187,7 @@
   "handoff_instructions": [
     "Read README.md and project_config.json (single source of truth) completely before working.",
     "Enter the experiment track: L01 -> experiments/l01_huang_2023, L02 -> experiments/l02_guo_2020.",
-    "Check the latest decision notes (docs/decisions) and reports (docs/reports) before continuing.",
+    "Read docs/README.md, then check the latest decisions and the relevant reports category before continuing.",
     "Continue from the earliest unfinished roadmap phase.",
     "Record important decisions in dated files under docs/decisions and update project_config.json and README status.",
     "Communicate in Chinese; keep technical terms in English."
