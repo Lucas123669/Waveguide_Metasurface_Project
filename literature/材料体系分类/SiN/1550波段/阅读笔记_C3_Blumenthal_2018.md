@@ -5,7 +5,7 @@
 - **题目**:Silicon Nitride in Silicon Photonics
 - **期刊 / 年份**:*Proceedings of the IEEE* **106**(12), 2209–2231 (2018)
 - **DOI**:[10.1109/JPROC.2018.2861576](https://doi.org/10.1109/JPROC.2018.2861576)
-- **本地原文**:待补档
+- **本地原文**:[PDF](pdfs/C3_Blumenthal_2018_SiN_in_Si_photonics.pdf)(IEEE OA 出版版,已补档)
 - **定位**:C 组;SiN 在硅光中的角色(系统集成视角)。
 
 ## 一句话总结

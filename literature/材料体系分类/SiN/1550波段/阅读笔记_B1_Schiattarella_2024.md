@@ -5,7 +5,7 @@
 - **题目**:Directive giant upconversion by supercritical bound states in the continuum
 - **期刊 / 年份**:*Nature* **626**, 765–771 (2024)
 - **DOI**:[10.1038/s41586-023-06967-9](https://doi.org/10.1038/s41586-023-06967-9)
-- **本地原文**:待补档
+- **本地原文**:[PDF](pdfs/B1_Schiattarella_2024_supercritical_BIC.pdf)(Nature 出版版,CC BY 开放获取,已补档)
 - **定位**:★B 组;SiN BIC 超表面增强发光的巅峰演示。
 
 ## 一句话总结

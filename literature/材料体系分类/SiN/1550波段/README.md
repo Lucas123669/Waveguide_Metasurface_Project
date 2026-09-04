@@ -2,7 +2,7 @@
 
 > 范围:1.5–1.6 μm(C 波段 / 1550 nm)的 Si₃N₄(氮化硅)超表面、波导集成与片上辐射器件。
 > 整理日期:2026-09-04。与 `Si/1550波段/` 专题同构,作为 SiN 体系的波段对照库。
-> 信息来源:网络检索 + CrossRef 书目核实(2026-09-04);**PDF 暂未批量下载**,笔记为基于摘要与公开资料的预备笔记,数值以原文为准。
+> 信息来源:网络检索 + CrossRef 书目核实(2026-09-04);**2026-09-04 已补档 9 篇开放获取 PDF**(见下方"PDF 补档状态"),其余条目为题录+摘要级预备笔记,数值以原文为准。
 
 ## 入库与标注规则
 
@@ -40,7 +40,7 @@
 | --- | --- | --- | --- | --- |
 | ★C1 | **2024 · Laser & Photonics Reviews 18(12), 2400508** | Buzaverov *et al.*, *Silicon Nitride Integrated Photonics from Visible to Mid-Infrared Spectra*;[DOI](https://doi.org/10.1002/lpor.202400508) | 项目主文献 L03([笔记](../../../阅读笔记_L03_Buzaverov_2024.md)) | [阅读笔记](阅读笔记_C1_Buzaverov_2024.md) |
 | C2 | **2018 · Optical Materials Express 8(8), 2330–2344** | Colburn *et al.*, *Broadband transparent and CMOS-compatible flat optics with silicon nitride metasurfaces [Invited]*;[DOI](https://doi.org/10.1364/OME.8.002330) | 待补档 | [阅读笔记](阅读笔记_C2_Colburn_2018.md) |
-| C3 | **2018 · Proceedings of the IEEE 106(12), 2209–2231** | Blumenthal *et al.*, *Silicon Nitride in Silicon Photonics*;[DOI](https://doi.org/10.1109/JPROC.2018.2861576) | 待补档 | [阅读笔记](阅读笔记_C3_Blumenthal_2018.md) |
+| C3 | **2018 · Proceedings of the IEEE 106(12), 2209–2231** | Blumenthal *et al.*, *Silicon Nitride in Silicon Photonics*;[DOI](https://doi.org/10.1109/JPROC.2018.2861576) | [PDF](pdfs/C3_Blumenthal_2018_SiN_in_Si_photonics.pdf) | [阅读笔记](阅读笔记_C3_Blumenthal_2018.md) |
 | C4 | **2021 · 中国光学 14(4), 998–1018** | 范智斌、董建文 等,《氮化硅光子器件与应用研究进展》;[DOI](https://doi.org/10.37188/CO.2021-0093) | 待补档 | [阅读笔记](阅读笔记_C4_Fan_2021.md) |
 
 ## D 组|自由空间 SiN metalens @1550 nm
@@ -58,9 +58,38 @@
 2. **1550 nm 自由空间 SiN metalens 稀缺**:D 组以 Alvarez 变焦路线为主(D1–D3);单波长固定焦 SiN metalens 在 C 波段基本让位于 Si/Si -rich 平台,这是 SiN 体系的已知空档。
 3. **波导集成 SiN 是主战场**:A 组 OPA/漏波天线在 1550 nm 已有从 2016–2025 的完整演进链(OLWA→大规模 OPA→多光束 FSO),L01 的 qBIC 漏波超表面是其中功能密度最高的路线。
 
+## PDF 补档状态(2026-09-04)
+
+**已补档 9 篇**(均在 `pdfs/`,已校验):
+
+| 编号 | 文献 | 版本来源 |
+| --- | --- | --- |
+| A2 | Poulton 2017, SiN OPA | MIT Photonics Group 开放稿(出版版) |
+| A4 | Bhandari 2022, SiN OPA 线扫 | Scientific Reports OA(出版版) |
+| B1 | Schiattarella 2024, 超临界 BIC 上转换 | Nature,CC BY(出版版) |
+| B2 | Yesilkoy 2019, 高光谱生物传感 | EPFL Infoscience 机构库(接受稿,CC BY-NC-ND) |
+| C3 | Blumenthal 2018, SiN 综述 | Proc. IEEE OA(出版版) |
+| C4 | 范智斌 2021, 氮化硅光子综述(中文) | 《中国光学》期刊网免费全文(出版版) |
+| D1 | Colburn 2018, 变焦 metalens | arXiv:1805.07832(预印本,出版版为 Optica) |
+| D2 | Han 2020, MEMS Alvarez lens | Microsystems & Nanoengineering OA(出版版) |
+| D3 | Han 2022, MEMS 调焦 meta-optics | Scientific Reports OA(出版版) |
+
+**待手动下载 6 篇**(发布方站点有验证码/反爬,脚本无法直下,需浏览器人工下载):
+
+| 编号 | 文献 | 下载入口 |
+| --- | --- | --- |
+| A3 | Zhao 2016, JLT 漏波天线 | [IEEE Xplore](https://ieeexplore.ieee.org/document/7599543)(需订阅/校园网) |
+| A5 | Arsanjani 2024, OE 1×32 OPA | [Optica 文章页](https://opg.optica.org/oe/abstract.cfm?uri=oe-32-25-43778)(过验证后下载) |
+| A6 | Jiao 2025, APL Photonics 多光束 | [AIP 文章页](https://pubs.aip.org/aip/app/article/10/5/056110/3346691/Two-dimensional-multi-beam-steering-for-parallel)(CC BY OA) |
+| B4 | Zhang 2024, OE qBIC 光阱 | [Optica 文章页](https://opg.optica.org/oe/abstract.cfm?uri=oe-32-22-39906)(过验证后下载) |
+| C2 | Colburn 2018, OME SiN 平光学 | [Optica 文章页](https://opg.optica.org/ome/abstract.cfm?uri=ome-8-8-2330)(过验证后下载) |
+| D4 | Mekonnen Berhe 2026, J. Opt. 全通滤波 | [IOP 文章页](https://iopscience.iop.org/article/10.1088/2040-8986/ae292f)(待确认 OA) |
+
+交叉引用不重复入库:A1=L01、A7=L02、C1=L03、B3=F-01、B5=Si 专题 B2。
+
 ## 使用建议
 
 1. 优先研读 ★A1(项目主文献 L01)、★B1、★C1(项目已有 L03)、★D1;它们分别对应漏波辐射机制、BIC 发光增强、SiN 工艺平台、SiN 相位型超表面设计。
 2. 做 SiN 元胞设计时,把 A3 的弱扰动漏波天线、B3/B5 的低对比高 Q、A1 的 qBIC 漏波超表面放在同一坐标系比较(扰动强度 vs Q vs 方向性)。
 3. 所有"待补档"条目在补入原文前,预备笔记中的数值不可直接写入仿真规格或立项结论。
-4. PDF 批量补档优先开放获取版本;**2026-09-04 已补档 A2(MIT 开放稿)、A4(Sci Rep OA)、D2(Microsystems & Nanoengineering OA)、D3(Sci Rep OA)**。B3 已交叉引用项目 F-01(不重复入库);A6(APL Photonics,CC BY OA)因 AIP 站点反爬暂未直下,需浏览器手动补。
+4. PDF 补档优先开放获取版本;**2026-09-04 已补档 9 篇**(A2/A4/B1/B2/C3/C4/D1/D2/D3,见上方"PDF 补档状态")。剩余 A3/A5/A6/B4/C2/D4 因站点验证码或订阅墙需手动浏览器下载;B3 交叉引用项目 F-01(不重复入库)。

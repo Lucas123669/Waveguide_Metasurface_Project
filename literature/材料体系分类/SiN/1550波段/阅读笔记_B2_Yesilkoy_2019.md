@@ -5,7 +5,7 @@
 - **题目**:Ultrasensitive hyperspectral imaging and biodetection enabled by dielectric metasurfaces
 - **期刊 / 年份**:*Nature Photonics* **13**(6), 390–396 (2019)
 - **DOI**:[10.1038/s41566-019-0394-6](https://doi.org/10.1038/s41566-019-0394-6)
-- **本地原文**:待补档
+- **本地原文**:[PDF](pdfs/B2_Yesilkoy_2019_hyperspectral_biodetection.pdf)(EPFL Infoscience 机构库接受稿,CC BY-NC-ND,已补档)
 - **定位**:B 组;SiN qBIC 超表面传感应用的代表作。
 
 ## 一句话总结

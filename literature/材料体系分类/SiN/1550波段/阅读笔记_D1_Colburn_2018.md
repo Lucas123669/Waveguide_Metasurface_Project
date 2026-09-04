@@ -5,7 +5,7 @@
 - **题目**:Varifocal zoom imaging with large area focal length adjustable metalenses
 - **期刊 / 年份**:*Optica* **5**(7), 825–831 (2018)
 - **DOI**:[10.1364/OPTICA.5.000825](https://doi.org/10.1364/OPTICA.5.000825)
-- **本地原文**:待补档(OA)
+- **本地原文**:[PDF](pdfs/D1_Colburn_2018_varifocal_metalens.pdf)(arXiv:1805.07832 预印本,已补档;出版版为 Optica 5(7), 825)
 - **定位**:★D 组;1550 nm 自由空间 SiN metalens 的代表作。
 
 ## 一句话总结
