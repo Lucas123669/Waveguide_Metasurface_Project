@@ -1,7 +1,7 @@
 # 1550 nm Si 体系候选文献
 
 > 范围:1.5–1.6 μm(C 波段 / 1550 nm)的 a-Si、c-Si、SOI 超表面与片上辐射器件。  
-> 整理日期:2026-09-03(初版)/ 2026-09-07(增补 B9 + 全 30 篇 SCI 分区列)/ 2026-09-08(增补 A9、A10 两篇)。每篇均已补上**年份 · 期刊**标签和项目笔记;PDF 统一采用 `编号_第一作者_年份_短标题.pdf`。
+> 整理日期:2026-09-03(初版)/ 2026-09-07(增补 B9 + 全 30 篇 SCI 分区列)/ 2026-09-08(增补 A9、A10 两篇,并补齐两篇阅读笔记)。每篇均已补上**年份 · 期刊**标签和项目笔记;PDF 统一采用 `编号_第一作者_年份_短标题.pdf`。
 > 2026-09-07 起,A/B/C/D 表新增 **SCI 分区** 列(中科院升级版 + JCR Q);新增 **B9 Eyvazi 2025(Si 波导集成 + flat-band 激光 + BIC,~800–850 nm)**。
 > **B9 备注**:虽进 Si/1550 专题是按"波导集成"主题归类,但其激射中心在 **~800–850 nm(近红外)**,而非 1550 nm——使用前需确认波段适配。
 
@@ -26,8 +26,8 @@
 | A6 | Q1 · 中科院二区 | **2015 · Optics Express 23(12), 16289–16304** | Bozzola *et al.*, *Optimising apodized grating couplers in a pure SOI platform to −0.5 dB coupling efficiency*;[DOI](https://doi.org/10.1364/OE.23.016289) | [PDF](pdfs/A6_Bozzola_2015_Apodized_Grating_Couplers.pdf) | [阅读笔记](阅读笔记_A6_Bozzola_2015.md) |
 | A7 | Q3 · 中科院四区(OA) | **2024 · Engineering Research Express 6(1), 015044** | Chen, *Subwavelength grating waveguide antenna based on interleaved groove structure*;[DOI](https://doi.org/10.1088/2631-8695/ad1d21) | 待补档 | [笔记(待原文核对)](阅读笔记_A7_Chen_2024.md) |
 | A8 | Q1 · 中科院一区 Top(OA) | **2020 · Science Advances 6, eabb4142** | Guo *et al.*, *Molding free-space light with guided wave-driven metasurfaces*;[DOI](https://doi.org/10.1126/sciadv.abb4142) | [项目已有 PDF](../../../L02_Guo_2020_Molding_Free-Space_Light.pdf) | [阅读笔记](阅读笔记_A8_Guo_2020.md) |
-| A9 | Q1 · 中科院一区 Top | **2023 · Nano Letters 23(6), 2094–2099** | Mikhin *et al.*, *Coherent control of topological states in an integrated waveguide lattice*;[DOI](https://doi.org/10.1021/acs.nanolett.2c04182)([arXiv:2210.01648](https://arxiv.org/abs/2210.01648)) | [PDF](pdfs/A9_Mikhin_2023_Coherent_Control_Topological_States.pdf) | 待补 |
-| A10 | Q1 · 中科院二区 | **2011 · Optics Letters 36(11), 2110–2112** | Schmid *et al.*, *Temperature-independent silicon subwavelength grating waveguides*;[DOI](https://doi.org/10.1364/OL.36.002110) | [PDF](pdfs/A10_Schmid_2011_Temperature_Independent_SWG_Waveguides.pdf) | 待补 |
+| A9 | Q1 · 中科院一区 Top | **2023 · Nano Letters 23(6), 2094–2099** | Mikhin *et al.*, *Coherent control of topological states in an integrated waveguide lattice*;[DOI](https://doi.org/10.1021/acs.nanolett.2c04182)([arXiv:2210.01648](https://arxiv.org/abs/2210.01648)) | [PDF](pdfs/A9_Mikhin_2023_Coherent_Control_Topological_States.pdf) | [阅读笔记](阅读笔记_A9_Mikhin_2023.md) |
+| A10 | Q1 · 中科院二区 | **2011 · Optics Letters 36(11), 2110–2112** | Schmid *et al.*, *Temperature-independent silicon subwavelength grating waveguides*;[DOI](https://doi.org/10.1364/OL.36.002110) | [PDF](pdfs/A10_Schmid_2011_Temperature_Independent_SWG_Waveguides.pdf) | [阅读笔记](阅读笔记_A10_Schmid_2011.md) |
 
 ## B 组｜高 Q / qBIC / BIC
 
