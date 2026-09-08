@@ -19,6 +19,9 @@
 | F-15 | Q1 · 中科院一区 Top(OA) | Controlling 3D optical fields via inverse Mie scattering（Zhan 2019） | 双光子逆设计 3D 光场方法（F08 案例 C25） | [PDF](pdfs/F_15_Zhan_2019_Inverse_Mie_3DOptical_SciAdv.pdf) · [笔记](阅读笔记_F_15_Zhan_2019.md) |
 | F-16 | Q1 · 中科院一区 Top | Grayscale-to-Color: scalable multispectral filter arrays（Williams 2019） | EBL/UV 灰度光刻 + MIM 多光谱滤光方法（F08 案例 C33） | [PDF](pdfs/F_16_Williams_2019_Grayscale_Multispectral_Filter_ACSPhotonics.pdf) · [笔记](阅读笔记_F_16_Williams_2019.md) |
 | F-24 | Q1 · 中科院一区 Top(OA) | 3D-printed multilayer structures for high-NA achromatic metalenses（Pan 2023） | 拓扑优化 + 双光子 3D 打印多层 meta-optics（F08 案例 C61） | [PDF](pdfs/F_24_Pan_2023_3DPrinted_Multilayer_Achromatic_Metalens_SciAdv.pdf) · [笔记](阅读笔记_F_24_Pan_2023.md) |
+| Q1-12 | —（方法奠基，非一区） | Grating couplers for coupling between optical fibers and nanophotonic waveguides（Taillaert 2006） | 波导‑光纤光栅耦合/激励方法（SOI 1550 nm，配套 2D COMSOL 模型） | [PDF](pdfs/Taillaert_2006_Grating_Couplers_JpnJApplPhys45_6071.pdf) · [笔记](阅读笔记_Q1_12_Taillaert_2006.md) |
+
+> Q1-12 为 2026-09-08 新增（师兄提供论文 + 2D 模型）；编号续 Q1 系列便于检索，但其期刊非一区（Jpn. J. Appl. Phys.），按方法通用性收录，PDF 与模型均在本仓库。模型见 [experiments/ref_taillaert_2006/](../../../experiments/ref_taillaert_2006/README.md)。
 
 > F-14/F-15/F-16/F-24 为 2026-09-02 加入（F08 案例论文），PDF 在 `pdfs/`，笔记同目录。
 

@@ -6,5 +6,6 @@
 | --- | --- | --- |
 | [l01_huang_2023/](l01_huang_2023/README.md) | Huang et al. 2023（Nat. Nanotechnol.）：PMMA/Si₃N₄ qBIC 漏波超表面 | case_001 完成；下一动作 case_002 元胞库 |
 | [l02_guo_2020/](l02_guo_2020/README.md) | Guo et al. 2020（Sci. Adv.）：Si 波导 Au/SiO₂/Au meta-atom | 45° 偏转已接受；metalens 待复现 |
+| [ref_taillaert_2006/](ref_taillaert_2006/README.md) | Taillaert et al. 2006（Jpn. J. Appl. Phys.）：光栅耦合器 2D 模型（**参考轨道**，2026-09-08 师兄提供） | 模型就位待核对参数 |
 
 每个轨道内：`README.md` 记录轨道状态与下一动作；结果目录附带 `run_manifest.json` 作为复现证据链。
