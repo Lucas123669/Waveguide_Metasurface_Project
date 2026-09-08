@@ -1,0 +1,68 @@
+{
+  "collection_id": "tio2_1550nm_2026-09-08",
+  "retrieved_on": "2026-09-08",
+  "scope": "Representative TiO2 metasurface papers covering 1.5-1.6 um or explicitly 1550 nm",
+  "naming_rule": "Tn_FirstAuthor_Year_ShortTitle.pdf",
+  "files": [
+    {
+      "id": "T1",
+      "doi": "10.1364/AO.58.001460",
+      "file": "pdfs/T1_Bayati_2019_Refractive_Index_Metalens_Performance.pdf",
+      "source": "https://labs.ece.uw.edu/amlab/Papers_Journals/Elyas_Index_Metalens_Performance.pdf",
+      "access": "institutional-hosted publisher PDF; license not stated in PDF",
+      "pages": 7,
+      "bytes": 1295574,
+      "sha256": "bd97c3a3e46bd7df4b86d546ca5486224acd586b1cf97d8c7999f2958481ad50"
+    },
+    {
+      "id": "T2",
+      "doi": "10.3390/nano12050793",
+      "file": "pdfs/T2_Zhao_2022_Optical_Fiber_Integrated_Metasurfaces_Review.pdf",
+      "source": "https://ira.lib.polyu.edu.hk/bitstream/10397/98715/1/nanomaterials-12-00793.pdf",
+      "access": "open access, CC BY 4.0",
+      "pages": 21,
+      "bytes": 5740937,
+      "sha256": "2262e7ed53f434193a6c50a7256d2604bae47cefb99b80acb8dbcc4c8cc7e56f"
+    },
+    {
+      "id": "T3",
+      "doi": "10.3390/mi12020219",
+      "file": "pdfs/T3_Zhao_2021_Broadband_PCF_TiO2_Metalens.pdf",
+      "source": "https://ira.lib.polyu.edu.hk/bitstream/10397/90884/1/micromachines-12-00219-v2.pdf",
+      "access": "open access, CC BY 4.0",
+      "pages": 11,
+      "bytes": 3303567,
+      "sha256": "8064c83cafc1dbfb126388886000521e006d2777722b2ec557d6a9788d6f310e"
+    },
+    {
+      "id": "T4",
+      "doi": "10.3390/nano12040653",
+      "file": "pdfs/T4_Guo_2022_Multifunctional_Optical_Vortex_Generator.pdf",
+      "source": "https://mdpi-res.com/d_attachment/nanomaterials/nanomaterials-12-00653/article_deploy/nanomaterials-12-00653.pdf",
+      "access": "open access, CC BY 4.0",
+      "pages": 11,
+      "bytes": 10814867,
+      "sha256": "4f447d854a79c903e36c3f0bfcb2aca7d9284094266480da47c7ad1e3ecb55d1"
+    },
+    {
+      "id": "T5",
+      "doi": "10.3390/photonics10010028",
+      "file": "pdfs/T5_Li_2023_Achromatic_Flat_Metasurface_Fiber_Coupler.pdf",
+      "source": "https://mdpi-res.com/d_attachment/photonics/photonics-10-00028/article_deploy/photonics-10-00028.pdf",
+      "access": "open access, CC BY 4.0",
+      "pages": 8,
+      "bytes": 1990312,
+      "sha256": "6b6dbc203d3df587dfb967b26f1fc10bc1385a974fc65b581078977be065fc7b"
+    },
+    {
+      "id": "T6",
+      "doi": "10.1038/s41565-026-02268-0",
+      "file": "pdfs/T6_Fathi_2026_Quantum_Well_TiO2_Metasurface.pdf",
+      "source": "https://www.nature.com/articles/s41565-026-02268-0.pdf",
+      "access": "version of record, open access, CC BY 4.0",
+      "pages": 10,
+      "bytes": 1977677,
+      "sha256": "2806af391584651fa68247ea097f970b6494b22991e1a72d6ebd6305a078ce4c"
+    }
+  ]
+}

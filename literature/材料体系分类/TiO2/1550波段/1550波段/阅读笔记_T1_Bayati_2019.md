@@ -1,0 +1,34 @@
+# 阅读笔记 T1｜Bayati 2019：Role of Refractive Index in Metalens Performance
+
+> **年份 · 期刊**：2019 · *Applied Optics* 58(6), 1460–1466  
+> **DOI**：10.1364/AO.58.001460 ｜ **证据等级**：数值对照研究（RCWA + FDTD + inverse design）  
+> **本地 PDF**：[T1_Bayati_2019_Refractive_Index_Metalens_Performance.pdf](pdfs/T1_Bayati_2019_Refractive_Index_Metalens_Performance.pdf)
+
+## 一句话总结
+
+在统一 1550 nm、80 μm 口径和多组 NA/焦距条件下比较不同折射率 metalens，说明在中等 NA（<0.6）与中等焦距下，TiO₂ 等中等折射率材料也可获得接近高折射率材料的焦斑和效率；高折射率的主要优势是支持更短焦距和更紧凑结构。
+
+## 结构与方法
+
+- 圆柱纳米柱位于 SiO₂ 基底上，以传播相位形成双曲相位面。
+- 统一工作波长 1550 nm；metalens 直径 80 μm，焦距扫描 5–200 μm。
+- TiO₂ 建模折射率 n=2.4；forward-design 初值：周期 790.5 nm、柱高 1317 nm，直径用于覆盖 0–2π 相位并避开 GMR 透射谷。
+- 元胞响应用 RCWA 建库，完整透镜用 Lumerical FDTD；另用广义多球 Mie 模型与 adjoint gradient descent 做 inverse-design 折射率扫描。
+
+## 关键结论
+
+- 对 forward design 的 n=1.2–3.43 和 inverse design 的 n=1.25–3.5，NA<0.6 时不同材料的 FWHM 与聚焦效率差异不显著。
+- 折射率降低时，为获得 2π 相位通常需要更大的厚度/周期；因此“效率接近”不等于“制造同样容易”。
+- 高折射率允许把焦距压得更短；TiO₂ 的价值是在低损耗、制造与几何尺度之间取得折中。
+
+## 对本项目的启示
+
+- 可把周期约 0.79 μm、柱高约 1.32 μm作为 1550 nm TiO₂ 传播相位元胞的第一组扫描中心，但必须换成本项目实测色散和实际包覆层重新建库。
+- 与 Si 方案比较时，不能只比较 n；至少同时比较可实现厚度、最小间隙、相位覆盖、透射谷与侧壁角。
+- 这篇论文适合作为“材料选择基线”，不直接证明某个 TiO₂ 器件已被制造。
+
+## 局限与待确认
+
+- 未考虑具体沉积、刻蚀、侧壁锥度、粗糙度和尺寸偏差，作者也明确说明 inverse-design 部分不处理实验可行性。
+- 使用常数折射率做材料比较，未覆盖实际 a-TiO₂ 薄膜的色散和吸收差异。
+- 若用于波导集成，需要重建导模入射、非均匀振幅和有限阵列边界，不能沿用自由空间均匀照明结果。
