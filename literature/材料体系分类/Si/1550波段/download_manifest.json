@@ -441,19 +441,50 @@
                        "sha256":  "0187e02bd4537ac4fd44b492ee513779e37cbd28f9c7241c6daa2de50dea054a",
                        "bytes":  764750,
                        "note":  "Previously downloaded and revalidated."
-                   }
+                   },
+                       {
+                           "id":  "A9",
+                           "priority":  false,
+                           "author_year":  "Mikhin_2023",
+                           "title":  "Coherent control of topological states in an integrated waveguide lattice",
+                           "doi":  "10.1021/acs.nanolett.2c04182",
+                           "original_doi":  null,
+                           "arxiv":  "2210.01648",
+                           "status":  "supplied_local",
+                           "path":  "pdfs/A9_Mikhin_2023_Coherent_Control_Topological_States.pdf",
+                           "source_url":  "https://arxiv.org/pdf/2210.01648",
+                           "sha256":  "53a778b72238ab3b968b004645155716190fb4cafe43bc2f2a428878ab3494a4",
+                           "bytes":  6681542,
+                           "note":  "Local PDF supplied to the project; SHA-256 re-audited on 2026-09-08. arXiv:2210.01648; published Nano Lett. 23(6) 2094-2099 (2023)."
+                       },
+                       {
+                           "id":  "A10",
+                           "priority":  false,
+                           "author_year":  "Schmid_2011",
+                           "title":  "Temperature-independent silicon subwavelength grating waveguides",
+                           "doi":  "10.1364/OL.36.002110",
+                           "original_doi":  null,
+                           "arxiv":  null,
+                           "status":  "supplied_local",
+                           "path":  "pdfs/A10_Schmid_2011_Temperature_Independent_SWG_Waveguides.pdf",
+                           "source_url":  "https://opg.optica.org/ol/abstract.cfm?uri=ol-36-11-2110",
+                           "sha256":  "a2a77c4a3eb7fc4dad242255afb31873829f4ae38374e640e0186ae25de15efd",
+                           "bytes":  521696,
+                           "note":  "Local PDF supplied to the project; SHA-256 re-audited on 2026-09-08."
+                       }
+
                ],
-    "supplied_local":  8,
+    "supplied_local":  10,
     "local_audit":  {
-                        "local_pdfs_in_collection":  25,
+                        "local_pdfs_in_collection":  27,
                         "existing_project_pdf":  1,
-                        "total_local_pdfs":  26,
+                        "total_local_pdfs":  28,
                         "missing_local_pdfs":  [
                                                    "A7",
                                                    "B6",
                                                    "B7"
                                                ],
-                        "audited_at":  "2026-09-03T19:15:00+08:00",
+                        "audited_at":  "2026-09-08T12:00:00+08:00",
                         "note":  "README.md is the human-readable year/journal index and note directory."
                     }
 }
