@@ -7,7 +7,7 @@
 
 - Taillaert *et al.*, *Grating Couplers for Coupling between Optical Fibers and Nanophotonic Waveguides*, **Jpn. J. Appl. Phys. 45, 6071–6077 (2006)**（Invited Paper，Ghent University IMEC 团队）
 - DOI: [10.1143/JJAP.45.6071]
-- PDF 存档：`literature/材料体系分类/通用交叉/pdfs/Taillaert_2006_Grating_Couplers_JpnJApplPhys45_6071.pdf`（编号 Q1-12，阅读笔记同目录）
+- PDF 存档：`literature/材料体系分类/通用交叉/pdfs/Q1_12_Taillaert_2006_Grating_Couplers_JpnJApplPhys.pdf`（编号 Q1-12，阅读笔记同目录）
 
 ## 模型
 

@@ -6,7 +6,7 @@
 - **期刊 / 年份**：*Jpn. J. Appl. Phys.* **45**(8A), 6071–6077 (2006)（Invited Paper，Selected Topics: Photonic Crystals）
 - **DOI**：[10.1143/JJAP.45.6071](https://doi.org/10.1143/JJAP.45.6071)
 - **单位**：Ghent University / IMEC（D. Taillaert, W. Bogaerts, R. Baets 等，光栅耦合器奠基团队）+ St. Andrews
-- **本地原文**：[PDF](pdfs/Taillaert_2006_Grating_Couplers_JpnJApplPhys45_6071.pdf)
+- **本地原文**：[PDF](pdfs/Q1_12_Taillaert_2006_Grating_Couplers_JpnJApplPhys.pdf)
 - **配套模型**：[experiments/ref_taillaert_2006/grating_coupler_2d/Taillaert2006_2D_ready.mph](../../../experiments/ref_taillaert_2006/grating_coupler_2d/Taillaert2006_2D_ready.mph)（师兄提供，57 MB 2D 模型）
 - **定位**：通用交叉（波导‑光纤耦合/激励方法奠基文献）。非一区顶刊，因方法通用性收录；与 Q1-07/Q1-08 同属"波导‑辐射/耦合设计方法"组。
 
