@@ -1,9 +1,10 @@
 # 1550 nm Si 体系候选文献
 
 > 范围:1.5–1.6 μm(C 波段 / 1550 nm)的 a-Si、c-Si、SOI 超表面与片上辐射器件。  
-> 整理日期:2026-09-03(初版)/ 2026-09-07(增补 B9 + 全 30 篇 SCI 分区列)/ 2026-09-08(增补 A9、A10 两篇,并补齐两篇阅读笔记)。每篇均已补上**年份 · 期刊**标签和项目笔记;PDF 统一采用 `编号_第一作者_年份_短标题.pdf`。
+> 整理日期:2026-09-03(初版)/ 2026-09-07(增补 B9 + 全 30 篇 SCI 分区列)/ 2026-09-08(增补 A9、A10 两篇,并补齐两篇阅读笔记)/ 2026-09-09(增补 C7 综述精读 + A11 模式转换器 + D8 异质反射器 + D9 HCG 理论,共 4 篇入库)。每篇均已补上**年份 · 期刊**标签和项目笔记;PDF 统一采用 `编号_第一作者_年份_短标题.pdf`。
 > 2026-09-07 起,A/B/C/D 表新增 **SCI 分区** 列(中科院升级版 + JCR Q);新增 **B9 Eyvazi 2025(Si 波导集成 + flat-band 激光 + BIC,~800–850 nm)**。
 > **B9 备注**:虽进 Si/1550 专题是按"波导集成"主题归类,但其激射中心在 **~800–850 nm(近红外)**,而非 1550 nm——使用前需确认波段适配。
+> **D8 备注**:Yao 2017(异质全介质超表面宽带反射器)工作波段为 **600–800 nm**,按"全介质超表面反射器设计范式"收录,供材料/结构思想迁移,几何参数不直接套用。
 
 ## 入库与标注规则
 
@@ -11,7 +12,7 @@
 - 文件名:专题 `pdfs/` 内统一为 `编号_第一作者_年份_短标题.pdf`,仅用 ASCII 字母、数字和下划线;短标题保留可检索关键词,不重复期刊信息。A8 复用项目全局 L02,保留其现有主文献名。
 - 年份 · 期刊:以正式出版年份和期刊卷(期)/文章号为准;预印本用 arXiv 号。
 - **SCI 分区列**:采用"**JCR Q? · 中科院X区 [Top]**"格式(中科院 2025 升级版)。Q1 Top = 学科前 5%,Q1 = 前 5–10%,Q2 = 前 10–25%,Q3 = 前 25–50%,Q4 = 后 50%。若作者发表时该刊为 OA 出版,额外标 **OA**。
-- PDF 审计(2026-09-08):专题目录检出 **28 份** PDF(A1–A6、A9、A10、B1–B5/B8/B9、C1–C6、D1–D7),项目根文献已有 A8(L02)1 份,合计 29 份在库;A7、B6、B7 仍待补档,三篇均有题录型预备笔记,明确标为待原文核对。A9、A10 为 2026-09-08 增补,不在原 30 篇清单内。
+- PDF 审计(2026-09-09):专题目录检出 **32 份** PDF(A1–A6、A9–A11、B1–B5/B8/B9、C1–C7、D1–D9),项目根文献已有 A8(L02)1 份,合计 33 份在库;A7、B6、B7 仍待补档,三篇均有题录型预备笔记,明确标为待原文核对。A9、A10 为 2026-09-08 增补,不在原 30 篇清单内;C7、A11、D8、D9 为 2026-09-09 增补(用户本地下载入库)。
 - 笔记口径:数值优先取本地 PDF;综述记录可直接用于本项目的设计/工艺路线。
 
 ## A 组｜Si 波导集成 / 片上辐射
@@ -28,6 +29,7 @@
 | A8 | Q1 · 中科院一区 Top(OA) | **2020 · Science Advances 6, eabb4142** | Guo *et al.*, *Molding free-space light with guided wave-driven metasurfaces*;[DOI](https://doi.org/10.1126/sciadv.abb4142) | [项目已有 PDF](../../../L02_Guo_2020_Molding_Free-Space_Light.pdf) | [阅读笔记](阅读笔记_A8_Guo_2020.md) |
 | A9 | Q1 · 中科院一区 Top | **2023 · Nano Letters 23(6), 2094–2099** | Mikhin *et al.*, *Coherent control of topological states in an integrated waveguide lattice*;[DOI](https://doi.org/10.1021/acs.nanolett.2c04182)([arXiv:2210.01648](https://arxiv.org/abs/2210.01648)) | [PDF](pdfs/A9_Mikhin_2023_Coherent_Control_Topological_States.pdf) | [阅读笔记](阅读笔记_A9_Mikhin_2023.md) |
 | A10 | Q1 · 中科院二区 | **2011 · Optics Letters 36(11), 2110–2112** | Schmid *et al.*, *Temperature-independent silicon subwavelength grating waveguides*;[DOI](https://doi.org/10.1364/OL.36.002110) | [PDF](pdfs/A10_Schmid_2011_Temperature_Independent_SWG_Waveguides.pdf) | [阅读笔记](阅读笔记_A10_Schmid_2011.md) |
+| A11 | Q1 · 中科院一区 | **2019 · Advanced Optical Materials 7(4), 1801191** | Wang *et al.*(上海交大 张永/苏翼凯), *Compact Silicon Waveguide Mode Converter Employing Dielectric Metasurface Structure*;[DOI](https://doi.org/10.1002/adom.201801191) | [PDF](pdfs/A11_Wang_2019_Silicon_Mode_Converter_Dielectric_Metasurface.pdf) | [阅读笔记](阅读笔记_A11_Wang_2019.md) |
 
 ## B 组｜高 Q / qBIC / BIC
 
@@ -55,6 +57,7 @@
 | C4 | Q1 · 中科院一区(OA) | **2020 · Nanophotonics 9(10), 3071–3087** | Li *et al.*, *Large-area metasurface on CMOS-compatible fabrication platform: driving flat optics from lab to fab*;[DOI](https://doi.org/10.1515/nanoph-2020-0063) | [PDF](pdfs/C4_Li_2020_Large_Area_CMOS_Metasurface_Platform.pdf) | [阅读笔记](阅读笔记_C4_Li_2020.md) |
 | C5 | Q1 · 中科院一区 Top | **2018 · Nanophotonics 7(6), 1041–1066** | Kamali *et al.*, *A review of dielectric optical metasurfaces for wavefront control*;[DOI](https://doi.org/10.1515/nanoph-2017-0129) | [PDF](pdfs/C5_Kamali_2018_Dielectric_Metasurface_Wavefront_Control_Review.pdf) | [阅读笔记](阅读笔记_C5_Kamali_2018.md) |
 | C6 | Q1 · 中科院一区 Top(OA) | **2024 · ACS Photonics 11(3), 816–955** | Kuznetsov *et al.*, *Roadmap for Optical Metasurfaces*;[DOI](https://doi.org/10.1021/acsphotonics.3c00457) | [PDF](pdfs/C6_Kuznetsov_2024_Roadmap_for_Optical_Metasurfaces.pdf) | [阅读笔记](阅读笔记_C6_Kuznetsov_2026.md) |
+| C7 | Q2 · 中科院三区(OA) | **2020 · Micromachines 11(7), 666** | Cheng *et al.*(清华-伯克利深圳研究院 TBSI), *Grating Couplers on Silicon Photonics: Design Principles, Emerging Trends and Practical Issues*;[DOI](https://doi.org/10.3390/mi11070666) | [PDF](pdfs/C7_Cheng_2020_Grating_Couplers_Silicon_Photonics_Review.pdf) | [阅读笔记](阅读笔记_C7_Cheng_2020.md) · [精读笔记](精读笔记_C7_Cheng_2020_构思结构与术语.md) |
 
 ## D 组｜自由空间 Si metalens @1550 nm
 
@@ -67,6 +70,8 @@
 | D5 | Q1 · 中科院一区(OA) | **2022 · Nanophotonics 11(2), 405–413** | Li *et al.*, *Flat telescope based on an all-dielectric metasurface doublet enabling polarization-controllable enhanced beam steering*;[DOI](https://doi.org/10.1515/nanoph-2021-0609) | [PDF](pdfs/D5_Li_2022_Flat_Telescope_Metasurface_Doublet.pdf) | [阅读笔记](阅读笔记_D5_Li_2022.md) |
 | D6 | Q1 · 中科院一区 Top | **2024 · Advanced Optical Materials 12(18), 2400191** | Matiushechkina *et al.*, *Perfect Mirror Effects in Metasurfaces of Silicon Nanodisks at Telecom Wavelength*;[DOI](https://doi.org/10.1002/adom.202400191) | [PDF](pdfs/D6_Matiushechkina_2024_Silicon_Nanodisk_Perfect_Mirror.pdf) | [阅读笔记](阅读笔记_D6_Matiushechkina_2024.md) |
 | D7 | arXiv 预印本(未正式出版) | **2017 · arXiv:1711.01430** | Vasilantonakis *et al.*, *Refractive index contrast enhanced metalens on an SOI platform for large angle deflection*;[arXiv](https://arxiv.org/abs/1711.01430) | [PDF](pdfs/D7_Vasilantonakis_2017_SOI_Large_Angle_Deflector.pdf) | [阅读笔记](阅读笔记_D7_Vasilantonakis_2017.md) |
+| D8 | Q1 · 中科院一区 | **2017 · Advanced Optical Materials 5(14), 1700090** | Yao & Wu(USC), *All-Dielectric Heterogeneous Metasurface as an Efficient Ultra-Broadband Reflector*;[DOI](https://doi.org/10.1002/adom.201700090) | [PDF](pdfs/D8_Yao_2017_Heterogeneous_Metasurface_Broadband_Reflector.pdf) | [阅读笔记](阅读笔记_D8_Yao_2017.md) |
+| D9 | Q1 · 中科院二区(OA) | **2010 · Optics Express 18(16), 16973–16988** | Karagodsky *et al.*(UC Berkeley), *Theoretical analysis of subwavelength high contrast grating reflectors*;[DOI](https://doi.org/10.1364/OE.18.016973) | [PDF](pdfs/D9_Karagodsky_2010_HCG_Reflector_Theory.pdf) | [阅读笔记](阅读笔记_D9_Karagodsky_2010.md) |
 
 ## 使用建议
 
@@ -74,4 +79,4 @@
 2. 做器件设计时,把 A6 的 apodization、A3 的长口径低散射、B1–B4 的辐射损耗工程并行比较;不要只比较峰值效率或理论 Q。
 3. A7、B6、B7 原文补入前,预备笔记中的参数不可直接进入仿真规格或立项结论。
 4. **B9 适配评估**:若项目目标在 1550 nm,仅借鉴 B9 的"长程耦合 flat-band + guided mode + BIC"机制框架;若波段适配 800–850 nm,B9 可直接作为光源原型。
-5. **SCI 分区选择建议**(本专题 30 篇):Q1 Top 8 篇(★A3/A5/A8、★B1/B2/B3/B4/B7、★C1/C2/C3/C5/C6、D1/D2/D6)+ Q1 一区 3 篇(★C4/D5/★B9)+ Q1 二区 6 篇(A1/A4/A6/B6/B8/D3)+ Q2 三区 2 篇(A2/B5/D4)+ Q3 四区 1 篇(A7)+ 预印本 1 篇(D7)。
+5. **SCI 分区选择建议**(本专题 34 篇):Q1 Top 8 篇(★A3/A5/A8、★B1/B2/B3/B4/B7、★C1/C2/C3/C5/C6、D1/D2/D6)+ Q1 一区 5 篇(★C4/D5/★B9/A11/D8)+ Q1 二区 7 篇(A1/A4/A6/B6/B8/D3/D9)+ Q2 三区 3 篇(A2/B5/D4/C7)+ Q3 四区 1 篇(A7)+ 预印本 1 篇(D7)。
