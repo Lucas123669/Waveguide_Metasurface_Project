@@ -6,7 +6,7 @@
 - **作者**：M. Molina-Ruiz, R. Zhou, A. Markosyan, R. Bassiri, M. M. Fejer, A. Ananyeva, S. C. Tait, G. Vajente, A. Davenport, C. S. Menoni, F. Hellman
 - **期刊 / 年份**：*Physical Review Materials* **9**, 105602 (2025)
 - **DOI**：[10.1103/5n1c-tjhq](https://doi.org/10.1103/5n1c-tjhq)
-- **原文入口**：[APS DOI](https://doi.org/10.1103/5n1c-tjhq)；用户提供的 APS 排版 PDF 未标注 CC BY，未提交到公开仓库
+- **本地原文**：[E1 PDF](pdfs/E1_Molina_Ruiz_2025_Hydrogenated_Amorphous_Silicon_Loss.pdf)；[APS DOI](https://doi.org/10.1103/5n1c-tjhq)
 - **定位**：E 组；a-Si:H 在 1550 nm 的吸收、氢化机制和热历史敏感性的材料证据。
 
 ## 一句话总结
@@ -95,4 +95,5 @@
 - 页数：11
 - 文件大小：495373 bytes
 - SHA-256：`78c27c2e7785fdf94667fd19102879a4d68246cc90b689b7b9ee8c3f6354e807`
-- 公开归档状态：**未上传出版社 PDF**。APS 的默认许可不允许在未明确标注 CC BY 时公开再分发；原文件仍保留在用户下载目录，笔记和题录可公开使用。
+- 归档状态：用户确认仓库已设为 Private 后，出版社 PDF 已按统一命名归档。
+- 权限边界：该 PDF 仅适用于当前私有研究仓库；若仓库重新公开，应先移除文件或替换为具有明确公开再分发许可的版本。

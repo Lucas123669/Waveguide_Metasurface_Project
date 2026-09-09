@@ -1,12 +1,12 @@
 {
     "collection": "1550 nm silicon metasurface literature",
-    "generated_at": "2026-09-09T18:01:10+08:00",
+    "generated_at": "2026-09-09T19:17:31+08:00",
     "output_root": "literature/材料体系分类/Si/1550波段",
-    "policy": "Legal OA sources only: publisher OA, PMC, arXiv, OSTI, or institutional repositories.",
+    "policy": "Legal OA is preferred. User-supplied publisher PDFs without public redistribution terms may be stored only while this repository remains private; remove or replace them before making the repository public.",
     "total_candidates": 37,
-    "downloaded": 17,
+    "downloaded": 16,
     "existing_in_project": 1,
-    "unavailable": 2,
+    "unavailable": 1,
     "pending_access": 2,
     "failed": 0,
     "papers": [
@@ -270,12 +270,12 @@
             "doi": "10.1038/ncomms8069",
             "original_doi": null,
             "arxiv": null,
-            "status": "downloaded",
+            "status": "supplied_local",
             "path": "pdfs/C2_Arbabi_2015_High_Contrast_Transmitarray_Lens.pdf",
-            "source_url": "https://arxiv.org/pdf/1410.8261",
-            "sha256": "67c3011f0ef33c6e43d7ee219b3ca6d2dd3e5a7968f46ce2eb74c7fc8d1cffa2",
-            "bytes": 2137788,
-            "note": "Legal OA arXiv PDF retained. User-supplied publisher PDF was used for content verification but not redistributed because the article page marks that version as subscription content."
+            "source_url": "https://www.nature.com/articles/ncomms8069.pdf",
+            "sha256": "8dc16989ea8f626213d2641a3eedb288023806513d2744b722be44ca80ed76ce",
+            "bytes": 897618,
+            "note": "User-supplied official Nature Communications PDF stored after the repository was made private; replaces the earlier arXiv copy. Remove or replace before public release."
         },
         {
             "id": "C3",
@@ -540,12 +540,12 @@
             "doi": "10.1103/5n1c-tjhq",
             "original_doi": null,
             "arxiv": null,
-            "status": "no_legal_oa_found",
-            "path": null,
+            "status": "supplied_local",
+            "path": "pdfs/E1_Molina_Ruiz_2025_Hydrogenated_Amorphous_Silicon_Loss.pdf",
             "source_url": "https://doi.org/10.1103/5n1c-tjhq",
-            "sha256": null,
-            "bytes": null,
-            "note": "User-supplied APS-formatted PDF was fully reviewed, but no CC license was identified; only metadata, DOI and reading notes are published in this public repository."
+            "sha256": "78c27c2e7785fdf94667fd19102879a4d68246cc90b689b7b9ee8c3f6354e807",
+            "bytes": 495373,
+            "note": "User-supplied APS-formatted PDF stored after the repository was made private; remove or replace before public release unless redistribution permission is confirmed."
         },
         {
             "id": "B9",
@@ -563,17 +563,17 @@
             "note": "Existing local PDF added to the machine-readable manifest during the 2026-09-09 consistency audit; operating band is approximately 800-850 nm, not 1550 nm."
         }
     ],
-    "supplied_local": 15,
+    "supplied_local": 17,
     "local_audit": {
-        "local_pdfs_in_collection": 32,
+        "local_pdfs_in_collection": 33,
         "existing_project_pdf": 1,
-        "total_local_pdfs": 33,
+        "total_local_pdfs": 34,
         "missing_local_pdfs": [
             "A7",
             "B6",
             "B7"
         ],
-        "audited_at": "2026-09-09T18:01:10+08:00",
-        "note": "README.md is the human-readable year/journal index and note directory. 2026-09-09 增补 E1 笔记；C2 经正式期刊版复核但继续保留合法 OA arXiv 版本。"
+        "audited_at": "2026-09-09T19:17:31+08:00",
+        "note": "README.md is the human-readable year/journal index and note directory. 2026-09-09 Private 仓库补入 E1 出版社 PDF，并以正式期刊版替换 C2。"
     }
 }
