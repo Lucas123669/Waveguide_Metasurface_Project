@@ -1,12 +1,12 @@
 {
     "collection": "1550 nm silicon metasurface literature",
-    "generated_at": "2026-09-09T12:10:02+08:00",
+    "generated_at": "2026-09-09T18:01:10+08:00",
     "output_root": "literature/材料体系分类/Si/1550波段",
     "policy": "Legal OA sources only: publisher OA, PMC, arXiv, OSTI, or institutional repositories.",
-    "total_candidates": 35,
+    "total_candidates": 37,
     "downloaded": 17,
     "existing_in_project": 1,
-    "unavailable": 1,
+    "unavailable": 2,
     "pending_access": 2,
     "failed": 0,
     "papers": [
@@ -275,7 +275,7 @@
             "source_url": "https://arxiv.org/pdf/1410.8261",
             "sha256": "67c3011f0ef33c6e43d7ee219b3ca6d2dd3e5a7968f46ce2eb74c7fc8d1cffa2",
             "bytes": 2137788,
-            "note": "Previously downloaded and revalidated."
+            "note": "Legal OA arXiv PDF retained. User-supplied publisher PDF was used for content verification but not redistributed because the article page marks that version as subscription content."
         },
         {
             "id": "C3",
@@ -531,9 +531,39 @@
             "sha256": "de42350f7c2f2d3dec27580d95fd8127c00ac181766357b0f2f8ba6d15a35112",
             "bytes": 1595486,
             "note": "Local PDF supplied to the project; Opt. Express 18(16) 16973-16988 (2010), GOLD OA/CC BY."
+        },
+        {
+            "id": "E1",
+            "priority": false,
+            "author_year": "Molina_Ruiz_2025",
+            "title": "Revealing the role of hydrogen in reducing optical absorption and mechanical loss in magnetron-sputtered amorphous silicon for gravitational-wave detectors",
+            "doi": "10.1103/5n1c-tjhq",
+            "original_doi": null,
+            "arxiv": null,
+            "status": "no_legal_oa_found",
+            "path": null,
+            "source_url": "https://doi.org/10.1103/5n1c-tjhq",
+            "sha256": null,
+            "bytes": null,
+            "note": "User-supplied APS-formatted PDF was fully reviewed, but no CC license was identified; only metadata, DOI and reading notes are published in this public repository."
+        },
+        {
+            "id": "B9",
+            "priority": true,
+            "author_year": "Eyvazi_2025",
+            "title": "Flat-Band Lasing in Silicon Waveguide-Integrated Metasurfaces",
+            "doi": "10.1021/acsphotonics.4c02332",
+            "original_doi": null,
+            "arxiv": null,
+            "status": "supplied_local",
+            "path": "pdfs/B9_Eyvazi_2025_Si_flatband_lasing_BIC.pdf",
+            "source_url": "https://doi.org/10.1021/acsphotonics.4c02332",
+            "sha256": "191c8b79b76cac8e034a62455ea6171e1d8a97bb2f223a9b7fc0f0dd6a77b530",
+            "bytes": 9606071,
+            "note": "Existing local PDF added to the machine-readable manifest during the 2026-09-09 consistency audit; operating band is approximately 800-850 nm, not 1550 nm."
         }
     ],
-    "supplied_local": 14,
+    "supplied_local": 15,
     "local_audit": {
         "local_pdfs_in_collection": 32,
         "existing_project_pdf": 1,
@@ -543,7 +573,7 @@
             "B6",
             "B7"
         ],
-        "audited_at": "2026-09-09T12:10:02+08:00",
-        "note": "README.md is the human-readable year/journal index and note directory. 2026-09-09 增补 C7/A11/D8/D9."
+        "audited_at": "2026-09-09T18:01:10+08:00",
+        "note": "README.md is the human-readable year/journal index and note directory. 2026-09-09 增补 E1 笔记；C2 经正式期刊版复核但继续保留合法 OA arXiv 版本。"
     }
 }
