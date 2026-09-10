@@ -3,6 +3,7 @@
 > 整理日期：2026-09-10
 > 适用范围：1550 nm 硅基波导超表面项目的衬底/工艺选型参考
 > 文献来源：Yang 2005（浙大 SOG 波导制备）、Corning SiOG TFT 白皮书（Cites et al. 2026）、Dawson-Elli 2007（ECS Trans.）、Manley 2008（ECS Trans.）、Ma 2018（Sensors, SOG MEMS 工艺综述）
+> **已并入汇报稿**：本文内容已整合为 [`docs/reports/fabrication/2026-09-09_1550nm玻璃基超表面材料选型与工艺路线.md`](../../../docs/reports/fabrication/2026-09-09_1550nm玻璃基超表面材料选型与工艺路线.md) 的**第 8 页「衬底选择：SOI 还是 SiOG？」**（对应证据 [E12]）；本文保留为详细依据与来源清单。
 
 ---
 
