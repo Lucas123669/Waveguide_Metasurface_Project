@@ -2,7 +2,7 @@
 
 > 范围:1.5–1.6 μm(C 波段 / 1550 nm)的 Si₃N₄(氮化硅)超表面、波导集成与片上辐射器件。
 > 整理日期:2026-09-04(初版)/ 2026-09-07(增补 SCI 分区列 20 篇)。
-> 信息来源:网络检索 + CrossRef 书目核实(2026-09-04);**2026-09-04 已补档 14 篇 PDF**(9 篇脚本下载 + 用户浏览器补 5 篇:A3/A5/A6/C2/D4),D1 由 arXiv 升级为 Optica 出版版。**B4 仍未补到**(Zhang 2024,OE qBIC 光阱,见下方"PDF 补档状态")。其余 5 篇为题录+摘要级预备笔记(B1/B5/C1/A7/B3 项目已有交叉引用),数值以原文为准。
+> 信息来源:网络检索 + CrossRef 书目核实(2026-09-04);**2026-09-10 位置修正后,专题为 19 条、专题目录内 13 篇 PDF**(原 D4 因波段不符迁出至 SiN 体系根目录,见上"波段适用性")。**B4 仍未补到**(Zhang 2024,OE qBIC 光阱,见下方"PDF 补档状态")。其余题录+摘要级预备笔记(B1/B5/C1/A7/B3 项目已有交叉引用),数值以原文为准。
 > 
 > ¹ B4 Zhang 2024(OE 32(22),39906,qBIC 光阱)本次未补到,下载入口:[Optica 文章页](https://opg.optica.org/oe/abstract.cfm?uri=oe-32-22-39906)。
 > **² C4 范智斌 2021《中国光学》为中文核心期刊,非 SCI 收录,故"SCI 分区"列填"中文核心"**;其余 19 篇均为 SCI 收录,分区采用中科院 2025 升级版。
@@ -11,11 +11,13 @@
 
 ## 波段适用性（先读）
 
-> **专题目标波段 = 1.55 μm / C 波段（1.5–1.6 μm）**。下列条目的工作波段**不在目标范围内**,只能借鉴方法:
+> **专题目标波段 = 1.55 μm / C 波段（1.5–1.6 μm）。经 2026-09-10 位置修正后,本专题条目全部工作在目标波段内。**
+>
+> 原按主题归入、但波段不符的条目已**迁出**本专题,移至 **SiN 体系根目录(非波段位置)**:
 
-| 编号 | 实际波段 | 允许的使用方式 |
-| --- | --- | --- |
-| ⚠️ D4 Mekonnen Berhe 2026 | **1100 nm(近红外)与 8000 nm(中红外)双波段**,数值为主 | 仅借全通判据与效率–NA 权衡;纳米柱几何不可搬用 |
+| 编号 | 实际波段 | 现位置 | 允许的使用方式 |
+| --- | --- | --- | --- |
+| ⚠️ D4 Mekonnen Berhe 2026 | **1100 nm(近红外)与 8000 nm(中红外)双波段**,数值为主 | [`../pdfs/`](../pdfs/) + [`../阅读笔记_D4_MekonnenBerhe_2026.md`](../阅读笔记_D4_MekonnenBerhe_2026.md) | 仅借全通判据与效率–NA 权衡;纳米柱几何不可搬用 |
 
 > 交叉引用说明:A1(=L01)、A7(=L02)、B3(=F-01)、B5(与 Si 专题 ★B2 同文)、C1(=L03) 均为项目已有文献,**不重复入库**。
 
@@ -66,7 +68,8 @@
 | ★D1 | Q1 · 中科院一区 Top | **2018 · Optica 5(7), 825–831** | Colburn *et al.*, *Varifocal zoom imaging with large area focal length adjustable metalenses*;[DOI](https://doi.org/10.1364/OPTICA.5.000825) | [PDF](pdfs/D1_Colburn_2018_varifocal_metalens.pdf) | [阅读笔记](阅读笔记_D1_Colburn_2018.md) |
 | D2 | Q1 · 中科院一区 Top(OA) | **2020 · Microsystems & Nanoengineering 6, 79** | Han *et al.*, *MEMS-actuated metasurface Alvarez lens*;[DOI](https://doi.org/10.1038/s41378-020-00190-6) | [PDF](pdfs/D2_Han_2020_MEMS_Alvarez_lens.pdf) | [阅读笔记](阅读笔记_D2_Han_2020.md) |
 | D3 | Q2 · 中科院三区(OA) | **2022 · Scientific Reports 12, 5385** | Han *et al.*, *Millimeter-scale focal length tuning with MEMS-integrated meta-optics employing high-throughput fabrication*;[DOI](https://doi.org/10.1038/s41598-022-09277-8) | [PDF](pdfs/D3_Han_2022_MEMS_metaoptics_tuning.pdf) | [阅读笔记](阅读笔记_D3_Han_2022.md) |
-| ⚠️ D4（非 1550 nm） | Q2 · 中科院三区 | **2026 · Journal of Optics 28(1), 015102** | Mekonnen Berhe *et al.*, *All-pass Si₃N₄ metasurface filter for advanced photonic applications: metalenses, vortex beams, and holography*;[DOI](https://doi.org/10.1088/2040-8986/ae292f) | [PDF](pdfs/D4_MekonnenBerhe_2026_SiN_allpass_metasurface.pdf) | [阅读笔记](阅读笔记_D4_MekonnenBerhe_2026.md) |
+
+> **编号完整性说明**:原 D4(1100/8000 nm,非目标波段)已于 2026-09-10 迁出本专题,故 D 组现为 D1–D3;其文件位置见本页"波段适用性(先读)"。
 
 ## 与 Si 专题的对照要点
 
@@ -76,7 +79,7 @@
 
 ## PDF 补档状态(2026-09-04)
 
-**已补档 14 篇**(均在 `pdfs/`,已校验 `​%PDF-` 魔数 + 元数据):
+**已补档 13 篇**（2026-09-10 起原 D4 迁出本目录）(均在 `pdfs/`,已校验 `​%PDF-` 魔数 + 元数据):
 
 | 编号 | 文献 | 当前文件名 | 版本来源 |
 | --- | --- | --- | --- |
@@ -93,7 +96,6 @@
 | D1 | Colburn 2018, 变焦 metalens | `D1_Colburn_2018_varifocal_metalens.pdf` | **Optica 5(7) 出版版**(替换原 arXiv:1805.07832 预印本) |
 | D2 | Han 2020, MEMS Alvarez lens | `D2_Han_2020_MEMS_Alvarez_lens.pdf` | Microsystems & Nanoengineering OA(出版版) |
 | D3 | Han 2022, MEMS 调焦 meta-optics | `D3_Han_2022_MEMS_metaoptics_tuning.pdf` | Scientific Reports OA(出版版) |
-| D4 | Mekonnen Berhe 2026, J. Opt. 全通滤波 | `D4_MekonnenBerhe_2026_SiN_allpass_metasurface.pdf` | IOP/J. Opt. 出版版(用户浏览器下载) |
 
 **待手动补档 1 篇**(本次未补到):
 
@@ -101,7 +103,7 @@
 | --- | --- | --- |
 | B4 | Zhang 2024, OE qBIC 光阱 | [Optica 文章页](https://opg.optica.org/oe/abstract.cfm?uri=oe-32-22-39906)(过 ShieldSquare 验证码) |
 
-**清理已完成**(`pdfs/` 现仅 14 个规范命名文件):已删 5 个重复副本(A4/B1/B2/C4/D2 各 1 个),删除 D1 arXiv 预印本并以 Optica 5(7) 出版版替代,5 个浏览器默认文件名已重命名为 `编号_作者_年份_短标题.pdf`。
+**清理已完成**(`pdfs/` 现仅 13 个规范命名文件;2026-09-10 原 D4 已迁出至体系根 `../pdfs/`):已删 5 个重复副本(A4/B1/B2/C4/D2 各 1 个),删除 D1 arXiv 预印本并以 Optica 5(7) 出版版替代,5 个浏览器默认文件名已重命名为 `编号_作者_年份_短标题.pdf`。
 
 交叉引用不重复入库:A1=L01、A7=L02、C1=L03、B3=F-01、B5=Si 专题 B2。
 
@@ -110,4 +112,4 @@
 1. 优先研读 ★A1(项目主文献 L01)、★B1、★C1(项目已有 L03)、★D1;它们分别对应漏波辐射机制、BIC 发光增强、SiN 工艺平台、SiN 相位型超表面设计。
 2. 做 SiN 元胞设计时,把 A3 的弱扰动漏波天线、B3/B5 的低对比高 Q、A1 的 qBIC 漏波超表面放在同一坐标系比较(扰动强度 vs Q vs 方向性)。
 3. 所有"待补档"条目在补入原文前,预备笔记中的数值不可直接写入仿真规格或立项结论。
-4. PDF 补档优先开放获取版本;**2026-09-04 已补档 14 篇**(A2/A3/A4/A5/A6/B1/B2/C2/C3/C4/D1/D2/D3/D4,见上方"PDF 补档状态"),目录已统一规范命名。剩余 B4(Zhang 2024,OE qBIC 光阱)因站点 ShieldSquare 验证码未补到。B3 交叉引用项目 F-01(不重复入库)。
+4. PDF 补档优先开放获取版本;**2026-09-10 位置修正后专题目录内有 13 篇**(A2/A3/A4/A5/A6/B1/B2/C2/C3/C4/D1/D2/D3,见上方"PDF 补档状态"),目录已统一规范命名。原 D4 因波段为 1100/8000 nm 已迁出至 `../pdfs/`。剩余 B4(Zhang 2024,OE qBIC 光阱)因站点 ShieldSquare 验证码未补到。B3 交叉引用项目 F-01(不重复入库)。

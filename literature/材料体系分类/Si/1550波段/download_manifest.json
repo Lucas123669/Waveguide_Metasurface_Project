@@ -3,7 +3,7 @@
     "generated_at": "2026-09-09T19:17:31+08:00",
     "output_root": "literature/材料体系分类/Si/1550波段",
     "policy": "Legal OA is preferred. User-supplied publisher PDFs without public redistribution terms may be stored only while this repository remains private; remove or replace them before making the repository public.",
-    "total_candidates": 37,
+    "total_candidates": 35,
     "downloaded": 16,
     "existing_in_project": 1,
     "unavailable": 1,
@@ -515,7 +515,8 @@
             "source_url": "https://onlinelibrary.wiley.com/doi/abs/10.1002/adom.201700090",
             "sha256": "63ccc7181f1fc02af63890455cdee03e05276a37d7cfe246132994c0a6a5ec3a",
             "bytes": 2724099,
-            "note": "Local PDF supplied to the project; Adv. Opt. Mater. 5(14) 1700090 (2017); band 600-800 nm, 按设计范式收录并备注."
+            "note": "Local PDF supplied to the project; Adv. Opt. Mater. 5(14) 1700090 (2017); band 600-800 nm, 按设计范式收录并备注.",
+            "relocated_out_2026-09-10": "band mismatch: moved to literature/材料体系分类/Si/ (non-band position); numbering kept for traceability"
         },
         {
             "id": "D9",
@@ -560,14 +561,15 @@
             "source_url": "https://doi.org/10.1021/acsphotonics.4c02332",
             "sha256": "191c8b79b76cac8e034a62455ea6171e1d8a97bb2f223a9b7fc0f0dd6a77b530",
             "bytes": 9606071,
-            "note": "Existing local PDF added to the machine-readable manifest during the 2026-09-09 consistency audit; operating band is approximately 800-850 nm, not 1550 nm."
+            "note": "Existing local PDF added to the machine-readable manifest during the 2026-09-09 consistency audit; operating band is approximately 800-850 nm, not 1550 nm.",
+            "relocated_out_2026-09-10": "band mismatch: moved to literature/材料体系分类/Si/ (non-band position); numbering kept for traceability"
         }
     ],
     "supplied_local": 17,
     "local_audit": {
-        "local_pdfs_in_collection": 33,
+        "local_pdfs_in_collection": 31,
         "existing_project_pdf": 1,
-        "total_local_pdfs": 34,
+        "total_local_pdfs": 32,
         "missing_local_pdfs": [
             "A7",
             "B6",
@@ -575,5 +577,27 @@
         ],
         "audited_at": "2026-09-09T19:17:31+08:00",
         "note": "README.md is the human-readable year/journal index and note directory. 2026-09-09 Private 仓库补入 E1 出版社 PDF，并以正式期刊版替换 C2。"
+    },
+    "band_relocation_2026-09-10": {
+        "reason": "working band outside the 1.5-1.6 um scope of this collection",
+        "moved_out": [
+            {
+                "id": "B9",
+                "band": "~800-850 nm (lasing)",
+                "pdf": "literature/材料体系分类/Si/pdfs/B9_Eyvazi_2025_Si_flatband_lasing_BIC.pdf",
+                "note": "literature/材料体系分类/Si/阅读笔记_B9_Eyvazi_2025.md"
+            },
+            {
+                "id": "D8",
+                "band": "600-800 nm",
+                "pdf": "literature/材料体系分类/Si/pdfs/D8_Yao_2017_Heterogeneous_Metasurface_Broadband_Reflector.pdf",
+                "note": "literature/材料体系分类/Si/阅读笔记_D8_Yao_2017.md"
+            }
+        ],
+        "candidate_count_before": 37,
+        "candidate_count_after": 35,
+        "local_pdf_before": 33,
+        "local_pdf_after": 31,
+        "registered_in": "literature/材料体系分类/Si/README.md (非波段文献 section)"
     }
 }

@@ -29,7 +29,15 @@
 
 ## 波段专题
 
-- [1550波段](1550波段/README.md):C 波段 SiN 超表面/波导候选文献 20 篇(A 波导集成 7 / B 高Q·BIC 5 / C 综述制造 4 / D 自由空间 metalens 4),2026-09-04 经 CrossRef 核实入库,PDF 待批量补档。
+- [1550波段](1550波段/README.md):C 波段 SiN 超表面/波导候选文献 **19 篇**(A 波导集成 7 / B 高Q·BIC 5 / C 综述制造 4 / D 自由空间 metalens 3),2026-09-04 经 CrossRef 核实入库;**2026-09-10 位置修正**:原 D4(1100/8000 nm)因波段不符已迁出本专题。
+
+## 非波段文献（体系根 `pdfs/`，2026-09-10 迁入）
+
+| 编号 | 分区 | 年份 · 期刊 | 文献 | 实际波段 | PDF / 笔记 |
+| --- | --- | --- | --- | --- | --- |
+| ⚠️ D4 | Q2 · 中科院三区 | **2026 · Journal of Optics 28(1), 015102** | Mekonnen Berhe *et al.*, *All-pass Si₃N₄ metasurface filter for advanced photonic applications: metalenses, vortex beams, and holography*; [DOI](https://doi.org/10.1088/2040-8986/ae292f) | **1100 nm(近红外) / 8000 nm(中红外)双波段，数值为主** | [PDF](pdfs/D4_MekonnenBerhe_2026_SiN_allpass_metasurface.pdf) · [笔记](阅读笔记_D4_MekonnenBerhe_2026.md) |
+
+> ⚠️ **使用边界**:D4 的工作波段**不是 1550 nm**;仅可借鉴全通(All-pass)判据与效率–NA 权衡方法,**纳米柱几何不可搬用**。它原先按"SiN 自由空间超表面"主题归入 1550 nm 专题,2026-09-10 因波段不符迁至体系根目录(非波段位置),编号沿用原专题编号以便追溯。
 
 ## 待补充文献
 

@@ -1,19 +1,24 @@
 # 1550 nm Si 体系候选文献
 
 > 范围:1.5–1.6 μm(C 波段 / 1550 nm)的 a-Si、c-Si、SOI 超表面与片上辐射器件。  
-> 整理日期:2026-09-03(初版)/ 2026-09-07(增补 B9 + 全 30 篇 SCI 分区列)/ 2026-09-08(增补 A9、A10 两篇,并补齐两篇阅读笔记)/ 2026-09-09(增补 C7、A11、D8、D9 与 E1；C2 更新为正式期刊 PDF)。现有原文均已补上**年份 · 期刊**标签和项目笔记;PDF 统一采用 `编号_第一作者_年份_短标题.pdf`。
-> 2026-09-07 起,A/B/C/D 表新增 **SCI 分区** 列(中科院升级版 + JCR Q);新增 **B9 Eyvazi 2025(Si 波导集成 + flat-band 激光 + BIC,~800–850 nm)**。
-> **B9 备注**:虽进 Si/1550 专题是按"波导集成"主题归类,但其激射中心在 **~800–850 nm(近红外)**,而非 1550 nm——使用前需确认波段适配。
-> **D8 备注**:Yao 2017(异质全介质超表面宽带反射器)工作波段为 **600–800 nm**,按"全介质超表面反射器设计范式"收录,供材料/结构思想迁移,几何参数不直接套用。
+> 整理日期:2026-09-03(初版)/ 2026-09-07(增补 B9 + 全 30 篇 SCI 分区列)/ 2026-09-08(增补 A9、A10 两篇,并补齐两篇阅读笔记)/ 2026-09-09(增补 C7、A11、D8、D9 与 E1；C2 更新为正式期刊 PDF)/ **2026-09-10(波段位置修正:B9、D8 因波段不符迁出本专题)**。现有原文均已补上**年份 · 期刊**标签和项目笔记;PDF 统一采用 `编号_第一作者_年份_短标题.pdf`。
+> 2026-09-07 起,A/B/C/D 表新增 **SCI 分区** 列(中科院升级版 + JCR Q)。
+> **2026-09-10 波段位置修正**:原 **B9 Eyvazi 2025**(激射中心 ~800–850 nm)与 **D8 Yao 2017**(工作波段 600–800 nm)已迁出本专题,移至 **Si 体系根目录(非波段位置)**,不再计入本专题条目与 PDF 审计:
+> - `材料体系分类/Si/pdfs/B9_Eyvazi_2025_Si_flatband_lasing_BIC.pdf` + `材料体系分类/Si/阅读笔记_B9_Eyvazi_2025.md`
+> - `材料体系分类/Si/pdfs/D8_Yao_2017_Heterogeneous_Metasurface_Broadband_Reflector.pdf` + `材料体系分类/Si/阅读笔记_D8_Yao_2017.md`
+>
+> 编号沿用原专题编号以便追溯,登记见 [`../README.md`](../README.md);引用时仍须写明其实际波段。
 
 ## 波段适用性（先读）
 
-> **专题目标波段 = 1.55 μm / C 波段（1.5–1.6 μm）**。下列条目按主题归入本专题，但**工作波段不在目标范围内**，只能借鉴方法与机制,**不得作为 1550 nm 的性能或设计依据**:
+> **专题目标波段 = 1.55 μm / C 波段（1.5–1.6 μm）。经 2026-09-10 位置修正后,本专题条目全部工作在目标波段内。**
+>
+> 原按主题归入、但波段不符的两个条目已**迁出**本专题,移至 Si 体系根目录(非波段位置):
 
-| 编号 | 实际波段 | 允许的使用方式 |
-| --- | --- | --- |
-| ⚠️ B9 Eyvazi 2025 | 激射中心 ~800–850 nm | 仅借"波导集成 + flat-band + BIC"机制框架;数值不可用于 1550 nm |
-| ⚠️ D8 Yao 2017 | 600–800 nm | 仅借异质叠层/超薄壳层设计思想;几何参数不可套用 |
+| 编号 | 实际波段 | 现位置 | 允许的使用方式 |
+| --- | --- | --- | --- |
+| ⚠️ B9 Eyvazi 2025 | 激射中心 ~800–850 nm | [`../pdfs/`](../pdfs/) + [`../阅读笔记_B9_Eyvazi_2025.md`](../阅读笔记_B9_Eyvazi_2025.md) | 仅借"波导集成 + flat-band + BIC"机制框架;数值不可用于 1550 nm |
+| ⚠️ D8 Yao 2017 | 600–800 nm | [`../pdfs/`](../pdfs/) + [`../阅读笔记_D8_Yao_2017.md`](../阅读笔记_D8_Yao_2017.md) | 仅借异质叠层/超薄壳层设计思想;几何参数不可套用 |
 
 > 引用上述条目时,正文必须写明实际波段。
 
@@ -23,7 +28,7 @@
 - 文件名:专题 `pdfs/` 内统一为 `编号_第一作者_年份_短标题.pdf`,仅用 ASCII 字母、数字和下划线;短标题保留可检索关键词,不重复期刊信息。A8 复用项目全局 L02,保留其现有主文献名。
 - 年份 · 期刊:以正式出版年份和期刊卷(期)/文章号为准;预印本用 arXiv 号。
 - **SCI 分区列**:采用"**JCR Q? · 中科院X区 [Top]**"格式(中科院 2025 升级版)。Q1 Top = 学科前 5%,Q1 = 前 5–10%,Q2 = 前 10–25%,Q3 = 前 25–50%,Q4 = 后 50%。若作者发表时该刊为 OA 出版,额外标 **OA**。
-- PDF 审计(2026-09-09):专题目录检出 **33 份** PDF(A1–A6、A9–A11、B1–B5/B8/B9、C1–C7、D1–D9、E1),项目根文献已有 A8(L02)1 份,合计 **34 份**在库；A7、B6、B7 仍待补档。C2 已用正式期刊版替换原 arXiv 版，E1 已补入出版社 PDF。两份出版社 PDF 仅适用于当前 Private 仓库，重新公开前必须复核或移除。
+- PDF 审计(2026-09-10):专题目录检出 **31 份** PDF(A1–A6、A9–A11、B1–B5/B8、C1–C7、D1–D7/D9、E1；B9 与 D8 已迁出本专题),项目根文献已有 A8(L02)1 份,合计 **32 份**在库；A7、B6、B7 仍待补档。C2 已用正式期刊版替换原 arXiv 版，E1 已补入出版社 PDF。两份出版社 PDF 仅适用于当前 Private 仓库，重新公开前必须复核或移除。
 - 笔记口径:数值优先取本地 PDF;综述记录可直接用于本项目的设计/工艺路线。
 
 ## A 组｜Si 波导集成 / 片上辐射
@@ -54,11 +59,10 @@
 | B6 | Q1 · 中科院二区 | **2014 · Optics Express 22(8), 9271–9280** | Lee *et al.*, *Resonant grating polarizers made with silicon nitride, titanium dioxide, and silicon*;[DOI](https://doi.org/10.1364/OE.22.009271) | 待补档 | [笔记(待原文核对)](阅读笔记_B6_Lee_2014.md) |
 | B7 | Q1 · 中科院一区 Top | **2023 · ACS Photonics 10(2), 534–543** | Kalinic *et al.*, *Quasi-BIC Modes in All-Dielectric Slotted Nanoantennas for Enhanced Er³⁺ Emission*;[DOI](https://doi.org/10.1021/acsphotonics.2c01703) | 待补档 | [笔记(待原文核对)](阅读笔记_B7_Kalinic_2023.md) |
 | B8 | Q1 · 中科院二区 | **2025 · Optics Express 33(5), 11853–11862** | Zhou *et al.*, *Efficient silicon-erbium photonic hybrids with flexible spatial control of light via BICs*;[DOI](https://doi.org/10.1364/OE.555348) | [PDF](pdfs/B8_Zhou_2025_Silicon_Erbium_BIC_Hybrids.pdf) | [阅读笔记](阅读笔记_B8_Zhou_2025.md) |
-| ⚠️ **B9**（非 1550 nm） | **Q1 · 中科院一区 Top(OA)** | **2025 · ACS Photonics 12(3), 1570–1578** | Eyvazi *et al.*(Törmä 组, Aalto),*Flat-Band Lasing in Silicon Waveguide-Integrated Metasurfaces*;[DOI](https://doi.org/10.1021/acsphotonics.4c02332) | [PDF](pdfs/B9_Eyvazi_2025_Si_flatband_lasing_BIC.pdf) | [阅读笔记](阅读笔记_B9_Eyvazi_2025.md) |
 
-> **B9 特别备注**:激射中心在 **~800–850 nm**,与本专题 1550 nm 主题波段不一致;按"波导集成 + BIC"主题归入 B 组,使用前请评估波段是否适配项目目标。
->
 > **易混提示(2026-09-10 补)**:本专题 ★B1 是 **Huang et al., Nat. Commun. 14, 3433 (2023)**(SOI 上全介质 GMR 超表面,Q_rad∝δ⁻²);项目主文献 **L01** 是 **Huang et al., Nat. Nanotechnol. 18(6), 580–588 (2023)**(PMMA/Si₃N₄ qBIC 泄漏波超表面)。两篇第一作者同姓、同年,但材料体系(SOI vs PMMA/Si₃N₄)、结构机制(全介质 GMR vs 椭圆孔 qBIC 漏波)与 δ 的定义都不同,**Q 值与 δ 标度不可跨文互用**;引用时务必写全期刊与卷页。
+>
+> **编号完整性说明**:原 B9(非 1550 nm)已于 2026-09-10 迁出本专题,故 B 组现为 B1–B8;其文件位置见本页"波段适用性(先读)"。
 
 ## C 组｜综述 / 制造平台
 
@@ -83,8 +87,9 @@
 | D5 | Q1 · 中科院一区(OA) | **2022 · Nanophotonics 11(2), 405–413** | Li *et al.*, *Flat telescope based on an all-dielectric metasurface doublet enabling polarization-controllable enhanced beam steering*;[DOI](https://doi.org/10.1515/nanoph-2021-0609) | [PDF](pdfs/D5_Li_2022_Flat_Telescope_Metasurface_Doublet.pdf) | [阅读笔记](阅读笔记_D5_Li_2022.md) |
 | D6 | Q1 · 中科院一区 Top | **2024 · Advanced Optical Materials 12(18), 2400191** | Matiushechkina *et al.*, *Perfect Mirror Effects in Metasurfaces of Silicon Nanodisks at Telecom Wavelength*;[DOI](https://doi.org/10.1002/adom.202400191) | [PDF](pdfs/D6_Matiushechkina_2024_Silicon_Nanodisk_Perfect_Mirror.pdf) | [阅读笔记](阅读笔记_D6_Matiushechkina_2024.md) |
 | D7 | arXiv 预印本(未正式出版) | **2017 · arXiv:1711.01430** | Vasilantonakis *et al.*, *Refractive index contrast enhanced metalens on an SOI platform for large angle deflection*;[arXiv](https://arxiv.org/abs/1711.01430) | [PDF](pdfs/D7_Vasilantonakis_2017_SOI_Large_Angle_Deflector.pdf) | [阅读笔记](阅读笔记_D7_Vasilantonakis_2017.md) |
-| ⚠️ D8（非 1550 nm） | Q1 · 中科院一区 | **2017 · Advanced Optical Materials 5(14), 1700090** | Yao & Wu(USC), *All-Dielectric Heterogeneous Metasurface as an Efficient Ultra-Broadband Reflector*;[DOI](https://doi.org/10.1002/adom.201700090) | [PDF](pdfs/D8_Yao_2017_Heterogeneous_Metasurface_Broadband_Reflector.pdf) | [阅读笔记](阅读笔记_D8_Yao_2017.md) |
 | D9 | Q1 · 中科院二区(OA) | **2010 · Optics Express 18(16), 16973–16988** | Karagodsky *et al.*(UC Berkeley), *Theoretical analysis of subwavelength high contrast grating reflectors*;[DOI](https://doi.org/10.1364/OE.18.016973) | [PDF](pdfs/D9_Karagodsky_2010_HCG_Reflector_Theory.pdf) | [阅读笔记](阅读笔记_D9_Karagodsky_2010.md) |
+
+> **编号完整性说明**:原 D8(600–800 nm,非目标波段)已于 2026-09-10 迁出本专题,故 D 组现为 D1–D7、D9;其文件位置见本页"波段适用性(先读)"。
 
 ## E 组｜材料参数 / 损耗与工艺窗口
 
@@ -99,6 +104,6 @@
 1. 优先研读 ★A1–A3、★B1–B3、★C1–C3:分别对应导模出射、容差/高 Q、集成与工艺路线。
 2. 做器件设计时,把 A6 的 apodization、A3 的长口径低散射、B1–B4 的辐射损耗工程并行比较;不要只比较峰值效率或理论 Q。
 3. A7、B6、B7 原文补入前,预备笔记中的参数不可直接进入仿真规格或立项结论。
-4. **B9 适配评估**:若项目目标在 1550 nm,仅借鉴 B9 的"长程耦合 flat-band + guided mode + BIC"机制框架;若波段适配 800–850 nm,B9 可直接作为光源原型。
+4. **B9 适配评估**:B9 已于 2026-09-10 迁出本专题(现位于 `Si/pdfs/`)。若项目目标在 1550 nm,仅借鉴其"长程耦合 flat-band + guided mode + BIC"机制框架;若波段适配 800–850 nm,可直接作为光源原型,但**引用时必须写明波段**。
 5. E1 用于回答“a-Si:H 为什么不能笼统称为低损耗”：先核对沉积方法、氢化方式和热处理状态，再引用吸收系数；不要把镜膜 QWL 吸收 ppm 直接换成超表面器件效率。
-6. **条目与分区口径**:本专题现有 37 条记录，其中 34 份 PDF 已在项目内可用，A7、B6、B7 待补原文。器件文献的分区只用于初筛；E1 暂标“分区待统一核验”，避免把未经统一年份/学科口径核验的分区写成定论。
+6. **条目与分区口径**:本专题现为 **35 条**(A×11 + B×8 + C×7 + D×8 + E×1;B9、D8 已迁出),其中 **32 份 PDF** 已在项目内可用,A7、B6、B7 待补原文。器件文献的分区只用于初筛；E1 暂标“分区待统一核验”，避免把未经统一年份/学科口径核验的分区写成定论。

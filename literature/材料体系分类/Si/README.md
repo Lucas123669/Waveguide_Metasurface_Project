@@ -26,9 +26,20 @@
 ## 1550 nm 专题文献
 
 - 专题入口：[1550波段/README.md](1550波段/README.md)。
-- 2026-09-03 候选 29 篇：已完成统一年份/期刊标注与 29 份阅读笔记；本地 PDF 26 篇（专题目录 25 篇、A8/L02 复用 1 篇），A7/B6/B7 待补档。
+- **2026-09-10 口径**：专题 **35 条**（A×11 + B×8 + C×7 + D×8 + E×1）；专题目录内 **31 篇 PDF**（A8/L02 复用 1 篇另计），A7/B6/B7 待补档。原 B9、D8 因波段不符已迁出本专题（见下节）。
 - 覆盖 Si 波导集成与片上辐射、高 Q/qBIC/BIC、综述与制造平台、自由空间 Si metalens 四组。
 - 下载来源、补入文件及 SHA-256 审计见 [1550波段/download_manifest.json](1550波段/download_manifest.json)。
+
+## 非波段文献（体系根 `pdfs/`，2026-09-10 迁入）
+
+> 这两篇原按主题归入 [1550 nm 专题](1550波段/README.md)，但因工作波段不在 C 波段内，2026-09-10 迁至体系根目录（非波段位置）；编号沿用原专题编号以便追溯。
+
+| 编号 | 分区 | 年份 · 期刊 | 文献 | 实际波段 | PDF / 笔记 |
+| --- | --- | --- | --- | --- | --- |
+| ⚠️ B9 | Q1 · 中科院一区 Top(OA) | **2025 · ACS Photonics 12(3), 1570–1578** | Eyvazi *et al.*(Törmä 组, Aalto), *Flat-Band Lasing in Silicon Waveguide-Integrated Metasurfaces*; [DOI](https://doi.org/10.1021/acsphotonics.4c02332) | **激射中心 ~800–850 nm** | [PDF](pdfs/B9_Eyvazi_2025_Si_flatband_lasing_BIC.pdf) · [笔记](阅读笔记_B9_Eyvazi_2025.md) |
+| ⚠️ D8 | Q1 · 中科院一区 | **2017 · Advanced Optical Materials 5(14), 1700090** | Yao & Wu(USC), *All-Dielectric Heterogeneous Metasurface as an Efficient Ultra-Broadband Reflector*; [DOI](https://doi.org/10.1002/adom.201700090) | **600–800 nm（可见光）** | [PDF](pdfs/D8_Yao_2017_Heterogeneous_Metasurface_Broadband_Reflector.pdf) · [笔记](阅读笔记_D8_Yao_2017.md) |
+
+> ⚠️ **使用边界**：两篇均**不得作为 1550 nm 的性能或设计依据**——B9 仅借"波导集成 + flat-band + BIC"机制框架；D8 仅借异质叠层/超薄壳层设计思想（几何参数不可套用）。引用时必须写明实际波段。
 
 ## 相关文献（跨体系引用）
 
