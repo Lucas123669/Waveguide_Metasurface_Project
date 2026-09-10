@@ -6,7 +6,7 @@
     "objective": "Design and fabricate a waveguide-integrated metasurface to control radiated light (direction, polarization, phase/wavefront, efficiency).",
     "status": "phase_2_simulation_started",
     "created": "2026-08-04",
-    "updated": "2026-09-09",
+    "updated": "2026-09-10",
     "single_source_of_truth": true,
     "primary_paper": {
       "title": "Leaky-wave metasurfaces for integrated photonics",
@@ -127,7 +127,7 @@
       {"id": "Si", "top_layer": "Silicon", "primary_papers": ["L02", "Q1-05", "Q1-11", "F-03", "F-05", "F-10", "F-12", "F-13", "F-17", "F-18", "F-19", "F-20", "F-23", "F-27"], "related_papers": ["Q1-06", "Q1-07", "F-08"], "literature_collections": [{"id": "si_1550nm_2026-09-03", "path": "literature/材料体系分类/Si/1550波段", "candidate_count": 37, "local_pdf_in_collection": 33, "existing_project_pdf": 1, "supplied_local": 17, "pending_local_pdf": 3, "notes_completed": 37, "priority_local_or_existing": 9, "priority_total": 9}]},
       {"id": "SiN", "top_layer": "Silicon Nitride", "primary_papers": ["L03", "Q1-03", "Q1-04", "F-01", "F-02", "F-04", "F-07"], "related_papers": ["L01", "F-10"]},
       {"id": "PMMA", "top_layer": "PMMA", "primary_papers": ["L01", "L04", "L05", "F-06"], "related_papers": ["F-08"]},
-      {"id": "TiO2", "top_layer": "Titanium Dioxide", "primary_papers": ["F-11", "F-21", "F-22", "F-25", "F-26"], "related_papers": ["F-08"], "note": "Dedicated TiO2 papers added 2026-09-02 (F08 cases: ALD/PER-NIL/slanted-BIC/high-AR metalens)"},
+      {"id": "TiO2", "top_layer": "Titanium Dioxide", "primary_papers": ["F-11", "F-21", "F-22", "F-25", "F-26"], "related_papers": ["F-08"], "note": "Dedicated TiO2 papers added 2026-09-02 (F08 cases: ALD/PER-NIL/slanted-BIC/high-AR metalens); T1-T6 (1550 nm) and T7 (visible slanted grating) added 2026-09-04/2026-09-10", "literature_collections": [{"id": "tio2_1550nm_2026-09-04", "path": "literature/材料体系分类/TiO2/1550波段", "candidate_count": 6, "local_pdf_in_collection": 6, "pending_local_pdf": 0, "notes_completed": 6, "band": "1550 nm", "note": "T6 Fathi 2026 is the only near-1550 nm experimental work; material n inputs are inconsistent across models (2.05 / 2.4 / 2.55 n_eff)"}, {"id": "tio2_visible_slanted_grating_2026-09-10", "path": "literature/材料体系分类/TiO2", "candidate_count": 1, "local_pdf_in_collection": 1, "pending_local_pdf": 0, "notes_completed": 1, "band": "visible (532 nm)", "items": ["T7 Gao 2025 Nano Lett. 25(41) 15055, DOI 10.1021/acs.nanolett.5c04104"], "note": "Wafer-level slanted TiO2 gratings (interference lithography + NIL + ICP + RIBE); visible band, NOT usable as 1550 nm performance evidence"}]},
       {"id": "通用交叉", "top_layer": "General / cross-system", "primary_papers": ["Q1-01", "Q1-02", "Q1-06", "Q1-07", "Q1-08", "Q1-09", "Q1-10", "F-08", "F-09", "F-14", "F-15", "F-16", "F-24"]}
     ]
   },

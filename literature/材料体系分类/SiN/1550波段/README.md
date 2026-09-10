@@ -6,6 +6,8 @@
 > 
 > ¹ B4 Zhang 2024(OE 32(22),39906,qBIC 光阱)本次未补到,下载入口:[Optica 文章页](https://opg.optica.org/oe/abstract.cfm?uri=oe-32-22-39906)。
 > **² C4 范智斌 2021《中国光学》为中文核心期刊,非 SCI 收录,故"SCI 分区"列填"中文核心"**;其余 19 篇均为 SCI 收录,分区采用中科院 2025 升级版。
+>
+> **³ 易混提示(2026-09-10 补)**:本专题 **A1(= 项目主文献 L01)** 是 **Huang et al., Nat. Nanotechnol. 18(6), 580–588 (2023)**(空气/PMMA 300 nm/Si₃N₄ 300 nm/石英的 qBIC 泄漏波超表面);而 **Si 专题 ★B1** 是 **Huang et al., Nat. Commun. 14, 3433 (2023)**(SOI 上全介质 GMR 超表面)。两篇同姓同年但为不同工作,**Q 与 δ 的定义和数值不可互用**,引用时请写全期刊卷页。
 
 ## 入库与标注规则
 
@@ -53,7 +55,7 @@
 | --- | --- | --- | --- | --- | --- |
 | ★D1 | Q1 · 中科院一区 Top | **2018 · Optica 5(7), 825–831** | Colburn *et al.*, *Varifocal zoom imaging with large area focal length adjustable metalenses*;[DOI](https://doi.org/10.1364/OPTICA.5.000825) | [PDF](pdfs/D1_Colburn_2018_varifocal_metalens.pdf) | [阅读笔记](阅读笔记_D1_Colburn_2018.md) |
 | D2 | Q1 · 中科院一区 Top(OA) | **2020 · Microsystems & Nanoengineering 6, 79** | Han *et al.*, *MEMS-actuated metasurface Alvarez lens*;[DOI](https://doi.org/10.1038/s41378-020-00190-6) | [PDF](pdfs/D2_Han_2020_MEMS_Alvarez_lens.pdf) | [阅读笔记](阅读笔记_D2_Han_2020.md) |
-| D3 | Q2 · 中科院三区(OA) | **2022 · Scientific Reports 12, 5385** | Han *et al.*, *Millimeter-scale focal length tuning with MEMS-integrated meta-optics employing high-throughput fabrication*;[DOI](https://doi.org/10.1038/s41598-022-09277-8) | [PDF](pdfs/D3_Han_2022_MEMS_metaoptics_tuning.pdf) | [阅读笔记](阅读笔记_D3_Han_2023.md) |
+| D3 | Q2 · 中科院三区(OA) | **2022 · Scientific Reports 12, 5385** | Han *et al.*, *Millimeter-scale focal length tuning with MEMS-integrated meta-optics employing high-throughput fabrication*;[DOI](https://doi.org/10.1038/s41598-022-09277-8) | [PDF](pdfs/D3_Han_2022_MEMS_metaoptics_tuning.pdf) | [阅读笔记](阅读笔记_D3_Han_2022.md) |
 | D4 | Q2 · 中科院三区 | **2026 · Journal of Optics 28(1), 015102** | Mekonnen Berhe *et al.*, *All-pass Si₃N₄ metasurface filter for advanced photonic applications: metalenses, vortex beams, and holography*;[DOI](https://doi.org/10.1088/2040-8986/ae292f) | [PDF](pdfs/D4_MekonnenBerhe_2026_SiN_allpass_metasurface.pdf) | [阅读笔记](阅读笔记_D4_MekonnenBerhe_2026.md) |
 
 ## 与 Si 专题的对照要点

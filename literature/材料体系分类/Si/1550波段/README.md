@@ -46,6 +46,8 @@
 | **B9** | **Q1 · 中科院一区 Top(OA)** | **2025 · ACS Photonics 12(3), 1570–1578** | Eyvazi *et al.*(Törmä 组, Aalto),*Flat-Band Lasing in Silicon Waveguide-Integrated Metasurfaces*;[DOI](https://doi.org/10.1021/acsphotonics.4c02332) | [PDF](pdfs/B9_Eyvazi_2025_Si_flatband_lasing_BIC.pdf) | [阅读笔记](阅读笔记_B9_Eyvazi_2025.md) |
 
 > **B9 特别备注**:激射中心在 **~800–850 nm**,与本专题 1550 nm 主题波段不一致;按"波导集成 + BIC"主题归入 B 组,使用前请评估波段是否适配项目目标。
+>
+> **易混提示(2026-09-10 补)**:本专题 ★B1 是 **Huang et al., Nat. Commun. 14, 3433 (2023)**(SOI 上全介质 GMR 超表面,Q_rad∝δ⁻²);项目主文献 **L01** 是 **Huang et al., Nat. Nanotechnol. 18(6), 580–588 (2023)**(PMMA/Si₃N₄ qBIC 泄漏波超表面)。两篇第一作者同姓、同年,但材料体系(SOI vs PMMA/Si₃N₄)、结构机制(全介质 GMR vs 椭圆孔 qBIC 漏波)与 δ 的定义都不同,**Q 值与 δ 标度不可跨文互用**;引用时务必写全期刊与卷页。
 
 ## C 组｜综述 / 制造平台
 
@@ -56,7 +58,7 @@
 | ★C3 | Q1 · 中科院一区 Top(OA) | **2024 · Nature Communications 15, 8271** | Ji *et al.*, *On-chip multifunctional metasurfaces with full-parametric multiplexed Jones matrix*;[DOI](https://doi.org/10.1038/s41467-024-52476-2) | [PDF](pdfs/C3_Ji_2024_On_Chip_Full_Parametric_Jones_Matrix.pdf) | [阅读笔记](阅读笔记_C3_Ji_2024.md) · [精读笔记](精读笔记_C3_Ji_2024_构思结构与术语.md) |
 | C4 | Q1 · 中科院一区(OA) | **2020 · Nanophotonics 9(10), 3071–3087** | Li *et al.*, *Large-area metasurface on CMOS-compatible fabrication platform: driving flat optics from lab to fab*;[DOI](https://doi.org/10.1515/nanoph-2020-0063) | [PDF](pdfs/C4_Li_2020_Large_Area_CMOS_Metasurface_Platform.pdf) | [阅读笔记](阅读笔记_C4_Li_2020.md) |
 | C5 | Q1 · 中科院一区 Top | **2018 · Nanophotonics 7(6), 1041–1066** | Kamali *et al.*, *A review of dielectric optical metasurfaces for wavefront control*;[DOI](https://doi.org/10.1515/nanoph-2017-0129) | [PDF](pdfs/C5_Kamali_2018_Dielectric_Metasurface_Wavefront_Control_Review.pdf) | [阅读笔记](阅读笔记_C5_Kamali_2018.md) |
-| C6 | Q1 · 中科院一区 Top(OA) | **2024 · ACS Photonics 11(3), 816–955** | Kuznetsov *et al.*, *Roadmap for Optical Metasurfaces*;[DOI](https://doi.org/10.1021/acsphotonics.3c00457) | [PDF](pdfs/C6_Kuznetsov_2024_Roadmap_for_Optical_Metasurfaces.pdf) | [阅读笔记](阅读笔记_C6_Kuznetsov_2026.md) |
+| C6 | Q1 · 中科院一区 Top(OA) | **2024 · ACS Photonics 11(3), 816–955** | Kuznetsov *et al.*, *Roadmap for Optical Metasurfaces*;[DOI](https://doi.org/10.1021/acsphotonics.3c00457) | [PDF](pdfs/C6_Kuznetsov_2024_Roadmap_for_Optical_Metasurfaces.pdf) | [阅读笔记](阅读笔记_C6_Kuznetsov_2024.md) |
 | C7 | Q2 · 中科院三区(OA) | **2020 · Micromachines 11(7), 666** | Cheng *et al.*(清华-伯克利深圳研究院 TBSI), *Grating Couplers on Silicon Photonics: Design Principles, Emerging Trends and Practical Issues*;[DOI](https://doi.org/10.3390/mi11070666) | [PDF](pdfs/C7_Cheng_2020_Grating_Couplers_Silicon_Photonics_Review.pdf) | [阅读笔记](阅读笔记_C7_Cheng_2020.md) · [精读笔记](精读笔记_C7_Cheng_2020_构思结构与术语.md) |
 
 ## D 组｜自由空间 Si metalens @1550 nm
