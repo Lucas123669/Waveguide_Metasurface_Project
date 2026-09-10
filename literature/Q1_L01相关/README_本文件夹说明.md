@@ -8,7 +8,8 @@
 
 ## 编号规则
 
-- 编号：`Q1-01` ~ `Q1-11`（Q1 = 一区/顶级期刊，且与 L01 强相关）。
+- 编号：`Q1-01` ~ `Q1-12`（Q1 = 一区/顶级期刊，且与 L01 强相关）。
+  - **本文件夹存放 Q1-01~Q1-11**；**Q1-12**（Taillaert 2006，光栅耦合器方法奠基类，期刊 Jpn. J. Appl. Phys. 非一区）按 2026-09-02 材料体系约定物理存放于 `literature/材料体系分类/通用交叉/`，配套 2D COMSOL 模型见 `experiments/ref_taillaert_2006/`。
 - PDF 命名：`Q1_序号_作者_年份_简短标题_期刊.pdf`。
 - 笔记命名：`阅读笔记_Q1_序号_作者_年份.md`。
 
@@ -16,7 +17,7 @@
 
 1. **BIC 物理/综述**：Q1-01 Hsu 2016（Nat. Rev. Mater.）、Q1-02 Azzam 2021（Adv. Opt. Mater.）、Q1-03 Hsu 2013（Nature，BIC 实验奠基）。
 2. **qBIC 设计/选择定则**：Q1-05 Koshelev 2018（PRL，Q ∝ α⁻² 定律）、Q1-06 Overvig 2020（PRB，选择定则目录）。
-3. **导模/泄漏波与片上超表面**：Q1-07 杨璐/邹毅 2026（光电工程，中文综述）、Q1-08 Jackson 2011（Proc. IEEE，泄漏波理论）。
+3. **导模/泄漏波与片上超表面**：Q1-07 杨璐/邹毅 2026（光电工程，中文综述）、Q1-08 Jackson 2011（Proc. IEEE，泄漏波理论）、Q1-12 Taillaert 2006（Jpn. J. Appl. Phys.，光栅耦合器设计基准；**物理位置在 `材料体系分类/通用交叉/`**）。
 4. **逆设计/非局域与鲁棒性理论**：Q1-09 Molesky 2018（Nat. Photonics）、Q1-10 Overvig & Alù 2022（Laser Photon. Rev.）、Q1-04 Kang 2022（Light Sci. Appl.，merged BIC）、Q1-11 Kühne 2021（Nanophotonics，制造鲁棒性）。
 
 ## 下载状态
@@ -24,7 +25,7 @@
 | 编号 | PDF | 状态 |
 | --- | --- | --- |
 | Q1-01 | Hsu 2016（MIT DSpace 正式版） | ✅ 已下载 |
-| Q1-02 | Azzam 2021（Adv. Opt. Mater.） | ⏳ 待上海交大认证下载（Wiley 付费） |
+| Q1-02 | Azzam 2021（Adv. Opt. Mater.） | ✅ 已下载（2026-09-01 补入正式版） |
 | Q1-03 | Hsu 2013（MIT DSpace 正式版） | ✅ 已下载 |
 | Q1-04 | Kang 2022（Nature 开放获取） | ✅ 已下载 |
 | Q1-05 | Koshelev 2018（arXiv 预印本） | ✅ 已下载 |
@@ -32,10 +33,11 @@
 | Q1-07 | 杨璐/邹毅 2026（光电工程官网） | ✅ 已下载 |
 | Q1-08 | Jackson 2011（eScholarship 开放获取） | ✅ 已下载 |
 | Q1-09 | Molesky 2018（Stanford 开放版） | ✅ 已下载 |
-| Q1-10 | Overvig & Alù 2022（Laser Photon. Rev.） | ⏳ 待上海交大认证下载（Wiley 付费） |
+| Q1-10 | Overvig & Alù 2022（Laser Photon. Rev.） | ✅ 已下载（2026-09-01 补入正式版） |
 | Q1-11 | Kühne 2021（CORE 开放获取） | ✅ 已下载 |
+| Q1-12 | Taillaert 2006（JJAP，师兄提供；**存放于 `材料体系分类/通用交叉/`**） | ✅ 已入库（含 2D COMSOL 模型 `experiments/ref_taillaert_2006/`） |
 
-待下载的两篇请用上海交大认证的浏览器保存到本文件夹，文件名保持上述统一规则即可（笔记已按摘要撰写，PDF 到位后可按全文补全）。
+Q1-01~Q1-11 的 PDF 已全部就位（Q1-02/Q1-10 于 2026-09-01 补入正式版）；Q1-12 见上表，存放于 `材料体系分类/通用交叉/`。
 
 ## 使用建议
 

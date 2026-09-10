@@ -6,6 +6,17 @@
 > **B9 备注**:虽进 Si/1550 专题是按"波导集成"主题归类,但其激射中心在 **~800–850 nm(近红外)**,而非 1550 nm——使用前需确认波段适配。
 > **D8 备注**:Yao 2017(异质全介质超表面宽带反射器)工作波段为 **600–800 nm**,按"全介质超表面反射器设计范式"收录,供材料/结构思想迁移,几何参数不直接套用。
 
+## 波段适用性（先读）
+
+> **专题目标波段 = 1.55 μm / C 波段（1.5–1.6 μm）**。下列条目按主题归入本专题，但**工作波段不在目标范围内**，只能借鉴方法与机制,**不得作为 1550 nm 的性能或设计依据**:
+
+| 编号 | 实际波段 | 允许的使用方式 |
+| --- | --- | --- |
+| ⚠️ B9 Eyvazi 2025 | 激射中心 ~800–850 nm | 仅借"波导集成 + flat-band + BIC"机制框架;数值不可用于 1550 nm |
+| ⚠️ D8 Yao 2017 | 600–800 nm | 仅借异质叠层/超薄壳层设计思想;几何参数不可套用 |
+
+> 引用上述条目时,正文必须写明实际波段。
+
 ## 入库与标注规则
 
 - 编号:A=波导集成/片上辐射,B=高 Q / BIC,C=综述与制造,D=自由空间 Si metalens,E=材料参数、损耗与工艺窗口。
@@ -43,7 +54,7 @@
 | B6 | Q1 · 中科院二区 | **2014 · Optics Express 22(8), 9271–9280** | Lee *et al.*, *Resonant grating polarizers made with silicon nitride, titanium dioxide, and silicon*;[DOI](https://doi.org/10.1364/OE.22.009271) | 待补档 | [笔记(待原文核对)](阅读笔记_B6_Lee_2014.md) |
 | B7 | Q1 · 中科院一区 Top | **2023 · ACS Photonics 10(2), 534–543** | Kalinic *et al.*, *Quasi-BIC Modes in All-Dielectric Slotted Nanoantennas for Enhanced Er³⁺ Emission*;[DOI](https://doi.org/10.1021/acsphotonics.2c01703) | 待补档 | [笔记(待原文核对)](阅读笔记_B7_Kalinic_2023.md) |
 | B8 | Q1 · 中科院二区 | **2025 · Optics Express 33(5), 11853–11862** | Zhou *et al.*, *Efficient silicon-erbium photonic hybrids with flexible spatial control of light via BICs*;[DOI](https://doi.org/10.1364/OE.555348) | [PDF](pdfs/B8_Zhou_2025_Silicon_Erbium_BIC_Hybrids.pdf) | [阅读笔记](阅读笔记_B8_Zhou_2025.md) |
-| **B9** | **Q1 · 中科院一区 Top(OA)** | **2025 · ACS Photonics 12(3), 1570–1578** | Eyvazi *et al.*(Törmä 组, Aalto),*Flat-Band Lasing in Silicon Waveguide-Integrated Metasurfaces*;[DOI](https://doi.org/10.1021/acsphotonics.4c02332) | [PDF](pdfs/B9_Eyvazi_2025_Si_flatband_lasing_BIC.pdf) | [阅读笔记](阅读笔记_B9_Eyvazi_2025.md) |
+| ⚠️ **B9**（非 1550 nm） | **Q1 · 中科院一区 Top(OA)** | **2025 · ACS Photonics 12(3), 1570–1578** | Eyvazi *et al.*(Törmä 组, Aalto),*Flat-Band Lasing in Silicon Waveguide-Integrated Metasurfaces*;[DOI](https://doi.org/10.1021/acsphotonics.4c02332) | [PDF](pdfs/B9_Eyvazi_2025_Si_flatband_lasing_BIC.pdf) | [阅读笔记](阅读笔记_B9_Eyvazi_2025.md) |
 
 > **B9 特别备注**:激射中心在 **~800–850 nm**,与本专题 1550 nm 主题波段不一致;按"波导集成 + BIC"主题归入 B 组,使用前请评估波段是否适配项目目标。
 >
@@ -72,7 +83,7 @@
 | D5 | Q1 · 中科院一区(OA) | **2022 · Nanophotonics 11(2), 405–413** | Li *et al.*, *Flat telescope based on an all-dielectric metasurface doublet enabling polarization-controllable enhanced beam steering*;[DOI](https://doi.org/10.1515/nanoph-2021-0609) | [PDF](pdfs/D5_Li_2022_Flat_Telescope_Metasurface_Doublet.pdf) | [阅读笔记](阅读笔记_D5_Li_2022.md) |
 | D6 | Q1 · 中科院一区 Top | **2024 · Advanced Optical Materials 12(18), 2400191** | Matiushechkina *et al.*, *Perfect Mirror Effects in Metasurfaces of Silicon Nanodisks at Telecom Wavelength*;[DOI](https://doi.org/10.1002/adom.202400191) | [PDF](pdfs/D6_Matiushechkina_2024_Silicon_Nanodisk_Perfect_Mirror.pdf) | [阅读笔记](阅读笔记_D6_Matiushechkina_2024.md) |
 | D7 | arXiv 预印本(未正式出版) | **2017 · arXiv:1711.01430** | Vasilantonakis *et al.*, *Refractive index contrast enhanced metalens on an SOI platform for large angle deflection*;[arXiv](https://arxiv.org/abs/1711.01430) | [PDF](pdfs/D7_Vasilantonakis_2017_SOI_Large_Angle_Deflector.pdf) | [阅读笔记](阅读笔记_D7_Vasilantonakis_2017.md) |
-| D8 | Q1 · 中科院一区 | **2017 · Advanced Optical Materials 5(14), 1700090** | Yao & Wu(USC), *All-Dielectric Heterogeneous Metasurface as an Efficient Ultra-Broadband Reflector*;[DOI](https://doi.org/10.1002/adom.201700090) | [PDF](pdfs/D8_Yao_2017_Heterogeneous_Metasurface_Broadband_Reflector.pdf) | [阅读笔记](阅读笔记_D8_Yao_2017.md) |
+| ⚠️ D8（非 1550 nm） | Q1 · 中科院一区 | **2017 · Advanced Optical Materials 5(14), 1700090** | Yao & Wu(USC), *All-Dielectric Heterogeneous Metasurface as an Efficient Ultra-Broadband Reflector*;[DOI](https://doi.org/10.1002/adom.201700090) | [PDF](pdfs/D8_Yao_2017_Heterogeneous_Metasurface_Broadband_Reflector.pdf) | [阅读笔记](阅读笔记_D8_Yao_2017.md) |
 | D9 | Q1 · 中科院二区(OA) | **2010 · Optics Express 18(16), 16973–16988** | Karagodsky *et al.*(UC Berkeley), *Theoretical analysis of subwavelength high contrast grating reflectors*;[DOI](https://doi.org/10.1364/OE.18.016973) | [PDF](pdfs/D9_Karagodsky_2010_HCG_Reflector_Theory.pdf) | [阅读笔记](阅读笔记_D9_Karagodsky_2010.md) |
 
 ## E 组｜材料参数 / 损耗与工艺窗口

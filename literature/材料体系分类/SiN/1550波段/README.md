@@ -9,6 +9,16 @@
 >
 > **³ 易混提示(2026-09-10 补)**:本专题 **A1(= 项目主文献 L01)** 是 **Huang et al., Nat. Nanotechnol. 18(6), 580–588 (2023)**(空气/PMMA 300 nm/Si₃N₄ 300 nm/石英的 qBIC 泄漏波超表面);而 **Si 专题 ★B1** 是 **Huang et al., Nat. Commun. 14, 3433 (2023)**(SOI 上全介质 GMR 超表面)。两篇同姓同年但为不同工作,**Q 与 δ 的定义和数值不可互用**,引用时请写全期刊卷页。
 
+## 波段适用性（先读）
+
+> **专题目标波段 = 1.55 μm / C 波段（1.5–1.6 μm）**。下列条目的工作波段**不在目标范围内**,只能借鉴方法:
+
+| 编号 | 实际波段 | 允许的使用方式 |
+| --- | --- | --- |
+| ⚠️ D4 Mekonnen Berhe 2026 | **1100 nm(近红外)与 8000 nm(中红外)双波段**,数值为主 | 仅借全通判据与效率–NA 权衡;纳米柱几何不可搬用 |
+
+> 交叉引用说明:A1(=L01)、A7(=L02)、B3(=F-01)、B5(与 Si 专题 ★B2 同文)、C1(=L03) 均为项目已有文献,**不重复入库**。
+
 ## 入库与标注规则
 
 - 编号:A=波导集成/片上辐射,B=高 Q / BIC,C=综述与制造,D=自由空间 SiN metalens(与 Si 专题同一口径)。
@@ -56,7 +66,7 @@
 | ★D1 | Q1 · 中科院一区 Top | **2018 · Optica 5(7), 825–831** | Colburn *et al.*, *Varifocal zoom imaging with large area focal length adjustable metalenses*;[DOI](https://doi.org/10.1364/OPTICA.5.000825) | [PDF](pdfs/D1_Colburn_2018_varifocal_metalens.pdf) | [阅读笔记](阅读笔记_D1_Colburn_2018.md) |
 | D2 | Q1 · 中科院一区 Top(OA) | **2020 · Microsystems & Nanoengineering 6, 79** | Han *et al.*, *MEMS-actuated metasurface Alvarez lens*;[DOI](https://doi.org/10.1038/s41378-020-00190-6) | [PDF](pdfs/D2_Han_2020_MEMS_Alvarez_lens.pdf) | [阅读笔记](阅读笔记_D2_Han_2020.md) |
 | D3 | Q2 · 中科院三区(OA) | **2022 · Scientific Reports 12, 5385** | Han *et al.*, *Millimeter-scale focal length tuning with MEMS-integrated meta-optics employing high-throughput fabrication*;[DOI](https://doi.org/10.1038/s41598-022-09277-8) | [PDF](pdfs/D3_Han_2022_MEMS_metaoptics_tuning.pdf) | [阅读笔记](阅读笔记_D3_Han_2022.md) |
-| D4 | Q2 · 中科院三区 | **2026 · Journal of Optics 28(1), 015102** | Mekonnen Berhe *et al.*, *All-pass Si₃N₄ metasurface filter for advanced photonic applications: metalenses, vortex beams, and holography*;[DOI](https://doi.org/10.1088/2040-8986/ae292f) | [PDF](pdfs/D4_MekonnenBerhe_2026_SiN_allpass_metasurface.pdf) | [阅读笔记](阅读笔记_D4_MekonnenBerhe_2026.md) |
+| ⚠️ D4（非 1550 nm） | Q2 · 中科院三区 | **2026 · Journal of Optics 28(1), 015102** | Mekonnen Berhe *et al.*, *All-pass Si₃N₄ metasurface filter for advanced photonic applications: metalenses, vortex beams, and holography*;[DOI](https://doi.org/10.1088/2040-8986/ae292f) | [PDF](pdfs/D4_MekonnenBerhe_2026_SiN_allpass_metasurface.pdf) | [阅读笔记](阅读笔记_D4_MekonnenBerhe_2026.md) |
 
 ## 与 Si 专题的对照要点
 
