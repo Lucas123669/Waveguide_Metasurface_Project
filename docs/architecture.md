@@ -12,7 +12,7 @@ config (seeds/calibrated) → design_with_params → build_phase_targets
 ## 2. 分层
 
 - `src/gwm_workflow/config.py`：配置加载与校验（参数来源标记：`paper_exact` / `figure_estimate` / `assumption` / `derived`）。
-- `src/gwm_workflow/phase_design.py`：偏转与金属透镜相位方程。
+- `src/gwm_workflow/phase_design.py`：偏转与超透镜相位方程。
 - `src/gwm_workflow/model_plan.py`：机器可读 COMSOL 构建计划。
 - `src/gwm_workflow/backends.py`：`AnalyticMockBackend`（无 COMSOL 时验证调度/理论）与 `ExternalComsolBackend`（经 MPh adapter 调用 COMSOL）。
 - `src/gwm_workflow/workflow.py`：候选生成与工件写入（candidate.json、phase_targets.csv、scored_result.json）。

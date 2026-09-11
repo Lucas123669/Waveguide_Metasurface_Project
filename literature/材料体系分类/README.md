@@ -22,7 +22,7 @@
 | [Si](Si/README.md) | 硅（a-/m-/p-Si） | Si 纳米柱/纳米孔/梯形柱 | L02、Q1-05、Q1-11、F-03、F-05、F-10 |
 | [SiN](SiN/README.md) | 氮化硅（Si₃N₄） | Si₃N₄ 孔阵/波导超表面 | L03、Q1-03、Q1-04、F-01、F-02、F-04、F-07 |
 | [PMMA](PMMA/README.md) | 聚甲基丙烯酸甲酯 | PMMA 椭圆孔（qBIC）/聚合物波导 | L01、L04、L05、F-06 |
-| [TiO2](TiO2/README.md) | 二氧化钛（TiO₂） | TiO₂ 纳米柱/金属透镜（ALD/EB 蒸发） | 暂无专属文献（见 F-08 相关工艺），待补充 |
+| [TiO2](TiO2/README.md) | 二氧化钛（TiO₂） | TiO₂ 纳米柱/超透镜（ALD/EB 蒸发） | 暂无专属文献（见 F-08 相关工艺），待补充 |
 | [通用交叉](通用交叉/README.md) | —（物理/方法/综述） | — | Q1-01、Q1-02、Q1-06、Q1-07、Q1-08、Q1-09、Q1-10、F-08、F-09 |
 
 ## 文献-体系归属总表
@@ -53,7 +53,7 @@
 | F-06 Sun 2008 | PMMA | — | PMMA 直接 EBL 写入波导 |
 | F-07 Luke 2013 | SiN | — | Si₃N₄ 应力与高 Q 波导 |
 | F-08 Yang 2024 | 通用交叉 | Si/TiO₂/Si₃N₄ | 制造综述（覆盖四体系） |
-| F-09 Park 2019 | 通用交叉 | — | SiO₂ 全玻璃金属透镜（体系外，参考） |
+| F-09 Park 2019 | 通用交叉 | — | SiO₂ 全玻璃超透镜（体系外，参考） |
 | F-10 Shi 2024 | Si | SiN | α-Si 顶层 + Si₃N₄ 波导 |
 | F-11 Devlin 2016 | TiO₂ | — | TiO₂ ALD 反向填充；可见光最高效率全息（F08 案例 C04） |
 | F-12 Yang 2020 | Si | — | Si-on-sapphire 结构色纳米盘（F08 案例 C01） |
