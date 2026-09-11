@@ -6,6 +6,7 @@
 - **期刊 / 年份**：*Scientific Reports* **15**, 19964 (2025)
 - **DOI**：[10.1038/s41598-025-05141-7](https://doi.org/10.1038/s41598-025-05141-7)
 - **本地原文**：[A2 PDF](pdfs/A2_Tanhayivash_2025_Phase_Amplitude_Gradient_Waveguide_Metasurfaces.pdf)
+- **对比分析**：[Q1-12 光栅耦合器 vs A2 波导超表面](../../../../docs/reports/literature/2026-09-11_对比_Q1-12光栅耦合器_vs_A2波导超表面.md)（激励端 vs 辐射端；含"器件类型 × 衬底"的 SOI/SiOG 判据，已并入 1550 nm 玻璃基材料选型汇报稿第 8 页）
 - **定位**：★A 组；Si bar 覆盖一维 slab waveguide 的导波驱动 metalens。
 
 ## 一句话总结

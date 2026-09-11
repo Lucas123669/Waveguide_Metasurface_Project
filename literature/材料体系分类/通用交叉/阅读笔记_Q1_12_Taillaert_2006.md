@@ -8,6 +8,7 @@
 - **单位**：Ghent University / IMEC（D. Taillaert, W. Bogaerts, R. Baets 等，光栅耦合器奠基团队）+ St. Andrews
 - **本地原文**：[PDF](pdfs/Q1_12_Taillaert_2006_Grating_Couplers_JpnJApplPhys.pdf)
 - **配套模型**：[experiments/ref_taillaert_2006/grating_coupler_2d/Taillaert2006_2D_ready.mph](../../../experiments/ref_taillaert_2006/grating_coupler_2d/Taillaert2006_2D_ready.mph)（师兄提供，57 MB 2D 模型）
+- **对比分析**：[Q1-12 光栅耦合器 vs A2 波导超表面](../../../docs/reports/literature/2026-09-11_对比_Q1-12光栅耦合器_vs_A2波导超表面.md)（激励端 vs 辐射端；含"器件类型 × 衬底"的 SOI/SiOG 判据，已并入 1550 nm 玻璃基材料选型汇报稿第 8 页）
 - **定位**：通用交叉（波导‑光纤耦合/激励方法奠基文献）。非一区顶刊，因方法通用性收录；与 Q1-07/Q1-08 同属"波导‑辐射/耦合设计方法"组。
 
 ## 一句话总结
