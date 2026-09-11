@@ -6,7 +6,7 @@
     "objective": "Design and fabricate a waveguide-integrated metasurface to control radiated light (direction, polarization, phase/wavefront, efficiency).",
     "status": "phase_2_simulation_started",
     "created": "2026-08-04",
-    "updated": "2026-09-10",
+    "updated": "2026-09-11",
     "single_source_of_truth": true,
     "primary_paper": {
       "title": "Leaky-wave metasurfaces for integrated photonics",
@@ -154,6 +154,24 @@
     "artifacts": "Large artifact index and storage policy",
     "fabrication": "Layouts, process flows, test records"
   },
+  "substrate_spec": {
+    "material": "Corning HPFS 7980, standard grade 0-AA",
+    "geometry": "wafer diameter <= 250 mm (available diameters: D100 / D150 / D200 / D300); thickness >= 300 um (lower bound, not an upper bound)",
+    "convention_note": "Legacy documents wrote 'substrate length L <= 250 mm'; this always meant the WAFER DIAMETER, not a rectangular plate length (clarified 2026-09-11).",
+    "processing_parameters_to_specify": ["thickness tolerance", "TTV", "surface form/irregularity (面形)", "warp/bow", "parallelism or wedge angle", "1550 nm transmittance", "roughness"]
+  },
+  "procurement_quotes": [
+    {
+      "date": "2026-09-11",
+      "vendor": "HPFS 7980 processing vendor (project contact: 汪旺顺)",
+      "scope": "HPFS 7980 standard grade 0-AA, thickness 0.3 mm and 0.5 mm, 10 pcs each, NO other processing",
+      "D300": "approx. CNY 7500 per piece",
+      "D100": "approx. CNY 1250 per piece",
+      "vendor_note": "small quantity -> high processing cost",
+      "evidence_level": "V (vendor quotation estimate; NOT a purchase price nor a guaranteed price; excludes other processing/inspection; changes with batch size, tolerance and surface-form grade)",
+      "used_in": "docs/reports/fabrication/2026-09-09_1550nm玻璃基超表面材料选型与工艺路线.md page 2, conclusion 8, Q5, evidence [E13]"
+    }
+  ],
   "environment": {
     "python_requirement": ">=3.10; dependencies are declared in pyproject.toml and requirements.txt",
     "validated_environment": "Python 3.13.12 with numpy 2.5.2, pytest 9.1.1, matplotlib 3.11.1, jpype 1.7.1, mph 1.4.0 (verified 2026-09-03)",
