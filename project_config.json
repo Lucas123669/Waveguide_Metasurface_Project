@@ -172,6 +172,34 @@
       "used_in": "docs/reports/fabrication/2026-09-09_1550nm玻璃基超表面材料选型与工艺路线.md page 2, conclusion 8, Q5, evidence [E13]"
     }
   ],
+  "material_route": {
+    "principle": "STAGED PROGRESSION, not a four-way trade-off: Si / Si3N4 / TiO2 / PMMA are not competing candidates to be淘汰; each step solves the failure mode exposed by the previous step and matches the fabrication capability actually available.",
+    "start_point": {
+      "platform": "HPFS 7980 fused silica + PECVD a-Si:H deposited directly on glass (no bonding, no layer transfer)",
+      "first_device": "metasurface waveguide, starting with a GRATING COUPLER (excitation side) for spatial radiation control (direction, phase/wavefront, amplitude, polarization)",
+      "why": ["shortest process chain", "transparent substrate -> backside far-field measurement", "cheapest D100 witness coupon (approx. CNY 1250 per piece, [E13])"]
+    },
+    "steps": [
+      {"step": 0, "platform": "fused silica + PECVD a-Si:H (project start)", "enables": "grating coupler + waveguide metasurface"},
+      {"step": 1, "platform": "Si3N4 (PECVD/LPCVD; etch-free or etched sub-routes; DUV for volume)", "enables": "long propagation length / lower waveguide loss"},
+      {"step": 2, "platform": "TiO2 (ALD gap-fill or thick-film etch)", "enables": "transmissive high-index devices"},
+      {"step": 3, "platform": "SOI (SOITEC 220 nm standard) / SiOG (ultra-thin Si film, pre-patternable interface)", "enables": "single-crystal Si, mature foundry supply chain"},
+      {"step": "parallel", "platform": "PMMA", "enables": "fastest process loop closure and low-index final structure (freestanding membrane)"}
+    ],
+    "soi_note": "SOI (SOITEC and others) is the most widely used platform in the collected literature and in industry (Q1-12 Taillaert 2006: 200 mm SOI/SOITEC, 220 nm Si / 1 um BOX, DUV 248 nm). Registered as witnessing platform + migration target, NOT the first-round start.",
+    "fabrication_philosophies": {
+      "subtractive": "Si, Si3N4 (etched route): resist pattern -> (metal/oxide) hard mask -> dry etch",
+      "additive": "TiO2: reverse-tone resist holes -> ALD gap fill -> etchback",
+      "pattern-only": "PMMA (and the PMMA sub-route on Si3N4): the patterned resist IS the device"
+    },
+    "inherited_modules_first_round": ["PECVD a-Si:H", "EBL (PMMA 950K or ZEP520A) + Espacer anti-charging", "metal/oxide hard mask (Al / Al2O3)", "fluorine-based ICP-RIE", "etch DOE gate (rate, mask selectivity, CD bias, sidewall angle, residue, roughness)"],
+    "deferred_modules": ["double-side aligned patterning (MS1/MS2)", "ALD TiO2 gap-fill", "DUV volume lithography", "freestanding membrane release"],
+    "evidence": ["E14 (D5 Li 2022, Si Al hard mask)", "E15 (T6 Fathi 2026, TiO2 ALD gap fill)", "E16 (Si3N4 three sub-routes)", "E17 (PMMA routes)", "E18 (SOI/SOITEC)"],
+    "document": "docs/reports/fabrication/2026-09-11_四类材料加工工艺路线对比.md",
+    "figures": ["docs/reports/fabrication/figures/fig_Si_D5_Li2022_doublet_EBL_Al_hardmask.png", "docs/reports/fabrication/figures/fig_TiO2_T6_Fathi2026_ALD_gapfill.png"],
+    "reported_in": "docs/reports/fabrication/2026-09-09_1550nm玻璃基超表面材料选型与工艺路线.md page 10, conclusion 9, evidence [E14]-[E18]",
+    "figure_licensing": "Fig.1 source is open access (Nanophotonics, De Gruyter); Fig.2 is the Supporting Information of a Nature Nanotechnology paper (NOT open access) and is allowed ONLY in the current Private repository - it must be removed or replaced before the repo is made public."
+  },
   "environment": {
     "python_requirement": ">=3.10; dependencies are declared in pyproject.toml and requirements.txt",
     "validated_environment": "Python 3.13.12 with numpy 2.5.2, pytest 9.1.1, matplotlib 3.11.1, jpype 1.7.1, mph 1.4.0 (verified 2026-09-03)",

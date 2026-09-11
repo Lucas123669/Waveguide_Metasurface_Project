@@ -24,6 +24,7 @@
 
 ## 制备与测试
 
+- **工艺流程图**：支持信息 **Figure S9 "Metasurface fabrication"**（衬底 → 旋涂 ZEP520A → EBL 写反图形 → **ALD 沉积 TiO₂ 填孔** → **回刻（etchback）** → 去胶）；本仓库截图见 [`docs/reports/fabrication/figures/fig_TiO2_T6_Fathi2026_ALD_gapfill.png`](../../../../docs/reports/fabrication/figures/fig_TiO2_T6_Fathi2026_ALD_gapfill.png)，用于汇报稿第 10 页的"**加法**"加工路线对比（2026-09-11 补）。
 - ZEP 520A 正胶：3800 rpm 45 s；90 °C 3 min + 180 °C 3 min；ESPACER 300 防充电。
 - 150 kV EBL、1 nA，o-xylene 显影；ALD 沉积 TiO₂，RIE 回刻过生长层，Remover PG 去胶。
 - 非线性测试用中心约 1560 nm 的 erbium femtosecond laser（70 fs、100 MHz）；结合透射谱、二次谐波谱与相对 LiNbO₃ 标定提取 χ²。
