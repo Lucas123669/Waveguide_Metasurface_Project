@@ -1,7 +1,7 @@
 # TiO₂ 超表面｜1550 nm / 通信波段代表文献
 
 > 范围：TiO₂ 作为主要纳米结构材料、波导/谐振层，且工作波段覆盖 1.5–1.6 μm 或明确包含 1550 nm。  
-> 整理日期：2026-09-08。PDF 统一命名为 `编号_第一作者_年份_短标题.pdf`；每篇均有中文项目笔记。
+> 整理日期：2026-09-08。PDF 统一命名为 `编号_第一作者_年份_短标题.pdf`；每篇均有中文项目笔记。**2026-09-11 补 T1 精读笔记**（构思 · 结构 · 递进 · 术语），说明"折射率↔效率"结论的适用范围与引用口径。
 
 ## 波段适用性（先读）
 
@@ -21,7 +21,7 @@
 
 | 编号 | 年份 · 期刊 | 文献与 DOI | 波段 / 证据 | 对项目的直接价值 | PDF / 笔记 |
 | --- | --- | --- | --- | --- | --- |
-| T1 | **2019 · Applied Optics 58(6), 1460–1466** | Bayati *et al.*, *Role of refractive index in metalens performance*；[DOI](https://doi.org/10.1364/AO.58.001460) | 1550 nm；数值对照 | TiO₂（n=2.4）与 Si/GaN/SiN 等统一口径比较；给出 TiO₂ 元胞初值 | [PDF](pdfs/T1_Bayati_2019_Refractive_Index_Metalens_Performance.pdf) · [笔记](阅读笔记_T1_Bayati_2019.md) |
+| T1 | **2019 · Applied Optics 58(6), 1460–1466** | Bayati *et al.*, *Role of refractive index in metalens performance*；[DOI](https://doi.org/10.1364/AO.58.001460) | 1550 nm；数值对照 | TiO₂（n=2.4）与 Si/GaN/SiN 等统一口径比较；给出 TiO₂ 元胞初值 | [PDF](pdfs/T1_Bayati_2019_Refractive_Index_Metalens_Performance.pdf) · [笔记](阅读笔记_T1_Bayati_2019.md) · [精读笔记](精读笔记_T1_Bayati_2019_构思结构与术语.md) |
 | T2 | **2022 · Nanomaterials 12(5), 793** | Zhao *et al.*, *Optical Fiber-Integrated Metasurfaces: An Emerging Platform for Multiple Optical Applications*；[DOI](https://doi.org/10.3390/nano12050793) | 800–1550 nm 相关；综述 | 光纤端面/纤芯集成、相位机制和 FIB/EBL/NIL 等工艺路线图 | [PDF](pdfs/T2_Zhao_2022_Optical_Fiber_Integrated_Metasurfaces_Review.pdf) · [笔记](阅读笔记_T2_Zhao_2022.md) |
 | ★T3 | **2021 · Micromachines 12(2), 219** | Zhao *et al.*, *Endless Single-Mode Photonic Crystal Fiber Metalens for Broadband and Efficient Focusing in Near-Infrared Range*；[DOI](https://doi.org/10.3390/mi12020219) | 800–1550 nm；数值设计 | TiO₂ 柱直接放在 LMA-PCF 纤芯区，最接近“导模驱动 + TiO₂ 波前整形” | [PDF](pdfs/T3_Zhao_2021_Broadband_PCF_TiO2_Metalens.pdf) · [笔记](阅读笔记_T3_Zhao_2021.md) |
 | T4 | **2022 · Nanomaterials 12(4), 653** | Guo *et al.*, *Multifunctional Optical Vortex Beam Generator via Cross-Phase Based on Metasurface*；[DOI](https://doi.org/10.3390/nano12040653) | 1550 nm；数值设计 | 给出 TiO₂/SiO₂ 方柱库和 vortex/OAM 多功能相位拼接示例 | [PDF](pdfs/T4_Guo_2022_Multifunctional_Optical_Vortex_Generator.pdf) · [笔记](阅读笔记_T4_Guo_2022.md) |

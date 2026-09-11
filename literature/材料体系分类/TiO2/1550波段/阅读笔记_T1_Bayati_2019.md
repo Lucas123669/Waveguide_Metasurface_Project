@@ -2,7 +2,8 @@
 
 > **年份 · 期刊**：2019 · *Applied Optics* 58(6), 1460–1466  
 > **DOI**：10.1364/AO.58.001460 ｜ **证据等级**：数值对照研究（RCWA + FDTD + inverse design）  
-> **本地 PDF**：[T1_Bayati_2019_Refractive_Index_Metalens_Performance.pdf](pdfs/T1_Bayati_2019_Refractive_Index_Metalens_Performance.pdf)
+> **本地 PDF**：[T1_Bayati_2019_Refractive_Index_Metalens_Performance.pdf](pdfs/T1_Bayati_2019_Refractive_Index_Metalens_Performance.pdf)  
+> **精读笔记（构思 · 结构 · 递进 · 术语）**：[精读笔记_T1_Bayati_2019_构思结构与术语.md](精读笔记_T1_Bayati_2019_构思结构与术语.md)（2026-09-11 补，含逐节逻辑、术语表、关键数字速查与引用口径）
 
 ## 一句话总结
 
