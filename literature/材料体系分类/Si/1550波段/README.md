@@ -3,7 +3,7 @@
 > 范围:1.5–1.6 μm(C 波段 / 1550 nm)的 a-Si、c-Si、SOI 超表面与片上辐射器件。  
 > 整理日期:2026-09-03(初版)/ 2026-09-07(增补 B9 + 全 30 篇 SCI 分区列)/ 2026-09-08(增补 A9、A10 两篇,并补齐两篇阅读笔记)/ 2026-09-09(增补 C7、A11、D8、D9 与 E1；C2 更新为正式期刊 PDF)/ **2026-09-10(波段位置修正:B9、D8 因波段不符迁出本专题)**。现有原文均已补上**年份 · 期刊**标签和项目笔记;PDF 统一采用 `编号_第一作者_年份_短标题.pdf`。
 > 2026-09-07 起,A/B/C/D 表新增 **SCI 分区** 列(中科院升级版 + JCR Q)。
-> **2026-09-11 补**:★A8(Guo 2020,即项目 L02)新增 [精读笔记](精读笔记_A8_Guo_2020_构思结构与术语.md)(构思 · 结构 · 递进 · 术语 + 本项目 45° 复现状态)。
+> **2026-09-11 补**:★A8(Guo 2020,即项目 L02)与 ★A2(Tanhayivash 2025)新增精读笔记(构思 · 结构 · 递进 · 术语;A8 含本项目 45° 复现状态,A2 含三处待核对项)。
 > **2026-09-10 波段位置修正**:原 **B9 Eyvazi 2025**(激射中心 ~800–850 nm)与 **D8 Yao 2017**(工作波段 600–800 nm)已迁出本专题,移至 **Si 体系根目录(非波段位置)**,不再计入本专题条目与 PDF 审计:
 > - `材料体系分类/Si/pdfs/B9_Eyvazi_2025_Si_flatband_lasing_BIC.pdf` + `材料体系分类/Si/阅读笔记_B9_Eyvazi_2025.md`
 > - `材料体系分类/Si/pdfs/D8_Yao_2017_Heterogeneous_Metasurface_Broadband_Reflector.pdf` + `材料体系分类/Si/阅读笔记_D8_Yao_2017.md`
@@ -37,7 +37,7 @@
 | 编号 | SCI 分区 | 年份 · 期刊 | 文献与 DOI | 本地 PDF | 笔记 |
 | --- | --- | --- | --- | --- | --- |
 | ★A1 | Q1 · 中科院二区 | **2023 · Optics Express 31(8), 12487–12496** | Hsieh *et al.*, *Metasurfaces on silicon photonic waveguides for simultaneous emission phase and amplitude control*;[DOI](https://doi.org/10.1364/OE.487589) | [PDF](pdfs/A1_Hsieh_2023_Waveguide_Phase_Amplitude_Control.pdf) | [阅读笔记](阅读笔记_A1_Hsieh_2023.md) |
-| ★A2 | Q2 · 中科院三区(OA) | **2025 · Scientific Reports 15, 19964** | Tanhayivash *et al.*, *Phase and amplitude gradient waveguide coupled metasurfaces*;[DOI](https://doi.org/10.1038/s41598-025-05141-7) | [PDF](pdfs/A2_Tanhayivash_2025_Phase_Amplitude_Gradient_Waveguide_Metasurfaces.pdf) | [阅读笔记](阅读笔记_A2_Tanhayivash_2025.md) |
+| ★A2 | Q2 · 中科院三区(OA) | **2025 · Scientific Reports 15, 19964** | Tanhayivash *et al.*, *Phase and amplitude gradient waveguide coupled metasurfaces*;[DOI](https://doi.org/10.1038/s41598-025-05141-7) | [PDF](pdfs/A2_Tanhayivash_2025_Phase_Amplitude_Gradient_Waveguide_Metasurfaces.pdf) | [阅读笔记](阅读笔记_A2_Tanhayivash_2025.md) · [精读笔记](精读笔记_A2_Tanhayivash_2025_构思结构与术语.md) |
 | ★A3 | Q1 · 中科院一区 Top | **2023 · Photonics Research 11(9), 1570–1584** | Van Iseghem & Bogaerts, *Optical leaky fin waveguide for long-range optical antennas*;[DOI](https://doi.org/10.1364/PRJ.490085) | [PDF](pdfs/A3_Van_Iseghem_2023_Optical_Leaky_Fin_Waveguide.pdf) | [阅读笔记](阅读笔记_A3_Van_Iseghem_Bogaerts_2023.md) |
 | A4 | Q1 · 中科院二区 | **2011 · Optics Express 19(22), 21595–21604** | Doylend *et al.*, *Two-dimensional free-space beam steering with an optical phased array on silicon-on-insulator*;[DOI](https://doi.org/10.1364/OE.19.021595) | [PDF](pdfs/A4_Doylend_2011_SOI_Optical_Phased_Array.pdf) | [阅读笔记](阅读笔记_A4_Doylend_2011.md) |
 | A5 | Q1 · 中科院一区 Top | **2013 · Nature 493, 195–199** | Sun *et al.*, *Large-scale nanophotonic phased array*;[DOI](https://doi.org/10.1038/nature11727) | [PDF](pdfs/A5_Sun_2013_Large_Scale_Nanophotonic_Phased_Array.pdf) | [阅读笔记](阅读笔记_A5_Sun_2013.md) |
