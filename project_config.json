@@ -158,6 +158,7 @@
     "material": "Corning HPFS 7980, standard grade 0-AA",
     "geometry": "wafer diameter <= 250 mm (available diameters: D100 / D150 / D200 / D300); thickness >= 300 um (lower bound, not an upper bound)",
     "convention_note": "Legacy documents wrote 'substrate length L <= 250 mm'; this always meant the WAFER DIAMETER, not a rectangular plate length (clarified 2026-09-11).",
+    "naming_note": "The substrate is SYNTHETIC FUSED SILICA (amorphous SiO2, flame-hydrolysis grade), NOT generic 'SiO2'. Do not conflate it with thermal oxide (SOI BOX, grown on Si, not a free-standing substrate), crystal quartz (birefringent single crystal), natural fused quartz (metal impurities), CVD oxide (hydrogenated), or display glass (used by SiOG as a thick lower cladding). Reference doc: docs/reports/fabrication/2026-09-11_熔融石英与SiO2术语差别.md",
     "processing_parameters_to_specify": ["thickness tolerance", "TTV", "surface form/irregularity (面形)", "warp/bow", "parallelism or wedge angle", "1550 nm transmittance", "roughness"]
   },
   "procurement_quotes": [
