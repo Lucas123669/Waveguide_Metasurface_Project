@@ -3,6 +3,7 @@
 > 范围:1.5–1.6 μm(C 波段 / 1550 nm)的 a-Si、c-Si、SOI 超表面与片上辐射器件。  
 > 整理日期:2026-09-03(初版)/ 2026-09-07(增补 B9 + 全 30 篇 SCI 分区列)/ 2026-09-08(增补 A9、A10 两篇,并补齐两篇阅读笔记)/ 2026-09-09(增补 C7、A11、D8、D9 与 E1；C2 更新为正式期刊 PDF)/ **2026-09-10(波段位置修正:B9、D8 因波段不符迁出本专题)**。现有原文均已补上**年份 · 期刊**标签和项目笔记;PDF 统一采用 `编号_第一作者_年份_短标题.pdf`。
 > 2026-09-07 起,A/B/C/D 表新增 **SCI 分区** 列(中科院升级版 + JCR Q)。
+> **2026-09-11 补**:★A8(Guo 2020,即项目 L02)新增 [精读笔记](精读笔记_A8_Guo_2020_构思结构与术语.md)(构思 · 结构 · 递进 · 术语 + 本项目 45° 复现状态)。
 > **2026-09-10 波段位置修正**:原 **B9 Eyvazi 2025**(激射中心 ~800–850 nm)与 **D8 Yao 2017**(工作波段 600–800 nm)已迁出本专题,移至 **Si 体系根目录(非波段位置)**,不再计入本专题条目与 PDF 审计:
 > - `材料体系分类/Si/pdfs/B9_Eyvazi_2025_Si_flatband_lasing_BIC.pdf` + `材料体系分类/Si/阅读笔记_B9_Eyvazi_2025.md`
 > - `材料体系分类/Si/pdfs/D8_Yao_2017_Heterogeneous_Metasurface_Broadband_Reflector.pdf` + `材料体系分类/Si/阅读笔记_D8_Yao_2017.md`
@@ -42,7 +43,7 @@
 | A5 | Q1 · 中科院一区 Top | **2013 · Nature 493, 195–199** | Sun *et al.*, *Large-scale nanophotonic phased array*;[DOI](https://doi.org/10.1038/nature11727) | [PDF](pdfs/A5_Sun_2013_Large_Scale_Nanophotonic_Phased_Array.pdf) | [阅读笔记](阅读笔记_A5_Sun_2013.md) |
 | A6 | Q1 · 中科院二区 | **2015 · Optics Express 23(12), 16289–16304** | Bozzola *et al.*, *Optimising apodized grating couplers in a pure SOI platform to −0.5 dB coupling efficiency*;[DOI](https://doi.org/10.1364/OE.23.016289) | [PDF](pdfs/A6_Bozzola_2015_Apodized_Grating_Couplers.pdf) | [阅读笔记](阅读笔记_A6_Bozzola_2015.md) |
 | A7 | Q3 · 中科院四区(OA) | **2024 · Engineering Research Express 6(1), 015044** | Chen, *Subwavelength grating waveguide antenna based on interleaved groove structure*;[DOI](https://doi.org/10.1088/2631-8695/ad1d21) | 待补档 | [笔记(待原文核对)](阅读笔记_A7_Chen_2024.md) |
-| A8 | Q1 · 中科院一区 Top(OA) | **2020 · Science Advances 6, eabb4142** | Guo *et al.*, *Molding free-space light with guided wave-driven metasurfaces*;[DOI](https://doi.org/10.1126/sciadv.abb4142) | [项目已有 PDF](../../../L02_Guo_2020_Molding_Free-Space_Light.pdf) | [阅读笔记](阅读笔记_A8_Guo_2020.md) |
+| A8 | Q1 · 中科院一区 Top(OA) | **2020 · Science Advances 6, eabb4142** | Guo *et al.*, *Molding free-space light with guided wave-driven metasurfaces*;[DOI](https://doi.org/10.1126/sciadv.abb4142) | [项目已有 PDF](../../../L02_Guo_2020_Molding_Free-Space_Light.pdf) | [阅读笔记](阅读笔记_A8_Guo_2020.md) · [精读笔记](精读笔记_A8_Guo_2020_构思结构与术语.md) |
 | A9 | Q1 · 中科院一区 Top | **2023 · Nano Letters 23(6), 2094–2099** | Mikhin *et al.*, *Coherent control of topological states in an integrated waveguide lattice*;[DOI](https://doi.org/10.1021/acs.nanolett.2c04182)([arXiv:2210.01648](https://arxiv.org/abs/2210.01648)) | [PDF](pdfs/A9_Mikhin_2023_Coherent_Control_Topological_States.pdf) | [阅读笔记](阅读笔记_A9_Mikhin_2023.md) |
 | A10 | Q1 · 中科院二区 | **2011 · Optics Letters 36(11), 2110–2112** | Schmid *et al.*, *Temperature-independent silicon subwavelength grating waveguides*;[DOI](https://doi.org/10.1364/OL.36.002110) | [PDF](pdfs/A10_Schmid_2011_Temperature_Independent_SWG_Waveguides.pdf) | [阅读笔记](阅读笔记_A10_Schmid_2011.md) |
 | A11 | Q1 · 中科院一区 | **2019 · Advanced Optical Materials 7(4), 1801191** | Wang *et al.*(上海交大 张永/苏翼凯), *Compact Silicon Waveguide Mode Converter Employing Dielectric Metasurface Structure*;[DOI](https://doi.org/10.1002/adom.201801191) | [PDF](pdfs/A11_Wang_2019_Silicon_Mode_Converter_Dielectric_Metasurface.pdf) | [阅读笔记](阅读笔记_A11_Wang_2019.md) |

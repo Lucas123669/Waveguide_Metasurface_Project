@@ -1,5 +1,7 @@
 # L02 轨道：Guo et al. 2020（Molding free-space light with guided wave-driven metasurfaces）
 
+> 文献精读（构思 · 结构 · 递进 · 术语，含本轨道复现状态核对）：[`literature/材料体系分类/Si/1550波段/精读笔记_A8_Guo_2020_构思结构与术语.md`](../../literature/材料体系分类/Si/1550波段/精读笔记_A8_Guo_2020_构思结构与术语.md)
+
 ## 轨道状态
 
 - 当前：**45° 右上偏转结果已接受**（beam_deflector_right45_air2x）
