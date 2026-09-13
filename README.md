@@ -7,6 +7,7 @@
 | 我要做什么 | 入口 |
 | --- | --- |
 | 接手项目 / 找下一步 | [AI 接手指南](docs/guides/AI_接手指南.md) |
+| **改文档并推送到 GitHub** | [AI 文档更新与推送工作流](docs/guides/AI_文档更新与推送工作流.md)（🔧 附一键体检脚本 `scripts/maintenance/check_docs.ps1`） |
 | 了解文档体系 | [文档中心](docs/README.md) |
 | 运行仿真或后处理 | [脚本入口](scripts/README.md) |
 | 选择 seed / calibrated 参数 | [配置说明](configs/README.md) |

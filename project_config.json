@@ -6,7 +6,7 @@
     "objective": "Design and fabricate a waveguide-integrated metasurface to control radiated light (direction, polarization, phase/wavefront, efficiency).",
     "status": "phase_2_simulation_started",
     "created": "2026-08-04",
-    "updated": "2026-09-11",
+    "updated": "2026-09-13",
     "single_source_of_truth": true,
     "primary_paper": {
       "title": "Leaky-wave metasurfaces for integrated photonics",
@@ -236,8 +236,10 @@
     "Read README.md and project_config.json (single source of truth) completely before working.",
     "Enter the experiment track: L01 -> experiments/l01_huang_2023, L02 -> experiments/l02_guo_2020.",
     "Read docs/README.md, then check the latest decisions and the relevant reports category before continuing.",
+    "Before editing any document, read docs/guides/AI_文档更新与推送工作流.md: which files must be updated together, the 12 consistency rules, the commit/push procedure including the SSH-over-443 fallback, and the definition of done.",
+    "Run 'powershell -NoProfile -ExecutionPolicy Bypass -File scripts/maintenance/check_docs.ps1' before committing: invalid JSON or broken relative links block the commit.",
     "Continue from the earliest unfinished roadmap phase.",
     "Record important decisions in dated files under docs/decisions and update project_config.json and README status.",
-    "Communicate in Chinese; keep technical terms in English."
+    "Communicate in Chinese; keep technical terms in English; write commit messages in English."
   ]
 }

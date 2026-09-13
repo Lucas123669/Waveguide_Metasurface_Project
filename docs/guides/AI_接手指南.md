@@ -10,6 +10,7 @@
 3. 读 `docs/README.md` 和 `docs/architecture.md`，确认信息应放在哪一层。
 4. 进入 `experiments/l01_huang_2023/` 或 `experiments/l02_guo_2020/` 的轨道 README。
 5. 查看 `docs/decisions/` 最新记录，以及与任务对应的 `docs/reports/<category>/`。
+6. **要动手改文档时，先读 [`AI_文档更新与推送工作流.md`](AI_文档更新与推送工作流.md)**：它给出"改哪几个文件 → 12 条口径自查 → 一键体检脚本 → 提交与推送（含 SSH 443 回退）→ 完成判定"的完整步骤。提交前请跑：`powershell -NoProfile -ExecutionPolicy Bypass -File scripts\maintenance\check_docs.ps1`。
 
 ## 2. 项目一句话
 
@@ -108,6 +109,7 @@ python -m pytest -q
 - 结果解释进入 `docs/reports/<category>/`；原始数据始终进入对应 `experiments/` 轨道。
 - 新 CLI 按职责进入 `scripts/simulation/`、`scripts/postprocess/` 或 `scripts/literature/`。
 - 不删除已有证据；确需迁移时同步更新活动配置和文档引用，并验证链接与测试。
+- **具体执行步骤、口径自查表、体检脚本与推送回退方案**：见 [`AI_文档更新与推送工作流.md`](AI_文档更新与推送工作流.md)。
 
 ## 9. 当前优先级
 

@@ -30,6 +30,18 @@
 | `literature/gen_f08_case_stats.py` | 生成 F08 制造案例统计报告 |
 | `literature/manifests/f08_download_manifest.json` | F08 下载来源与状态 |
 
+## maintenance｜仓库健康检查
+
+| 脚本 | 用途 |
+| --- | --- |
+| `maintenance/check_docs.ps1` | 一键体检：JSON 合法性、全库相对链接、汇报稿结构计数、图片孤儿检测、术语残留、Git 状态；有阻断项时退出码为 1 |
+
+```powershell
+# 本机无 pwsh 且执行策略为 Restricted，需显式 bypass（详见 docs/guides/AI_文档更新与推送工作流.md）
+powershell -NoProfile -ExecutionPolicy Bypass -File scripts\maintenance\check_docs.ps1
+powershell -NoProfile -ExecutionPolicy Bypass -File scripts\maintenance\check_docs.ps1 -Quiet
+```
+
 ## 常用命令
 
 ```bash
@@ -37,6 +49,7 @@ python scripts/simulation/run_single.py --config configs/seeds/guo2020_beam_defl
 python scripts/simulation/plan_model.py --config configs/seeds/guo2020_beam_deflector_paper_seed.json
 python scripts/postprocess/reprocess_45deg_results.py
 powershell -File scripts/literature/download_si_1550_refs.ps1 -NoNetwork
+powershell -NoProfile -ExecutionPolicy Bypass -File scripts\maintenance\check_docs.ps1
 ```
 
 可复用的计算逻辑应放 `src/gwm_workflow/`；`scripts/` 只负责参数解析、调用和输入输出编排。

@@ -7,6 +7,7 @@
 | 任务 | 首选入口 | 内容 |
 | --- | --- | --- |
 | 接手项目 | [AI 接手指南](guides/AI_接手指南.md) | 当前状态、工作约定、下一动作 |
+| **改文档并推送** | [AI 文档更新与推送工作流](guides/AI_文档更新与推送工作流.md) | 改哪几个文件、12 条口径自查、体检脚本、提交流程、SSH 443 回退、DoD 清单 |
 | 理解代码 | [架构说明](architecture.md) | config → design → backend → result 数据流 |
 | 查历史选择 | [decisions/](decisions/README.md) | 带日期的决策、环境和工艺结论 |
 | 查设计分析 | [reports/design/](reports/README.md#design设计分析) | 结构、参数和设计论证 |
