@@ -4,7 +4,7 @@
 > **题录**：E. Bayati, A. Zhan, S. Colburn, M. V. Zhelyeznyakov, A. Majumdar, *Role of refractive index in metalens performance*, **Applied Optics 58**(6), 1460–1466 (2019). DOI: [10.1364/AO.58.001460](https://doi.org/10.1364/AO.58.001460)
 > **单位**：华盛顿大学（University of Washington）电子与计算机工程系 + 物理系；通讯作者 E. Bayati，PI 为 Arka Majumdar
 > **本地原文**：[pdfs/T1_Bayati_2019_Refractive_Index_Metalens_Performance.pdf](pdfs/T1_Bayati_2019_Refractive_Index_Metalens_Performance.pdf)
-> **速览版笔记**：[阅读笔记_T1_Bayati_2019.md](阅读笔记_T1_Bayati_2019.md)（一句话总结与要点）
+> **规范笔记**：本文为该 DOI 的唯一正文笔记；旧速览路径保留为兼容入口。
 > **与项目关系**：★T 组（1550 nm 多材料横向对照）。汇报稿 §0、第 3 页与证据 **[E6]** 用它支撑"**折射率影响结构尺寸，但不单独决定效率**"。本笔记把它的**论证结构、方法自省与术语**逐节拆开，并明确"哪些结论能进我们的选型/规格、哪些不能"。
 
 ---

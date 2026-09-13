@@ -1,10 +1,12 @@
-# 体系：PMMA（顶层超表面 = PMMA）
+# 材料视图：PMMA
+
+> 本页是非互斥浏览视图。论文只要涉及 PMMA 器件层、光刻胶或可迁移工艺即可列入，不表示它只属于 PMMA；完整标签见 [多维分类索引](../../多维分类索引.md)。
 
 ## 体系定位
 
 顶层超表面材料为聚甲基丙烯酸甲酯（PMMA，n≈1.48）。PMMA 可同时作为电子束胶与超表面/波导图案层（无刻蚀路线），是本项目主论文 L01 的核心体系，也是加工友好性最强的体系。
 
-## 主文献
+## 重点文献
 
 | 编号 | SCI 分区 | 标题 | 在本体系中的角色 | PDF / 笔记 |
 | --- | --- | --- | --- | --- |
@@ -13,7 +15,7 @@
 | L05 | Q1 · 中科院二区 | A review of PMMA as a versatile lithographic resist | PMMA 光刻胶机制综述(曝光/显影/剂量标定) | [PDF](../../L05_Rahman_2020_PMMA_Lithographic_Resist.pdf) · [笔记](../../阅读笔记_L05_Rahman_2020.md) |
 | F-06 | Q1 · 中科院二区 | Direct electron beam writing of electro-optic polymer microring resonators | PMMA 直接 EBL 写入波导(30 kV/700 μC/cm²) | [PDF](../../Q1_工艺_L01相关/F_06_2008_Direct_EBL_PMMA_Microring_OptExpress.pdf) · [笔记](../../Q1_工艺_L01相关/阅读笔记_F_06_Sun_2008.md) |
 
-## 相关文献（跨体系引用）
+## 其他交叉引用
 
 - F-08 Yang 2024（制造综述中的聚合物/灰度工艺）
 

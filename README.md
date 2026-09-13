@@ -1,10 +1,10 @@
-# Waveguide Metasurface Project（波导 + 超表面：辐射光控制）
+# Waveguide Metasurface Project（波导 + 超表面辐射光控制）
 
-> 本文件是项目入口。机器可读的单一状态源是 `project_config.json`；本文中的状态表由人工同步维护，若不一致以 `project_config.json` 为准。
+> 项目入口。机器可读的当前状态以 [`project_config.json`](project_config.json) 为准；结构和口径变更见 [`CHANGELOG.md`](CHANGELOG.md)。
 
 ## 快速导航
 
-| 我要做什么 | 入口 |
+| 任务 | 入口 |
 | --- | --- |
 | 接手项目 / 找下一步 | [AI 接手指南](docs/guides/AI_接手指南.md) |
 | **改文档并推送到 GitHub** | [AI 文档更新与推送工作流](docs/guides/AI_文档更新与推送工作流.md)（🔧 附一键体检脚本 `scripts/maintenance/check_docs.ps1`） |
@@ -12,106 +12,77 @@
 | 运行仿真或后处理 | [脚本入口](scripts/README.md) |
 | 选择 seed / calibrated 参数 | [配置说明](configs/README.md) |
 | 进入论文复现轨道 | [实验轨道](experiments/README.md) |
-| 查论文、笔记和材料体系 | [文献库](literature/README.md) |
+| 按任务、材料、波段查文献 | [文献多维分类索引](literature/多维分类索引.md) |
+| 查编号、DOI 与入库状态 | [文献清单](literature/文献清单.md) |
 
-项目主链路为：**文献依据 → 决策 → 配置 → 代码/脚本 → 实验结果 → 报告 → 制备**。每类信息只在一个主目录维护，其余位置使用链接。
+项目主链路为：**文献依据 → 决策 → 配置 → 代码/脚本 → 实验结果 → 报告 → 制备**。每类信息只维护一个权威入口，其他位置通过链接复用。
 
 ## 1. 项目目标
 
-在波导结构上集成超表面（metasurface），实现对辐射光（radiated light）的调控：辐射方向（出射角度）、偏振状态、相位/波前整形、辐射效率。任务最终包含两部分：实现（设计 + 仿真）与制备（实验）。
+在波导结构上集成超表面，实现对辐射方向、偏振、相位/波前和效率的调控。项目包含设计与仿真、微纳加工与实验验证两部分。
 
-## 2. 两条实验轨道（结构分轨）
+## 2. 实验轨道
 
-仓库按论文复现路线分轨，物理模型、材料体系与仿真目标互不混淆：
+| 轨道 | 论文与平台 | 目标 | 当前状态 / 下一步 |
+| --- | --- | --- | --- |
+| [`l01_huang_2023`](experiments/l01_huang_2023/) | Huang 2023；PMMA / Si₃N₄ 双层波导 + qBIC 椭圆孔 | 片上漏波超表面全参量辐射控制 | case_001 平板模完成；下一步 case_002 元胞库 |
+| [`l02_guo_2020`](experiments/l02_guo_2020/) | Guo 2020；Si 波导 + Au/SiO₂/Au meta-atom | beam deflector + metalens | 45° 偏转已接受；下一步 metalens 与相位库 |
 
-| 轨道 | 论文 | 材料体系 | 目标 | 当前状态 |
-| --- | --- | --- | --- | --- |
-| `experiments/l01_huang_2023/` | Huang et al., Nat. Nanotechnol. 18, 580 (2023) | PMMA / Si₃N₄ 双层波导 + qBIC 椭圆孔 | 片上漏波超表面（LWM）全参量辐射控制 | case_001 平板模分析完成；下一动作 case_002 元胞库 |
-| `experiments/l02_guo_2020/` | Guo et al., Sci. Adv. 6, eabb4142 (2020) | Si 波导 + Au/SiO₂/Au meta-atom | beam deflector + metalens（COMSOL 自动化复现） | 45° 偏转结果已接受（见 run_manifest）；metalens 待复现 |
+## 3. 当前状态
 
-## 3. 当前状态（2026-09-09）
+- **L01**：TM₀ `n_eff≈1.5507`、TE₀ `n_eff≈1.6759`（1.55 μm）的平板模分析已完成；进入 δ/α/D₀ 扫描与容差展宽。
+- **L02**：15 个 supercell、周期 897.331 nm 的模型得到 `+45.0147°` 角谱峰；结果与配置已归档。
+- **材料与制备**：已形成玻璃基 Si 起步路线，以及 SiN、TiO₂、PMMA 的分阶段迁移方案；见 [fabrication 报告](docs/reports/fabrication/)。
+- **文献库**：使用“稳定编号 + 多维标签”，材料、波段、主题、用途可同时多选；A/B/C/D/T 只作为专题内历史架位码。
+- **待补原文**：以 [文献清单](literature/文献清单.md) 和各专题 README 的状态为准，不在本页重复维护数量。
 
-- L01 轨道：case_001 平板模分析已完成（TM₀ n_eff≈1.5507、TE₀ n_eff≈1.6759 @1.55 μm，见 `experiments/l01_huang_2023/case_001_slab_mode/`）；下一动作 case_002（元胞库：δ/α/D₀ 扫描 + 容差展宽）。
-- L02 轨道：Guo 2020 COMSOL 工作流已并入；45° 右上偏转结果已接受（15 supercell、897.331 nm 周期、模拟角谱峰 45.0147°，配置见 `configs/calibrated/`，结果见 `experiments/l02_guo_2020/beam_deflector/right45_15cells_air2x/`）。
-- 综合分析与初步结构报告：`docs/reports/design/2026-08-25_L01超表面波导综合分析与初步结构.md`。
-- 1550 nm玻璃基材料汇报：`docs/reports/fabrication/2026-09-09_1550nm玻璃基超表面材料选型与工艺路线.md`，在 HPFS 7980、**基片直径 ≤250 mm**（常规规格 D100/D150/D200/D300；早期文档写作"基片长度"，实指**晶圆直径**）、`t≥300 μm` 约束下比较 Si/Si₃N₄/TiO₂/PMMA，给出 Si 主路线、证据边界、逐页讲稿与实验验证关口；2026-09-10/11 增补**衬底选择第 8 页**（SOI vs SiOG + 器件类型×衬底判据 + "a-Si:H on 玻璃 ≠ SiOG"辨析）、**晶圆规格/厂商报价块**（[E13]：7980 标准级 0-AA、0.3/0.5 mm 各 10 片、不做其他处理 → **D300 ≈ ¥7500/片、D100 ≈ ¥1250/片**，属询价估算）、**第 2 页"熔融石英 ≠ 泛指 SiO₂"术语澄清**与**第 10 页「四种材料不是取舍：推进路线与加工方式差异」**（第一步＝熔融石英 + PECVD a-Si:H、先做光栅耦合器；SOI/SOITEC 为见证平台与迁移目标；Si=减法/TiO₂=加法/PMMA=免刻蚀三条加工哲学，附 Si 与 TiO₂ 工艺流程截图；共 10 页讲稿 + 证据 [E13]–[E18]）。配套文档：`docs/reports/fabrication/2026-09-11_四类材料加工工艺路线对比.md`（加工方式参数级依据）与 `2026-09-11_熔融石英与SiO2术语差别.md`（材质术语口径）。
-- 文献：2026-09-02 新增 F-11~F-27（F08 制造综述案例论文 17 篇），按顶层材料体系收纳于 `literature/材料体系分类/<体系>/`（`pdfs/` + 阅读笔记）；15 篇已下载并精读，F-19/F-20 出版社反爬待浏览器下载。F08 案例统计汇报见 `docs/reports/literature/2026-09-02_F08制造案例统计与汇报.md`。
-- Si 1550 nm 专题：**35 条**文献记录（原 37 条；B9、D8 因波段不符于 2026-09-10 迁至体系根目录 `材料体系分类/Si/`）均已提供年份/期刊标注和项目笔记；仓库 PDF **32 篇**（专题目录 31 篇 + 复用 L02 1 篇），A7、B6、B7 待补原文。2026-09-09 在仓库改为 Private 后补入 E1 出版社 PDF，并以正式期刊版替换 C2；两份文件在仓库重新公开前必须复核或移除。专题索引见 `literature/材料体系分类/Si/1550波段/README.md`。
-
-## 4. 目录结构
+## 4. 目录边界
 
 ```text
 Waveguide_Metasurface_Project/
-├── README.md                  # 项目入口（本文）
+├── README.md                  # 当前入口
+├── CHANGELOG.md               # 影响使用方式的项目级变更
 ├── project_config.json        # 机器可读单一状态源
-├── pyproject.toml             # Python 包（src/gwm_workflow）与依赖
-├── LICENSE / NOTICE.md        # 代码许可与第三方资产边界
-├── CITATION.cff               # 引用信息
-├── src/gwm_workflow/          # L02 复现核心模块（config/backend/workspace 流水线）
-├── configs/
-│   ├── schemas/               # 仿真配置 JSON Schema
-│   ├── seeds/                 # 论文种子参数（paper_exact / figure_estimate）
-│   └── calibrated/            # 已校准配置（最终接受结果所用）
-├── experiments/
-│   ├── l01_huang_2023/        # L01 轨道（case_001…）
-│   └── l02_guo_2020/          # L02 轨道（beam_deflector / metalens）
-├── scripts/
-│   ├── simulation/            # 建模与求解 CLI
-│   ├── postprocess/           # 结果重处理与绘图
-│   └── literature/            # 文献下载、manifest 与统计
-├── tests/
-│   ├── unit/                  # 纯 Python 单元测试
-│   ├── regression/            # 已知解回归测试
-│   └── integration/           # 集成测试（占位）
-├── docs/
-│   ├── README.md              # 文档导航与边界
-│   ├── architecture.md        # 架构说明
-│   ├── guides/                # 接手与文献库指南
-│   ├── decisions/             # 带日期的决策与工艺记录
-│   ├── reports/               # design/simulation/fabrication/literature
-│   ├── templates/             # 仿真与记录模板
-│   └── archive/               # 失效但需追溯的旧约定
-├── references/
-│   ├── references.bib         # 论文 BibTeX
-│   └── README.md              # 论文与资产策略
-├── literature/                # 论文 PDF、阅读笔记与专题索引
-│   └── 材料体系分类/          # 按顶层材料体系（Si/SiN/PMMA/TiO₂）分类的文献索引
-├── artifacts/                 # 大型产物的索引与策略说明
+├── src/gwm_workflow/          # L02 复现核心模块
+├── configs/                   # schemas / seeds / calibrated
+├── experiments/               # 按论文拆分的复现轨道
+├── scripts/                   # simulation / postprocess / literature
+├── tests/                     # unit / regression / integration
+├── docs/                      # 指南、决策、报告与模板
+├── references/                # BibTeX 与资产策略
+├── literature/                # PDF、规范笔记与多维索引
+├── artifacts/                 # 大型产物索引与存储策略
 └── fabrication/               # 工艺参考资料
 ```
 
 ## 5. 快速开始
 
 ```bash
-# 安装 Python 包（src/gwm_workflow）
 pip install -e .
 
-# 无 COMSOL 时验证流水线/理论逻辑（mock backend）
-python scripts/simulation/run_single.py --config configs/seeds/guo2020_beam_deflector_paper_seed.json --backend mock
+# 无 COMSOL 时验证工作流
+python scripts/simulation/run_single.py \
+  --config configs/seeds/guo2020_beam_deflector_paper_seed.json \
+  --backend mock
 
-# L01 平板模（纯 Python，无需 COMSOL）
+# L01 平板模
 python experiments/l01_huang_2023/case_001_slab_mode/scripts/slab_mode_solver.py \
   --config experiments/l01_huang_2023/case_001_slab_mode/params.json \
   --output experiments/l01_huang_2023/case_001_slab_mode/results/result.json
 
-# 运行测试
 pytest tests/
 ```
 
-## 6. 复现证据链（run_manifest）
+## 6. 复现与资产规则
 
-每个已接受的结果目录包含 `run_manifest.json`，记录：输入配置 SHA、Git commit、运行环境/版本、结果校验和。任何已接受结果都可追溯到配置、代码提交与输入资产（见 `experiments/l02_guo_2020/beam_deflector/right45_15cells_air2x/run_manifest.json`）。
+- 已接受结果使用 `run_manifest.json` 记录输入配置、Git commit、运行环境和结果校验和。
+- 普通 Git 保存代码、配置、文档和轻量数据；大型二进制的策略见 [artifacts](artifacts/README.md) 与 [references](references/README.md)。
+- 第三方论文和受 COMSOL 许可约束的资产不随代码授权，边界见 [NOTICE.md](NOTICE.md)。
+- 新增文献时只保存一份 PDF、每个 DOI 只维护一份规范笔记；跨材料或专题用索引链接复用。
 
-## 7. 资产与许可策略
+## 7. 接手约定
 
-- 普通 Git 保存源代码、配置、文档与轻量数据。
-- 大型二进制（`.mph`、`.npz`、论文 PDF）当前随仓库保存；如需瘦身可迁移至 Git LFS / Release（策略见 `artifacts/README.md` 与 `references/README.md`）。
-- 第三方论文与 COMSOL 许可约束的资产不随代码授权，边界见 `NOTICE.md`。
-
-## 8. 给未来 AI 助手的接手指引
-
-1. 先读本文件与 `project_config.json`（单一状态源）。
-2. 按实验轨道进入：L01 看 `experiments/l01_huang_2023/`，L02 看 `experiments/l02_guo_2020/`。
-3. 读 `docs/README.md`，再按任务进入 `docs/decisions/` 或 `docs/reports/*/`。
-4. 重要决策记录到 `docs/decisions/` 下带日期文件中，并同步更新 `project_config.json` 与本文状态表。
-5. 中文交流；技术术语保留英文。
+1. 先读本页和 `project_config.json`。
+2. 按任务进入对应实验轨道，再阅读相关 decision/report。
+3. 重要结构或口径变化写入 `docs/decisions/`，同步更新 `project_config.json`、本页与 `CHANGELOG.md`。
+4. 文献分类遵循 [多维分类索引](literature/多维分类索引.md)，不要根据目录名推断唯一材料、波段或期刊分区。

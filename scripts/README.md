@@ -34,7 +34,7 @@
 
 | 脚本 | 用途 |
 | --- | --- |
-| `maintenance/check_docs.ps1` | 一键体检：JSON 合法性、全库相对链接、汇报稿结构计数、图片孤儿检测、术语残留、Git 状态；有阻断项时退出码为 1 |
+| `maintenance/check_docs.ps1` | 一键体检：JSON 合法性、全库相对链接、汇报稿结构计数、图片孤儿检测、术语残留、Git 状态；支持 sparse checkout，有阻断项时退出码为 1 |
 
 ```powershell
 # 本机无 pwsh 且执行策略为 Restricted，需显式 bypass（详见 docs/guides/AI_文档更新与推送工作流.md）

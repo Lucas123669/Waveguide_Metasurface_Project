@@ -1,5 +1,7 @@
 # 1550 nm SiN 体系候选文献
 
+> **分类口径**：A/B/C/D 是本专题的历史架位视图，不是互斥分区；同一文献可同时属于多个材料、波段与主题。跨目录引用请写成 `SiN-1550:A1`。完整规则见 [多维分类索引](../../../多维分类索引.md)。
+
 > 范围:1.5–1.6 μm(C 波段 / 1550 nm)的 Si₃N₄(氮化硅)超表面、波导集成与片上辐射器件。
 > 整理日期:2026-09-04(初版)/ 2026-09-07(增补 SCI 分区列 20 篇)。
 > 信息来源:网络检索 + CrossRef 书目核实(2026-09-04);**2026-09-10 位置修正后,专题为 19 条、专题目录内 13 篇 PDF**(原 D4 因波段不符迁出至 SiN 体系根目录,见上"波段适用性")。**B4 仍未补到**(Zhang 2024,OE qBIC 光阱,见下方"PDF 补档状态")。其余题录+摘要级预备笔记(B1/B5/C1/A7/B3 项目已有交叉引用),数值以原文为准。
@@ -30,38 +32,38 @@
 - 交叉引用:与项目已有文献重复的(L01/L02/L03/F-01、Si 专题 B2)不重复入库,仅登记链接。
 - 笔记口径:现阶段为**题录+摘要级预备笔记**;补入原文前,笔记中的参数不得直接进入仿真规格。
 
-## A 组|SiN 波导集成 / 片上辐射
+## A 视图｜SiN 波导集成 / 片上辐射
 
 | 编号 | SCI 分区 | 年份 · 期刊 | 文献与 DOI | 本地 PDF | 笔记 |
 | --- | --- | --- | --- | --- | --- |
-| ★A1 | Q1 · 中科院一区 Top | **2023 · Nature Nanotechnology 18(6), 580–588** | Huang *et al.*, *Leaky-wave metasurfaces for integrated photonics*;[DOI](https://doi.org/10.1038/s41565-023-01360-z) | 项目主文献 L01([笔记](../../../阅读笔记_L01_Huang_2023.md)) | [阅读笔记](阅读笔记_A1_Huang_2023.md) |
+| ★A1 | Q1 · 中科院一区 Top | **2023 · Nature Nanotechnology 18(6), 580–588** | Huang *et al.*, *Leaky-wave metasurfaces for integrated photonics*;[DOI](https://doi.org/10.1038/s41565-023-01360-z) | 项目主文献 L01 | [规范笔记](../../../阅读笔记_L01_Huang_2023.md) |
 | A2 | Q1 · 中科院二区(OA) | **2017 · Optics Letters 42(1), 21–24** | Poulton *et al.*, *Large-scale silicon nitride nanophotonic phased arrays at infrared and visible wavelengths*;[DOI](https://doi.org/10.1364/OL.42.000021) | [PDF](pdfs/A2_Poulton_2017_SiN_phased_array.pdf) | [阅读笔记](阅读笔记_A2_Poulton_2017.md) |
 | A3 | Q1 · 中科院二区 | **2016 · Journal of Lightwave Technology 34(21), 4864–4871** | Zhao *et al.*, *Experimental Demonstration of Directive Si₃N₄ Optical Leaky Wave Antennas With Semiconductor Perturbations*;[DOI](https://doi.org/10.1109/JLT.2016.2608801) | [PDF](pdfs/A3_Zhao_2016_SiN_OLWA_IEEE.pdf) | [阅读笔记](阅读笔记_A3_Zhao_2016.md) |
 | A4 | Q2 · 中科院三区(OA) | **2022 · Scientific Reports 12, 18759** | Bhandari *et al.*, *Dispersive silicon–nitride optical phased array incorporating arrayed waveguide delay lines for passive line beam scanning*;[DOI](https://doi.org/10.1038/s41598-022-23456-7) | [PDF](pdfs/A4_Bhandari_2022_SiN_OPA_line_scan.pdf) | [阅读笔记](阅读笔记_A4_Bhandari_2022.md) |
 | A5 | Q1 · 中科院二区 | **2024 · Optics Express 32(25), 43778–43787** | Arsanjani *et al.*, *Two dimensional beam forming and steering based on silicon nitride 1×32 optical phased array*;[DOI](https://doi.org/10.1364/OE.534684) | [PDF](pdfs/A5_Arsanjani_2024_SiN_1x32_OPA.pdf) | [阅读笔记](阅读笔记_A5_Arsanjani_2024.md) |
 | A6 | Q1 · 中科院一区 Top(OA) | **2025 · APL Photonics 10(5), 056110** | Jiao *et al.*, *Two-dimensional multi-beam steering for parallel free-space optical communication based on a silicon nitride optical phase array*;[DOI](https://doi.org/10.1063/5.0264068) | [PDF](pdfs/A6_Jiao_2025_SiN_2D_multibeam.pdf) | [阅读笔记](阅读笔记_A6_Jiao_2025.md) |
-| A7 | Q1 · 中科院一区 Top(OA) | **2020 · Science Advances 6, eabb4142** | Guo *et al.*, *Molding free-space light with guided wave-driven metasurfaces*;[DOI](https://doi.org/10.1126/sciadv.abb4142) | 项目主文献 L02(SiN 波导 + Au/SiO₂/Au 元原子) | [阅读笔记](阅读笔记_A7_Guo_2020.md) |
+| A7 | Q1 · 中科院一区 Top(OA) | **2020 · Science Advances 6, eabb4142** | Guo *et al.*, *Molding free-space light with guided wave-driven metasurfaces*;[DOI](https://doi.org/10.1126/sciadv.abb4142) | 项目主文献 L02；SiN/Si 交叉 | [规范笔记](../../Si/1550波段/精读笔记_A8_Guo_2020_构思结构与术语.md) |
 
-## B 组|高 Q / qBIC / BIC
+## B 视图｜高 Q / qBIC / BIC
 
 | 编号 | SCI 分区 | 年份 · 期刊 | 文献与 DOI | 本地 PDF | 笔记 |
 | --- | --- | --- | --- | --- | --- |
 | ★B1 | Q1 · 中科院一区 Top(OA) | **2024 · Nature 626, 765–771** | Schiattarella *et al.*, *Directive giant upconversion by supercritical bound states in the continuum*;[DOI](https://doi.org/10.1038/s41586-023-06967-9) | [PDF](pdfs/B1_Schiattarella_2024_supercritical_BIC.pdf) | [阅读笔记](阅读笔记_B1_Schiattarella_2024.md) |
 | B2 | Q1 · 中科院一区 Top(OA) | **2019 · Nature Photonics 13(6), 390–396** | Yesilkoy *et al.*, *Ultrasensitive hyperspectral imaging and biodetection enabled by dielectric metasurfaces*;[DOI](https://doi.org/10.1038/s41566-019-0394-6) | [PDF](pdfs/B2_Yesilkoy_2019_hyperspectral_biodetection.pdf) | [阅读笔记](阅读笔记_B2_Yesilkoy_2019.md) |
-| B3 | Q1 · 中科院一区 Top(OA) | **2026 · Nano Letters(DUV 晶圆级 qBIC)** | Beisenova *et al.*, *Wafer-Scale All-Dielectric Quasi-BIC Metasurfaces*(arXiv:2510.15135);[arXiv](https://arxiv.org/abs/2510.15135) | 项目已有 F-01([笔记](../../../Q1_工艺_L01相关/阅读笔记_F_01_Yesilkoy_2026.md)) | [阅读笔记](阅读笔记_B3_Beisenova_2025.md) |
+| B3 | Q1 · 中科院一区 Top(OA) | **2026 · Nano Letters(DUV 晶圆级 qBIC)** | Beisenova *et al.*, *Wafer-Scale All-Dielectric Quasi-BIC Metasurfaces*(arXiv:2510.15135);[arXiv](https://arxiv.org/abs/2510.15135) | 稳定编号 F-01 | [规范笔记](../../../Q1_工艺_L01相关/阅读笔记_F_01_Yesilkoy_2026.md) |
 | B4 | Q1 · 中科院二区 | **2024 · Optics Express 32(22), 39906–39916** | Zhang *et al.*, *Optical trapping using quasi-bound states in the continuum of photonic crystal slab*;[DOI](https://doi.org/10.1364/OE.537544) | 待补档(未补到)¹ | [阅读笔记](阅读笔记_B4_Zhang_2024.md) |
-| B5 | Q1 · 中科院一区 Top | **2025 · Nano Letters 25(7), 2777–2784** | Watanabe *et al.*, *Low-Contrast BIC Metasurfaces with Quality Factors Exceeding 100,000*;[DOI](https://doi.org/10.1021/acs.nanolett.4c05880) | Si 专题 B2 已入库(SiN/石英低对比平台) | [阅读笔记](阅读笔记_B5_Watanabe_2025.md) |
+| B5 | Q1 · 中科院一区 Top | **2025 · Nano Letters 25(7), 2777–2784** | Watanabe *et al.*, *Low-Contrast BIC Metasurfaces with Quality Factors Exceeding 100,000*;[DOI](https://doi.org/10.1021/acs.nanolett.4c05880) | 与 `Si-1550:B2` 同一文献 | [规范笔记](../../Si/1550波段/阅读笔记_B2_Watanabe_2025.md) |
 
-## C 组|综述 / 制造平台
+## C 视图｜综述 / 制造平台
 
 | 编号 | SCI 分区 | 年份 · 期刊 | 文献与 DOI | 本地 PDF | 笔记 |
 | --- | --- | --- | --- | --- | --- |
-| ★C1 | Q1 · 中科院一区 Top | **2024 · Laser & Photonics Reviews 18(12), 2400508** | Buzaverov *et al.*, *Silicon Nitride Integrated Photonics from Visible to Mid-Infrared Spectra*;[DOI](https://doi.org/10.1002/lpor.202400508) | 项目主文献 L03([笔记](../../../阅读笔记_L03_Buzaverov_2024.md)) | [阅读笔记](阅读笔记_C1_Buzaverov_2024.md) |
+| ★C1 | Q1 · 中科院一区 Top | **2024 · Laser & Photonics Reviews 18(12), 2400508** | Buzaverov *et al.*, *Silicon Nitride Integrated Photonics from Visible to Mid-Infrared Spectra*;[DOI](https://doi.org/10.1002/lpor.202400508) | 稳定编号 L03 | [规范笔记](../../../精读笔记_L03_Buzaverov_2024_构思结构与术语.md) |
 | C2 | Q1 · 中科院二区(OA) | **2018 · Optical Materials Express 8(8), 2330–2344** | Colburn *et al.*, *Broadband transparent and CMOS-compatible flat optics with silicon nitride metasurfaces [Invited]*;[DOI](https://doi.org/10.1364/OME.8.002330) | [PDF](pdfs/C2_Colburn_2018_SiN_flat_optics.pdf) | [阅读笔记](阅读笔记_C2_Colburn_2018.md) |
 | C3 | Q1 · 中科院一区 Top | **2018 · Proceedings of the IEEE 106(12), 2209–2231** | Blumenthal *et al.*, *Silicon Nitride in Silicon Photonics*;[DOI](https://doi.org/10.1109/JPROC.2018.2861576) | [PDF](pdfs/C3_Blumenthal_2018_SiN_in_Si_photonics.pdf) | [阅读笔记](阅读笔记_C3_Blumenthal_2018.md) |
 | C4 | 中文核心(非 SCI)² | **2021 · 中国光学 14(4), 998–1018** | 范智斌、董建文 等,《氮化硅光子器件与应用研究进展》;[DOI](https://doi.org/10.37188/CO.2021-0093) | [PDF](pdfs/C4_Fan_2021_SiN_photonics_review_CN.pdf) | [阅读笔记](阅读笔记_C4_Fan_2021.md) |
 
-## D 组|自由空间 SiN metalens @1550 nm
+## D 视图｜自由空间 SiN metalens @1550 nm
 
 | 编号 | SCI 分区 | 年份 · 期刊 | 文献与 DOI | 本地 PDF | 笔记 |
 | --- | --- | --- | --- | --- | --- |

@@ -24,6 +24,7 @@
 [CmdletBinding()]
 param(
     [string]$Repo = '',
+    [string]$Git = '',
     [switch]$Quiet
 )
 
@@ -37,6 +38,29 @@ if (-not $Repo) {
     else { $Repo = (Get-Location).Path }
 }
 $Repo = (Resolve-Path -LiteralPath $Repo).Path
+
+# Git is optional for a full checkout, but lets sparse/partial checkouts verify
+# links against the committed tree instead of reporting unmaterialized files as
+# broken. An explicit path is useful in managed environments where Git is not
+# inherited by a child PowerShell process.
+$gitExe = $null
+if ($Git -and (Test-Path -LiteralPath $Git)) {
+    $gitExe = (Resolve-Path -LiteralPath $Git).Path
+}
+elseif (Get-Command git -ErrorAction SilentlyContinue) {
+    $gitExe = (Get-Command git).Source
+}
+
+$trackedPaths = [System.Collections.Generic.HashSet[string]]::new([System.StringComparer]::OrdinalIgnoreCase)
+if ($gitExe) {
+    try {
+        & $gitExe -c "safe.directory=$Repo" -c core.quotepath=false -C $Repo ls-tree -r --name-only HEAD 2>$null |
+            ForEach-Object { [void]$trackedPaths.Add($_.Replace('\', '/')) }
+    }
+    catch {
+        Write-Host '   [warn] unable to read the Git tree; sparse-checkout links may be reported as missing' -ForegroundColor Yellow
+    }
+}
 
 function Write-Head([string]$text) {
     if (-not $Quiet) { Write-Host ""; Write-Host "== $text" -ForegroundColor Cyan }
@@ -97,7 +121,27 @@ foreach ($f in $mdFiles) {
         $checked++
         $decoded = [uri]::UnescapeDataString($target)
         $path = if ($decoded -match '^[A-Za-z]:') { $decoded } else { Join-Path $f.DirectoryName $decoded }
-        if (-not (Test-Path -LiteralPath $path)) {
+        $exists = Test-Path -LiteralPath $path
+        if (-not $exists -and $trackedPaths.Count -gt 0) {
+            try {
+                $full = [System.IO.Path]::GetFullPath($path)
+                if ($full.StartsWith($Repo, [System.StringComparison]::OrdinalIgnoreCase)) {
+                    $rel = $full.Substring($Repo.Length).TrimStart('\', '/').Replace('\', '/')
+                    $exists = $trackedPaths.Contains($rel)
+                    if (-not $exists) {
+                        $prefix = $rel.TrimEnd('/') + '/'
+                        foreach ($item in $trackedPaths) {
+                            if ($item.StartsWith($prefix, [System.StringComparison]::OrdinalIgnoreCase)) {
+                                $exists = $true
+                                break
+                            }
+                        }
+                    }
+                }
+            }
+            catch {}
+        }
+        if (-not $exists) {
             $broken += "$($f.FullName.Replace($Repo + '\', '')) -> $target"
         }
     }
@@ -130,16 +174,24 @@ else {
 
 # -------------------------------------------------------------- 4. images ---
 Write-Head '4) Image reference audit'
-$imgFiles = Get-ChildItem (Join-Path $Repo 'docs') -Filter '*.png' -File -Recurse -ErrorAction SilentlyContinue
-if ($imgFiles) {
+$imgPaths = @()
+if ($trackedPaths.Count -gt 0) {
+    $imgPaths = @($trackedPaths | Where-Object { $_ -match '^docs/.+\.png$' })
+}
+else {
+    $imgPaths = @(Get-ChildItem (Join-Path $Repo 'docs') -Filter '*.png' -File -Recurse -ErrorAction SilentlyContinue |
+        ForEach-Object { $_.FullName.Substring($Repo.Length).TrimStart('\', '/').Replace('\', '/') })
+}
+if ($imgPaths.Count -gt 0) {
     $refs = ($mdFiles | ForEach-Object { Get-Content $_.FullName -Raw -Encoding UTF8 }) -join "`n"
     $orphans = @()
-    foreach ($img in $imgFiles) {
-        if ($refs -notmatch [regex]::Escape($img.Name)) {
-            $orphans += $img.FullName.Replace($Repo + '\', '')
+    foreach ($imgPath in $imgPaths) {
+        $imgName = Split-Path -Leaf $imgPath
+        if ($refs -notmatch [regex]::Escape($imgName)) {
+            $orphans += $imgPath
         }
     }
-    Write-Item "images = $($imgFiles.Count), orphans = $($orphans.Count)"
+    Write-Item "images = $($imgPaths.Count), orphans = $($orphans.Count)"
     foreach ($o in $orphans) { Write-Warn2 "never referenced: $o" }
 }
 else {
@@ -168,9 +220,10 @@ foreach ($t in $terms) {
 # ---------------------------------------------------------------- 6. git ----
 Write-Head '6) Git state'
 try {
-    $branch = (git -C $Repo rev-parse --abbrev-ref HEAD 2>$null)
-    $head = (git -C $Repo log --oneline -1 2>$null)
-    $dirty = (git -C $Repo status --short 2>$null | Measure-Object).Count
+    if (-not $gitExe) { throw 'git not available' }
+    $branch = (& $gitExe -c "safe.directory=$Repo" -C $Repo rev-parse --abbrev-ref HEAD 2>$null)
+    $head = (& $gitExe -c "safe.directory=$Repo" -C $Repo log --oneline -1 2>$null)
+    $dirty = (& $gitExe -c "safe.directory=$Repo" -C $Repo status --short 2>$null | Measure-Object).Count
     Write-Item "branch=$branch"
     Write-Item "head=$head"
     Write-Item "uncommitted files=$dirty"

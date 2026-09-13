@@ -1,6 +1,6 @@
 {
   "schema_version": 2,
-  "layout_version": 3,
+  "layout_version": 4,
   "project": {
     "name": "Waveguide_Metasurface_Radiation_Control",
     "objective": "Design and fabricate a waveguide-integrated metasurface to control radiated light (direction, polarization, phase/wavefront, efficiency).",
@@ -31,7 +31,7 @@
         "journal": "Laser & Photonics Reviews 18(12), 2400508 (2024)",
         "doi": "10.1002/lpor.202400508",
         "authors": "Buzaverov et al.",
-        "note_file": "literature/阅读笔记_L03_Buzaverov_2024.md",
+        "note_file": "literature/精读笔记_L03_Buzaverov_2024_构思结构与术语.md",
         "note": "SiN fabrication reference; PDF in literature/"
       },
       {
@@ -71,8 +71,24 @@
       ]
     }
   },
+  "literature_taxonomy": {
+    "version": 2,
+    "classification_mode": "multi_label",
+    "canonical_id_rule": "L/Q1/F stable IDs never change when classification changes",
+    "scoped_alias_format": "<material>-<band>:<local_code>",
+    "dimensions": {
+      "materials": {"multi": true},
+      "bands": {"multi": true},
+      "topics": {"multi": true},
+      "uses": {"multi": true},
+      "journal_rank": {"multi": false, "independent": true}
+    },
+    "canonical_note_per_doi": true,
+    "index": "literature/多维分类索引.md",
+    "changelog": "CHANGELOG.md"
+  },
   "q1_papers": {
-    "description": "Q1-tier papers strongly related to L01 (design & fabrication theory); stored separately in literature/Q1_L01相关/",
+    "description": "Historical Q1-prefixed paper series related to L01; the prefix is a stable identifier and does not guarantee journal quartile.",
     "folder": "literature/Q1_L01相关",
     "papers": [
       {"id": "Q1-01", "title": "Bound states in the continuum", "journal": "Nature Reviews Materials 1, 16048 (2016)", "doi": "10.1038/natrevmats.2016.48", "role": "BIC physics review", "pdf": "Q1_01_Hsu_2016_BIC_Review_Nature_Reviews_Materials.pdf", "note_file": "literature/Q1_L01相关/阅读笔记_Q1_01_Hsu_2016.md"},
@@ -85,11 +101,12 @@
       {"id": "Q1-08", "title": "The Fundamental Physics of Directive Beaming at Microwave and Optical Frequencies and the Role of Leaky Waves", "journal": "Proceedings of the IEEE 99(10), 1780 (2011)", "doi": "10.1109/JPROC.2010.2103530", "role": "Leaky-wave theory", "pdf": "Q1_08_Jackson_2011_Directive_Beaming_Leaky_Waves_Proc_IEEE.pdf", "note_file": "literature/Q1_L01相关/阅读笔记_Q1_08_Jackson_2011.md"},
       {"id": "Q1-09", "title": "Inverse design in nanophotonics", "journal": "Nature Photonics 12, 659 (2018)", "doi": "10.1038/s41566-018-0246-9", "role": "Inverse design review", "pdf": "Q1_09_Molesky_2018_Inverse_Design_Nanophotonics_Nat_Photonics.pdf", "note_file": "literature/Q1_L01相关/阅读笔记_Q1_09_Molesky_2018.md"},
       {"id": "Q1-10", "title": "Diffractive Nonlocal Metasurfaces", "journal": "Laser & Photonics Reviews 16(8), 2100633 (2022)", "doi": "10.1002/lpor.202100633", "role": "Nonlocal metasurface perspective", "pdf": "Q1_10_Overvig_Alu_2022_Diffractive_Nonlocal_Metasurfaces_Laser_Photonics_Rev.pdf", "note_file": "literature/Q1_L01相关/阅读笔记_Q1_10_Overvig_Alu_2022.md"},
-      {"id": "Q1-11", "title": "Fabrication robustness in BIC metasurfaces", "journal": "Nanophotonics 10(17), 4305 (2021)", "doi": "10.1515/nanoph-2021-0391", "role": "Fabrication robustness model; ellipse most robust", "pdf": "Q1_11_Kuehne_2021_Fabrication_Robustness_BIC_Nanophotonics.pdf", "note_file": "literature/Q1_L01相关/阅读笔记_Q1_11_Kuehne_2021.md"}
+      {"id": "Q1-11", "title": "Fabrication robustness in BIC metasurfaces", "journal": "Nanophotonics 10(17), 4305 (2021)", "doi": "10.1515/nanoph-2021-0391", "role": "Fabrication robustness model; ellipse most robust", "pdf": "Q1_11_Kuehne_2021_Fabrication_Robustness_BIC_Nanophotonics.pdf", "note_file": "literature/Q1_L01相关/阅读笔记_Q1_11_Kuehne_2021.md"},
+      {"id": "Q1-12", "title": "Grating Couplers for Coupling between Optical Fibers and Nanophotonic Waveguides", "journal": "Japanese Journal of Applied Physics 45(8R), 6071-6077 (2006)", "doi": "10.1143/JJAP.45.6071", "role": "Foundational grating-coupler design reference", "pdf": "literature/材料体系分类/通用交叉/pdfs/Q1_12_Taillaert_2006_Grating_Couplers_JpnJApplPhys.pdf", "note_file": "literature/材料体系分类/通用交叉/阅读笔记_Q1_12_Taillaert_2006.md"}
     ]
   },
   "q1_fabrication_papers": {
-    "description": "Q1-tier nanofabrication-process papers strongly related to L01; stored separately in literature/Q1_工艺_L01相关/",
+    "description": "Historical F-prefixed fabrication series related to L01; journal quartile is tracked independently.",
     "folder": "literature/Q1_工艺_L01相关",
     "papers": [
       {"id": "F-01", "title": "Wafer-Scale All-Dielectric Quasi-BIC Metasurfaces (DUV)", "journal": "Nano Letters 26(6), 2059 (2026)", "doi": "10.1021/acs.nanolett.5c05226", "role": "DUV wafer-scale qBIC fabrication", "pdf": "F_01_Yesilkoy_2026_WaferScale_qBIC_DUV_NanoLetters.pdf", "note_file": "literature/Q1_工艺_L01相关/阅读笔记_F_01_Yesilkoy_2026.md"},
@@ -122,8 +139,10 @@
     ]
   },
   "material_systems": {
-    "description": "Waveguide-metasurface tasks by top-layer material system; classified in literature/材料体系分类/. 2026-09-02 update: this folder also stores downloaded F08 case-reference PDFs (pdfs/ subfolders) and reading notes (convention revised from 'indexes only').",
+    "description": "Non-exclusive material views for waveguide-metasurface literature. One paper may belong to several material, band, topic and use views without duplicating its PDF or canonical note.",
     "folder": "literature/材料体系分类",
+    "membership_mode": "non_exclusive",
+    "legacy_array_note": "primary_papers and related_papers are navigation priorities retained for compatibility, not mutually exclusive classification.",
     "systems": [
       {"id": "Si", "top_layer": "Silicon", "primary_papers": ["L02", "Q1-05", "Q1-11", "F-03", "F-05", "F-10", "F-12", "F-13", "F-17", "F-18", "F-19", "F-20", "F-23", "F-27"], "related_papers": ["Q1-06", "Q1-07", "F-08"], "literature_collections": [{"id": "si_1550nm_2026-09-03", "path": "literature/材料体系分类/Si/1550波段", "candidate_count": 35, "local_pdf_in_collection": 31, "existing_project_pdf": 1, "pending_local_pdf": 3, "notes_completed": 35, "priority_local_or_existing": 9, "priority_total": 9, "note": "2026-09-10 band relocation: B9 (~800-850 nm) and D8 (600-800 nm) moved out of this collection to literature/材料体系分类/Si/ (non-band position); numbering kept for traceability, neither may be cited as 1550 nm evidence"}, {"id": "si_nonband_2026-09-10", "path": "literature/材料体系分类/Si", "candidate_count": 2, "local_pdf_in_collection": 2, "pending_local_pdf": 0, "notes_completed": 2, "items": ["B9 Eyvazi 2025 (~800-850 nm)", "D8 Yao 2017 (600-800 nm)"], "note": "Relocated from Si/1550波段 on 2026-09-10 due to band mismatch; visible/NIR bands only, method-level reference"}]},
       {"id": "SiN", "top_layer": "Silicon Nitride", "primary_papers": ["L03", "Q1-03", "Q1-04", "F-01", "F-02", "F-04", "F-07"], "related_papers": ["L01", "F-10"], "literature_collections": [{"id": "sin_1550nm_2026-09-04", "path": "literature/材料体系分类/SiN/1550波段", "candidate_count": 19, "local_pdf_in_collection": 13, "pending_local_pdf": 1, "notes_completed": 19, "band": "1550 nm", "note": "B4 (Zhang 2024, OE qBIC optical trapping) PDF still pending; its pre-note values must not be used as design input"}, {"id": "sin_nonband_2026-09-10", "path": "literature/材料体系分类/SiN", "candidate_count": 1, "local_pdf_in_collection": 1, "pending_local_pdf": 0, "notes_completed": 1, "items": ["D4 Mekonnen Berhe 2026 (1100 nm / 8000 nm, numerical)"], "note": "Relocated from SiN/1550波段 on 2026-09-10 due to band mismatch; method-level reference only, geometry not transferable"}]},

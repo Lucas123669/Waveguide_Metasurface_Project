@@ -4,7 +4,7 @@
 > **题录**：Y. Tanhayivash, H. Soofi, S. Nikmehr, *Phase and amplitude gradient waveguide coupled metasurfaces*, **Scientific Reports 15**, 19964 (2025). DOI: [10.1038/s41598-025-05141-7](https://doi.org/10.1038/s41598-025-05141-7)
 > **单位**：伊朗大不里士大学（University of Tabriz）电气与计算机工程学院；通讯 H. Soofi；三位作者贡献等同
 > **本地原文**：[A2_Tanhayivash_2025_Phase_Amplitude_Gradient_Waveguide_Metasurfaces.pdf](pdfs/A2_Tanhayivash_2025_Phase_Amplitude_Gradient_Waveguide_Metasurfaces.pdf)（开放获取；**无独立补充材料**，数据集"按需索取"）
-> **速览笔记**：[阅读笔记_A2_Tanhayivash_2025.md](阅读笔记_A2_Tanhayivash_2025.md)
+> **规范笔记**：本文为该 DOI 的唯一正文笔记；旧速览路径保留为兼容入口。
 > **对照文档**：[Q1-12 光栅耦合器 vs A2 波导超表面](../../../../docs/reports/literature/2026-09-11_对比_Q1-12光栅耦合器_vs_A2波导超表面.md)（甲=激励端、乙=辐射端；已并入汇报稿第 8 页）
 > **与项目关系**：★A 组、**辐射端（导模→自由空间）**的"纯介质 Si-bar"代表。它的两个主张（**全硅无金属吸收** + **振幅梯度补偿波导衰减**）正好对应我们汇报稿里"效率瓶颈"与 apodization 的两条主线。
 

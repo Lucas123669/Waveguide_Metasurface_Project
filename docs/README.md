@@ -14,6 +14,8 @@
 | 查仿真结果 | [reports/simulation/](reports/README.md#simulation仿真与结果) | COMSOL 模型、结果与复现说明 |
 | 查加工汇报 | [reports/fabrication/](reports/README.md#fabrication加工与汇报) | 工艺提纲、讲稿和汇报材料 |
 | 查文献统计 | [reports/literature/](reports/README.md#literature文献分析) | 文献案例统计与专题汇总 |
+| 查文献分类与编号 | [文献多维分类](../literature/多维分类索引.md) | 材料、波段、主题、用途和期刊级别的独立视图 |
+| 查项目更新 | [更新日志](../CHANGELOG.md) | 只记录结构、口径与重要结果变化 |
 | 新建仿真参数 | [仿真参数模板](templates/仿真参数模板.md) | 参数、边界、网格与验收项 |
 | 查旧目录约定 | [archive/](archive/simulations-layout-v1.md) | 仅供追溯，不作为当前规范 |
 
