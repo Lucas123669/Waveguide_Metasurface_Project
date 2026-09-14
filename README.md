@@ -12,6 +12,7 @@
 | 运行仿真或后处理 | [脚本入口](scripts/README.md) |
 | 选择 seed / calibrated 参数 | [配置说明](configs/README.md) |
 | 进入论文复现轨道 | [实验轨道](experiments/README.md) |
+| 咨询 EBL 加工与仿真设备 | [问题清单与回填表](docs/reports/consultation/2026-09-14_EBL加工与仿真设备咨询问题清单.md) |
 | 按任务、材料、波段查文献 | [文献多维分类索引](literature/多维分类索引.md) |
 | 查编号、DOI 与入库状态 | [文献清单](literature/文献清单.md) |
 

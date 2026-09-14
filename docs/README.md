@@ -10,6 +10,7 @@
 | **改文档并推送** | [AI 文档更新与推送工作流](guides/AI_文档更新与推送工作流.md) | 改哪几个文件、12 条口径自查、体检脚本、提交流程、SSH 443 回退、DoD 清单 |
 | 理解代码 | [架构说明](architecture.md) | config → design → backend → result 数据流 |
 | 查历史选择 | [decisions/](decisions/README.md) | 带日期的决策、环境和工艺结论 |
+| 准备加工/设备咨询 | [EBL 与仿真设备咨询清单](reports/consultation/2026-09-14_EBL加工与仿真设备咨询问题清单.md) | 防充电、邻近效应、PMMA、写场拼接、软件许可与计算资源 |
 | 查设计分析 | [reports/design/](reports/README.md#design设计分析) | 结构、参数和设计论证 |
 | 查仿真结果 | [reports/simulation/](reports/README.md#simulation仿真与结果) | COMSOL 模型、结果与复现说明 |
 | 查加工汇报 | [reports/fabrication/](reports/README.md#fabrication加工与汇报) | 工艺提纲、讲稿和汇报材料 |
@@ -23,7 +24,7 @@
 
 - `guides/`：告诉成员“如何进入和操作”。
 - `decisions/`：记录“为何这样做”，结论不随报告改写而漂移。
-- `reports/`：记录“分析和结果是什么”，按领域分层。
+- `reports/`：记录“分析和结果是什么”，并集中维护跨领域的待咨询事项。
 - `templates/`：新任务可复制的固定结构。
 - `archive/`：已废弃但仍需追溯的旧约定。
 
