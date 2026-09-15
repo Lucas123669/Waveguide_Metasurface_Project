@@ -63,7 +63,7 @@ fabrication/            后续版图、工艺卡和表征记录
 ## 5. 文献组织
 
 - `L01–L05`：主线与辅助论文，位于 `literature/` 根部。
-- `Q1-01–Q1-12`：L01 相关物理/设计。其中 Q1-01~Q1-11 位于 `literature/Q1_L01相关/`；**Q1-12（Taillaert 2006 光栅耦合器，方法奠基类，期刊非一区）物理位置在 `literature/材料体系分类/通用交叉/`**，配套 2D COMSOL 模型见 `experiments/ref_taillaert_2006/`。
+- `Q1-01–Q1-17`：L01 相关物理/设计（`Q1` 是历史前缀，不代表期刊分区）。Q1-01~Q1-11、Q1-13~Q1-16 位于 `literature/Q1_L01相关/`；**Q1-12（Taillaert 2006 光栅耦合器，方法奠基类）与 Q1-17（Wang 2024，拓扑单向导模共振 UGR 光栅耦合器，*Sci. Adv.*）物理位置在 `literature/材料体系分类/通用交叉/`**；Q1-12 配套 2D COMSOL 模型见 `experiments/ref_taillaert_2006/`。
 - `F-01–F-10`：L01 相关加工，位于 `literature/Q1_工艺_L01相关/`。
 - `F-11–F-27`：F08 制造案例，按材料放在 `literature/材料体系分类/<体系>/`。
 - Si 1550 nm A/B/C/D 专题：29 篇已建索引与笔记，本地 PDF 26 篇；入口 `literature/材料体系分类/Si/1550波段/README.md`。

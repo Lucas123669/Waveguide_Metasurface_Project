@@ -2,7 +2,7 @@
 
 ## 内容
 
-- `references.bib`：核心集合的 BibTeX（L01–L05、Q1-01–Q1-11、F-01–F-10）；材料体系扩展和 Si 1550 nm 专题条目以后续同步为准。
+- `references.bib`：核心集合的 BibTeX（L01–L05、Q1-01–Q1-11、F-01–F-10），并已补入后续 Q1 条目（Q1-12~Q1-17）、E1 与 T7；材料体系扩展和 Si 1550 nm 专题条目以后续同步为准。
 - 论文 PDF 与阅读笔记：`literature/`（L 系列、Q1_L01相关、Q1_工艺_L01相关）。
 - 人类可读总清单：`literature/文献清单.md`；文献库导航：`literature/README.md`。
 
