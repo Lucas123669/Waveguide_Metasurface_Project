@@ -22,13 +22,13 @@
 | F-16 | Q1 · 中科院一区 Top | Grayscale-to-Color: scalable multispectral filter arrays（Williams 2019） | EBL/UV 灰度光刻 + MIM 多光谱滤光方法（F08 案例 C33） | [PDF](pdfs/F_16_Williams_2019_Grayscale_Multispectral_Filter_ACSPhotonics.pdf) · [笔记](阅读笔记_F_16_Williams_2019.md) |
 | F-24 | Q1 · 中科院一区 Top(OA) | 3D-printed multilayer structures for high-NA achromatic metalenses（Pan 2023） | 拓扑优化 + 双光子 3D 打印多层 meta-optics（F08 案例 C61） | [PDF](pdfs/F_24_Pan_2023_3DPrinted_Multilayer_Achromatic_Metalens_SciAdv.pdf) · [笔记](阅读笔记_F_24_Pan_2023.md) |
 | Q1-12 | —（方法奠基，非一区） | Grating couplers for coupling between optical fibers and nanophotonic waveguides（Taillaert 2006） | 波导‑光纤光栅耦合/激励方法（SOI 1550 nm，配套 2D COMSOL 模型） | [PDF](pdfs/Q1_12_Taillaert_2006_Grating_Couplers_JpnJApplPhys.pdf) · [笔记](阅读笔记_Q1_12_Taillaert_2006.md) |
-| Q1-17 | Q1 · 中科院一区 Top(OA) | Ultralow-loss optical interconnect enabled by topological unidirectional guided resonance（Wang 2024） | **单向辐射 UGR**：对称保护 BIC 整数荷分裂为半荷，无需底部反射镜；含变迹、套刻容差与层叠"光过孔"（SOI 1550 nm） | [PDF](pdfs/Q1_17_Wang_2024_Topological_UGR_Grating_Coupler.pdf) · [笔记](阅读笔记_Q1_17_Wang_2024.md) |
+| Q1-17 | Q1 · 中科院一区 Top(OA) | Ultralow-loss optical interconnect enabled by topological unidirectional guided resonance（Wang 2024） | **单向辐射 UGR**：对称保护 BIC 整数荷分裂为半荷，无需底部反射镜；含变迹、套刻容差与层叠"光过孔"（SOI 1550 nm） | [PDF](pdfs/Q1_17_Wang_2024_Topological_UGR_Grating_Coupler.pdf) · [补充材料](pdfs/Q1_17_Wang_2024_补充材料.pdf) · [笔记](阅读笔记_Q1_17_Wang_2024.md) |
 
 > Q1-12 为 2026-09-08 新增（师兄提供论文 + 2D 模型）；编号续 Q1 系列便于检索，但其期刊非一区（Jpn. J. Appl. Phys.），按方法通用性收录，PDF 与模型均在本仓库。模型见 [experiments/ref_taillaert_2006/](../../../experiments/ref_taillaert_2006/README.md)。
 
 > F-14/F-15/F-16/F-24 为 2026-09-02 加入（F08 案例论文），PDF 在 `pdfs/`，笔记同目录。
 
-> Q1-17 为 2026-09-15 新增（用户提供 *Sci. Adv.* 10(12), eadn4372 出版社 CC BY 版）。它与 Q1-12 同属"光栅辐射/耦合"组：Q1-12 是**激励端方法奠基**，Q1-17 是**单向辐射的拓扑实现**；其 −0.34 dB（92.47%）为**耦合器→光纤**CE，与 `Si-1550:A2` 的 16%、L02 的 9%/80% **口径不同、不可比**（详见 [笔记](阅读笔记_Q1_17_Wang_2024.md)"效率口径提醒"）。
+> Q1-17 为 2026-09-15 新增（用户提供 *Sci. Adv.* 10(12), eadn4372 出版社 CC BY 版）。它与 Q1-12 同属"光栅辐射/耦合"组：Q1-12 是**激励端方法奠基**，Q1-17 是**单向辐射的拓扑实现**；其 −0.34 dB（92.47%）为**耦合器→光纤**CE，与 `Si-1550:A2` 的 16%、L02 的 9%/80% **口径不同、不可比**（详见 [笔记](阅读笔记_Q1_17_Wang_2024.md)"效率口径提醒"）。补充材料 S1–S7、Figs. S1–S8 与 Table S1（29 页）与正文一并入库，其中 S6/Table S1 给出与已报道 SOI 耦合器的逐项对比。
 
 ## 使用建议
 
