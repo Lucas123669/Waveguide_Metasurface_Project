@@ -14,6 +14,7 @@
 | 进入论文复现轨道 | [实验轨道](experiments/README.md) |
 | 咨询 EBL 加工与仿真设备 | [问题清单与回填表](docs/reports/consultation/2026-09-14_EBL加工与仿真设备咨询问题清单.md) |
 | 查看近期文献筛选与项目影响 | [2026-09-14 文献筛选报告](docs/reports/literature/2026-09-14_近期相关文献筛选与项目影响.md) |
+| 采购 HPFS 7980 衬底 | [面积推导与采购建议](docs/reports/fabrication/2026-09-21_HPFS7980衬底面积与采购建议.md) |
 | 按任务、材料、波段查文献 | [文献多维分类索引](literature/多维分类索引.md) |
 | 查编号、DOI 与入库状态 | [文献清单](literature/文献清单.md) |
 
@@ -34,7 +35,7 @@
 
 - **L01**：TM₀ `n_eff≈1.5507`、TE₀ `n_eff≈1.6759`（1.55 μm）的平板模分析已完成；进入 δ/α/D₀ 扫描与容差展宽。
 - **L02**：15 个 supercell、周期 897.331 nm 的模型得到 `+45.0147°` 角谱峰；结果与配置已归档。
-- **材料与制备**：已形成玻璃基 Si 起步路线，以及 SiN、TiO₂、PMMA 的分阶段迁移方案；见 [fabrication 报告](docs/reports/fabrication/)。
+- **材料与制备**：已形成玻璃基 Si 起步路线，以及 SiN、TiO₂、PMMA 的分阶段迁移方案；HPFS 7980 常规研发片建议 20×20×0.5 mm，整片设备路线采用 D100；见 [fabrication 报告](docs/reports/fabrication/)。
 - **文献库**：使用“稳定编号 + 多维标签”；本轮新增 Q1-13 至 Q1-16，补齐全参量 Jones 矩阵、级联 qBIC 光谱路由、E-Spacer/PMMA 与 1550 nm 多模容差设计。
 - **待补原文**：以 [文献清单](literature/文献清单.md) 和各专题 README 的状态为准，不在本页重复维护数量。
 

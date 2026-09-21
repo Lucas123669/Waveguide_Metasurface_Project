@@ -6,7 +6,7 @@
     "objective": "Design and fabricate a waveguide-integrated metasurface to control radiated light (direction, polarization, phase/wavefront, efficiency).",
     "status": "phase_2_simulation_started",
     "created": "2026-08-04",
-    "updated": "2026-09-13",
+    "updated": "2026-09-21",
     "single_source_of_truth": true,
     "primary_paper": {
       "title": "Leaky-wave metasurfaces for integrated photonics",
@@ -181,7 +181,13 @@
   },
   "substrate_spec": {
     "material": "Corning HPFS 7980, standard grade 0-AA",
-    "geometry": "wafer diameter <= 250 mm (available diameters: D100 / D150 / D200 / D300); thickness >= 300 um (lower bound, not an upper bound)",
+    "geometry": "project maximum finished diameter <= 250 mm; routine R&D coupon 20 mm x 20 mm; use D100 when full-wafer handling/coating is required. Vendor lists D100/D150/D200/D300 processing sizes, but D300 exceeds the current project maximum.",
+    "general_coupon": "20 mm x 20 mm = 400 mm^2 = 4 cm^2 (recommended routine R&D area)",
+    "minimum_coupon": "10 mm x 10 mm = 100 mm^2 = 1 cm^2 (only after all tool holders are confirmed)",
+    "wafer_route": "D100 = 7854 mm^2 = 78.54 cm^2 when full-wafer handling/coating is required; about 12 full 20 mm x 20 mm coupons before kerf and edge exclusion",
+    "first_purchase_thickness": "0.5 mm preferred for mechanical handling; 0.3 mm only after tool and cleaving/dicing confirmation",
+    "area_basis_document": "docs/reports/fabrication/2026-09-21_HPFS7980衬底面积与采购建议.md",
+    "material_reference": "references/materials/Corning_HPFS_7979_7980_8655_Product_Brochure_CN_2015.pdf",
     "convention_note": "Legacy documents wrote 'substrate length L <= 250 mm'; this always meant the WAFER DIAMETER, not a rectangular plate length (clarified 2026-09-11).",
     "naming_note": "The substrate is SYNTHETIC FUSED SILICA (amorphous SiO2, flame-hydrolysis grade), NOT generic 'SiO2'. Do not conflate it with thermal oxide (SOI BOX, grown on Si, not a free-standing substrate), crystal quartz (birefringent single crystal), natural fused quartz (metal impurities), CVD oxide (hydrogenated), or display glass (used by SiOG as a thick lower cladding). Reference doc: docs/reports/fabrication/2026-09-11_熔融石英与SiO2术语差别.md",
     "processing_parameters_to_specify": ["thickness tolerance", "TTV", "surface form/irregularity (面形)", "warp/bow", "parallelism or wedge angle", "1550 nm transmittance", "roughness"]
@@ -203,7 +209,7 @@
     "start_point": {
       "platform": "HPFS 7980 fused silica + PECVD a-Si:H deposited directly on glass (no bonding, no layer transfer)",
       "first_device": "metasurface waveguide, starting with a GRATING COUPLER (excitation side) for spatial radiation control (direction, phase/wavefront, amplitude, polarization)",
-      "why": ["shortest process chain", "transparent substrate -> backside far-field measurement", "cheapest D100 witness coupon (approx. CNY 1250 per piece, [E13])"]
+      "why": ["shortest process chain", "transparent substrate -> backside far-field measurement", "20 mm x 20 mm coupon when tools allow; otherwise D100 full wafer (quoted approx. CNY 1250 per piece, [E13])"]
     },
     "steps": [
       {"step": 0, "platform": "fused silica + PECVD a-Si:H (project start)", "enables": "grating coupler + waveguide metasurface"},
