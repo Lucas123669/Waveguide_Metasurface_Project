@@ -6,7 +6,7 @@
     "objective": "Design and fabricate a waveguide-integrated metasurface to control radiated light (direction, polarization, phase/wavefront, efficiency).",
     "status": "phase_2_simulation_started",
     "created": "2026-08-04",
-    "updated": "2026-09-21",
+    "updated": "2026-09-28",
     "single_source_of_truth": true,
     "primary_paper": {
       "title": "Leaky-wave metasurfaces for integrated photonics",
@@ -70,6 +70,17 @@
         {"id": "beam_deflector_right45_air2x", "path": "experiments/l02_guo_2020/beam_deflector/right45_15cells_air2x", "manifest": "run_manifest.json"}
       ]
     }
+  },
+  "collaboration_demo_plan": {
+    "meeting_date": "2026-09-28",
+    "application_sequence": ["MOT demonstration", "optical tweezers / high-power focusing"],
+    "device_sequence": ["waveguide output", "metasurface integration", "modulation functions"],
+    "material_priority": ["Si", "Si3N4"],
+    "deferred_materials": ["TiO2"],
+    "wavelength_sequence_nm": [1064, 852],
+    "evidence_level": "Meeting decision for the collaboration demo; process parameters and procurement remain subject to platform confirmation and test coupons.",
+    "note": "This plan does not replace the 1550 nm parameters used in the L01/L02 paper-reproduction tracks.",
+    "record": "docs/reports/consultation/2026-09-28_片上光波导与超表面工艺研讨纪要.md"
   },
   "literature_taxonomy": {
     "version": 2,

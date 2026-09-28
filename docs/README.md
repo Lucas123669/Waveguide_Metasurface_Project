@@ -10,6 +10,7 @@
 | **改文档并推送** | [AI 文档更新与推送工作流](guides/AI_文档更新与推送工作流.md) | 改哪几个文件、12 条口径自查、体检脚本、提交流程、SSH 443 回退、DoD 清单 |
 | 理解代码 | [架构说明](architecture.md) | config → design → backend → result 数据流 |
 | 查历史选择 | [decisions/](decisions/README.md) | 带日期的决策、环境和工艺结论 |
+| 跟进最新工艺研讨 | [2026-09-28 研讨纪要](reports/consultation/2026-09-28_片上光波导与超表面工艺研讨纪要.md) | MOT/光镊目标、Si/Si₃N₄与1064/852 nm路线、加工/仿真/测试待办与负责人 |
 | 准备加工/设备咨询 | [EBL 与仿真设备咨询清单](reports/consultation/2026-09-14_EBL加工与仿真设备咨询问题清单.md) | 防充电、邻近效应、PMMA、写场拼接、软件许可与计算资源 |
 | 查设计分析 | [reports/design/](reports/README.md#design设计分析) | 结构、参数和设计论证 |
 | 查仿真结果 | [reports/simulation/](reports/README.md#simulation仿真与结果) | COMSOL 模型、结果与复现说明 |
