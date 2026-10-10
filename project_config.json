@@ -6,7 +6,7 @@
     "objective": "Design and fabricate a waveguide-integrated metasurface to control radiated light (direction, polarization, phase/wavefront, efficiency).",
     "status": "phase_2_simulation_started",
     "created": "2026-08-04",
-    "updated": "2026-09-28",
+    "updated": "2026-10-10",
     "single_source_of_truth": true,
     "primary_paper": {
       "title": "Leaky-wave metasurfaces for integrated photonics",
@@ -118,7 +118,8 @@
       {"id": "Q1-14", "title": "On-chip nonlocal metasurface for color router: conquering efficiency-loss from spatial-multiplexing", "journal": "Light: Science & Applications 15, 66 (2026)", "doi": "10.1038/s41377-025-02146-9", "role": "Experimental cascaded qBIC spectral router; separates absolute extraction from energy utilization", "pdf": "literature/Q1_L01相关/Q1_14_Shi_2026_Onchip_Nonlocal_Metasurface_Color_Router.pdf", "note_file": "literature/Q1_L01相关/阅读笔记_Q1_14_Shi_2026.md"},
       {"id": "Q1-15", "title": "Permittivity-asymmetric qBIC metasurfaces for refractive index sensing", "journal": "Nanophotonics 14(27), 5311-5321 (2025)", "doi": "10.1515/nanoph-2025-0415", "role": "TiO2/PMMA permittivity-asymmetric qBIC; explicit PMMA 950k A4 and E-Spacer 300Z EBL process; local PDF is arXiv 2508.21574 author version", "pdf": "literature/Q1_L01相关/Q1_15_Yang_2025_Permittivity_Asymmetric_qBIC.pdf", "note_file": "literature/Q1_L01相关/阅读笔记_Q1_15_Yang_2025.md"},
       {"id": "Q1-16", "title": "All-dielectric meta-waveguides for on-chip integration", "journal": "npj Nanophotonics 2, 20 (2025)", "doi": "10.1038/s44310-025-00069-2", "role": "Numerical 1550 nm Si-on-Si3N4 guided-mode control and +/-10 nm tolerance baseline", "pdf": "literature/Q1_L01相关/Q1_16_Wang_2025_All_Dielectric_Meta_Waveguides.pdf", "note_file": "literature/Q1_L01相关/阅读笔记_Q1_16_Wang_2025.md"},
-      {"id": "Q1-17", "title": "Ultralow-loss optical interconnect enabled by topological unidirectional guided resonance", "journal": "Science Advances 10(12), eadn4372 (2024)", "doi": "10.1126/sciadv.adn4372", "role": "Experimental 1550 nm SOI topological UGR grating coupler; unidirectional radiation without a bottom mirror; -0.34 dB coupler-to-fiber CE", "pdf": "literature/材料体系分类/通用交叉/pdfs/Q1_17_Wang_2024_Topological_UGR_Grating_Coupler.pdf", "note_file": "literature/材料体系分类/通用交叉/阅读笔记_Q1_17_Wang_2024.md"}
+      {"id": "Q1-17", "title": "Ultralow-loss optical interconnect enabled by topological unidirectional guided resonance", "journal": "Science Advances 10(12), eadn4372 (2024)", "doi": "10.1126/sciadv.adn4372", "role": "Experimental 1550 nm SOI topological UGR grating coupler; unidirectional radiation without a bottom mirror; -0.34 dB coupler-to-fiber CE", "pdf": "literature/材料体系分类/通用交叉/pdfs/Q1_17_Wang_2024_Topological_UGR_Grating_Coupler.pdf", "note_file": "literature/材料体系分类/通用交叉/阅读笔记_Q1_17_Wang_2024.md"},
+      {"id": "Q1-18", "title": "Fundamentals to emerging concepts and applications of metasurfaces for flat optics: a tutorial", "journal": "Advances in Optics and Photonics 17(4), 789-1058 (2025)", "doi": "10.1364/AOP.541854", "role": "Cross-material tutorial; phase/Jones, nonlocal qBIC, design, metalenses and holography; SiN guided-wave migration and formula checks, not new device results", "pdf": null, "publisher_url": "https://doi.org/10.1364/AOP.541854", "source_status": "User-provided publisher PDF read locally; not redistributed", "source_page_count": 270, "source_sha256": "8AE64EA521C8F66DF8FB32C432118F3BE2849A4D20EF1CD57D2F66CED35D463B", "journal_rank": "Not independently verified", "note_file": "literature/材料体系分类/通用交叉/精读笔记_Q1_18_Gao_Ma_2025_构思结构与术语.md"}
     ]
   },
   "q1_fabrication_papers": {
