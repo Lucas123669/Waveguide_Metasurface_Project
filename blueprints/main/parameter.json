@@ -1,0 +1,195 @@
+{
+  "schema_version": 1,
+  "project": {
+    "name": "hex_cavity_20-20_engineering",
+    "release_status": "engineering_preview"
+  },
+  "geometry": {
+    "schema_version": 1,
+    "length_unit": "um",
+    "lattice": {
+      "kind": "triangular_hexagonal_v1",
+      "period_um": 0.82,
+      "origin_um": [0.0, 0.0],
+      "orientation_deg": 0.0
+    },
+    "unit_cell": {
+      "kind": "six_triangular_holes_fourier_v1",
+      "radial_reference_fraction": 0.3333333333333333,
+      "edge_reference_nm": 230.0,
+      "cavity": {
+        "b0_nm": 245.0,
+        "eta": 0.96,
+        "zeta": 1.156
+      },
+      "cladding": {
+        "b0_nm": 242.0,
+        "eta": 0.98,
+        "zeta": 0.93
+      }
+    },
+    "finite": {
+      "kind": "hex_shells_v1",
+      "cavity_layers": 15,
+      "cladding_layers": 15,
+      "empty_buffer_periods": 0.5
+    },
+    "cladding_shift": {
+      "geometry": {
+        "kind": "groups"
+      },
+      "profile": {
+        "kind": "uniform"
+      },
+      "x_factor": 0.0,
+      "y_factor": 0.0
+    }
+  },
+  "fabrication": {
+    "profile_id": "sem-air-hole-220nm-radial-v1",
+    "revision": "1",
+    "provenance": "data/SEM_air_hole_correction.csv; target_cd_nm=220; process_gain=1.0",
+    "triangle_side_correction": {
+      "kind": "equilateral_parallel_edge_v1",
+      "global_delta_nm": -10.0,
+      "envelope_modulation_strength": 1.0,
+      "regions": ["cavity", "cladding"]
+    },
+    "local_correction": {
+      "default": {
+        "operators": [
+          {
+            "kind": "edge_offset",
+            "value_nm": 0.0,
+            "join_style": "miter",
+            "miter_limit": 5.0
+          }
+        ]
+      },
+      "by_region": {
+        "outer_etch_window": {
+          "operators": [
+            {
+              "kind": "edge_offset",
+              "value_nm": 0.0,
+              "join_style": "miter",
+              "miter_limit": 5.0
+            }
+          ]
+        },
+        "parameter_marker": {
+          "operators": [
+            {
+              "kind": "edge_offset",
+              "value_nm": 0.0,
+              "join_style": "miter",
+              "miter_limit": 5.0
+            }
+          ]
+        }
+      }
+    },
+    "spatial_envelope": {
+      "kind": "radial_even_polynomial",
+      "target": "edge_offset_nm",
+      "center_um": [0.0, 0.0],
+      "half_size_um": [32.8, 32.8],
+      "outside_policy": "clip",
+      "coefficients": [
+        -0.09853204031556974,
+        5.134538035287714,
+        -30.140260018739795
+      ],
+      "regions": ["cavity", "cladding"]
+    },
+    "placement_distortion": {
+      "kind": "none"
+    },
+    "grid_nm": 1.0,
+    "corner_strategy": {
+      "kind": "sharp"
+    },
+    "scale_correction_ppm": {
+      "x": 0.0,
+      "y": 0.0
+    }
+  },
+  "dose": {
+    "kind": "unassigned",
+    "value": null,
+    "unit": null,
+    "response": {
+      "kind": "pass_through"
+    },
+    "encoder": {
+      "kind": "external_recipe"
+    }
+  },
+  "layout": {
+    "rotation_deg": 0.0,
+    "mirror_x": false,
+    "mirror_y": false,
+    "translation_um": [0.0, 0.0],
+    "polarity": "unspecified",
+    "etch_layer": "ETCH"
+  },
+  "die": {
+    "kind": "none"
+  },
+  "outer_etch_windows": {
+    "kind": "segmented_hex_ring_windows_v2",
+    "reference": "finite_boundary",
+    "inner_clearance_um": 3.8,
+    "radial_width": {
+      "kind": "linear_from_total_finite_layers_v1",
+      "slope_um_per_total_layer": 0.4,
+      "intercept_um": -3.0
+    },
+    "parallel_side_gap_um": 5.0,
+    "inner_corner_radius_um": 3.0,
+    "arc_segments_per_quadrant": 8,
+    "dxf_layer": "ETCH"
+  },
+  "markers": {
+    "kind": "seven_segment_parameter_label_v1",
+    "source": "geometry.unit_cell.cavity_cladding",
+    "anchor": "below_outer_etch_windows",
+    "center_x_um": 0.0,
+    "top_clearance_um": 3.0,
+    "digit_height_um": 3.0,
+    "digit_width_um": 1.7,
+    "segment_thickness_um": 0.28,
+    "segment_gap_um": 0.1,
+    "segment_bevel_um": 0.09,
+    "digit_spacing_um": 0.28,
+    "decimal_size_um": 0.28,
+    "decimal_gap_um": 0.1,
+    "value_spacing_um": 1.3,
+    "group_spacing_um": 1.6,
+    "dash_length_um": 2.2,
+    "dash_thickness_um": 0.28,
+    "b0_decimals": 1,
+    "eta_decimals": 2,
+    "zeta_max_decimals": 3,
+    "trim_zeta_trailing_zeros": true,
+    "dxf_layer": "ETCH"
+  },
+  "drc": {
+    "min_hole_width_nm": null,
+    "min_edge_nm": null,
+    "min_bridge_nm": null,
+    "boundary_clearance_nm": null,
+    "fail_on_warning": false
+  },
+  "export": {
+    "mode": "engineering_preview",
+    "dxf_version": "R2010",
+    "flatten": true,
+    "output_root": ".out",
+    "overwrite": false,
+    "debug_artifacts": false,
+    "dpi": 220,
+    "preview_layout": "radial_three_position_correction_compact_wide_v4"
+  },
+  "source_trace": null
+}

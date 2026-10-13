@@ -16,6 +16,7 @@
 | 查看近期文献筛选与项目影响 | [2026-09-14 文献筛选报告](docs/reports/literature/2026-09-14_近期相关文献筛选与项目影响.md) |
 | 学习超表面设计并迁移到 SiN | [Q1-18 平面光学超表面教程精读报告](docs/reports/literature/2026-10-09_Q1-18_平面光学超表面教程精读报告.md)（逐章解读、公式核验、SiN/双波长执行计划） |
 | 采购 HPFS 7980 衬底 | [面积推导与采购建议](docs/reports/fabrication/2026-09-21_HPFS7980衬底面积与采购建议.md) |
+| 生成微纳加工 DXF 版图 | [有限六角光子晶体三角空气孔版图工作流](blueprints/README.md) |
 | 按任务、材料、波段查文献 | [文献多维分类索引](literature/多维分类索引.md) |
 | 查编号、DOI 与入库状态 | [文献清单](literature/文献清单.md) |
 
@@ -37,6 +38,7 @@
 - **L01**：TM₀ `n_eff≈1.5507`、TE₀ `n_eff≈1.6759`（1.55 μm）的平板模分析已完成；进入 δ/α/D₀ 扫描与容差展宽。
 - **L02**：15 个 supercell、周期 897.331 nm 的模型得到 `+45.0147°` 角谱峰；结果与配置已归档。
 - **材料与制备**：已形成玻璃基 Si 起步路线，以及 SiN、TiO₂、PMMA 的分阶段迁移方案；HPFS 7980 常规研发片建议 20×20×0.5 mm，整片设备路线采用 D100；见 [fabrication 报告](docs/reports/fabrication/)。
+- **DXF 版图工作流**：新增独立的有限六角光子晶体三角空气孔版图生成器，覆盖几何构建、SEM 修正接口、dose 接口、DRC、DXF 回读及 PNG 预览；当前仅为 `engineering_preview`，尚未绑定 L01/L02，剂量、极性和生产 DRC 阈值待标定。
 - **合作演示路线（2026-09-28）**：先做 MOT、后拓展光镊；近期集中 Si/Si₃N₄，按 1064 nm → 852 nm 推进，TiO₂ 暂缓。工艺口头建议仍需平台确认与试片；见 [研讨纪要](docs/reports/consultation/2026-09-28_片上光波导与超表面工艺研讨纪要.md)。
 - **文献库**：使用“稳定编号 + 多维标签”；Q1-13 至 Q1-17 覆盖全参量 Jones 矩阵、级联 qBIC 光谱路由、EBL/PMMA、多模容差与单向辐射；新增 Q1-18 教程精读，连接相位/非局域/设计/聚焦/全息与 SiN 1064→852 nm 路线，含原文公式与材料案例核验，不代表新增器件结果。
 - **待补原文**：以 [文献清单](literature/文献清单.md) 和各专题 README 的状态为准，不在本页重复维护数量。
@@ -51,6 +53,7 @@ Waveguide_Metasurface_Project/
 ├── src/gwm_workflow/          # L02 复现核心模块
 ├── configs/                   # schemas / seeds / calibrated
 ├── experiments/               # 按论文拆分的复现轨道
+├── blueprints/                # 独立 DXF 微纳加工版图生成器
 ├── scripts/                   # simulation / postprocess / literature
 ├── tests/                     # unit / regression / integration
 ├── docs/                      # 指南、决策、报告与模板
@@ -76,6 +79,15 @@ python experiments/l01_huang_2023/case_001_slab_mode/scripts/slab_mode_solver.py
   --output experiments/l01_huang_2023/case_001_slab_mode/results/result.json
 
 pytest tests/
+```
+
+DXF 版图工作流使用独立环境，详见 [`blueprints/README.md`](blueprints/README.md)：
+
+```powershell
+cd blueprints
+uv sync
+uv run python main\run_blueprint.py --preflight-only
+uv run python main\run_blueprint.py
 ```
 
 ## 6. 复现与资产规则

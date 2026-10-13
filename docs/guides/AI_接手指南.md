@@ -32,7 +32,8 @@ experiments/            按论文轨道保存输入快照、模型、数据和 r
         ↓
 docs/reports/           design / simulation / fabrication / literature 解释与汇报
         ↓
-fabrication/            后续版图、工艺卡和表征记录
+blueprints/             独立 DXF 版图生成、修正、DRC 与预览
+fabrication/            工艺参考、工艺卡和表征记录
 ```
 
 边界规则：
@@ -41,6 +42,7 @@ fabrication/            后续版图、工艺卡和表征记录
 - `configs/seeds/` 保留论文值/估读值/假设的来源标签；校准值另存 `configs/calibrated/`。
 - `experiments/` 是运行证据源，`docs/reports/` 只解释它，不复制结果数据。
 - `literature/` 保存 PDF 和笔记；`references/` 保存规范化 BibTeX 与许可策略。
+- `blueprints/` 是无 COMSOL 依赖的独立版图项目；当前是有限六角光子晶体三角空气孔 `engineering_preview`，未绑定 L01/L02。
 - 历史 `resolved_config.json` 和 `run_manifest.json` 不因目录重构回写。
 
 ## 4. 实验轨道
@@ -85,6 +87,11 @@ python scripts/simulation/build_phase_targets.py --config configs/seeds/guo2020_
 
 # 测试
 python -m pytest -q
+
+# DXF 工程版图（在 blueprints/ 独立环境内）
+cd blueprints
+uv sync
+uv run python main/run_blueprint.py --preflight-only
 ```
 
 脚本总表见 `scripts/README.md`。COMSOL 工作依赖本机安装与相应许可证，不把可执行程序路径写死到说明文档中。

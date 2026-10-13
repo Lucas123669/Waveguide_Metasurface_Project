@@ -1,0 +1,8 @@
+.out/
+.venv/
+.pytest_cache/
+.test_tmp_*/
+__pycache__/
+*.py[cod]
+*.egg-info/
+.understand-anything/

@@ -18,6 +18,8 @@
 | 查文献统计 | [reports/literature/](reports/README.md#literature文献分析) | 文献案例统计与专题汇总 |
 | 查文献分类与编号 | [文献多维分类](../literature/多维分类索引.md) | 材料、波段、主题、用途和期刊级别的独立视图 |
 | 查项目更新 | [更新日志](../CHANGELOG.md) | 只记录结构、口径与重要结果变化 |
+| 生成 DXF 工程版图 | [blueprints 工作流](../blueprints/README.md) | 有限六角光子晶体三角空气孔版图、SEM 修正接口、DRC 与预览 |
+| 查 DXF 接入决策 | [2026-10-13 决策记录](decisions/2026-10-13_DXF版图工作流接入与类型标注.md) | 版图类型、目录边界、工程预览与生产版边界 |
 | 新建仿真参数 | [仿真参数模板](templates/仿真参数模板.md) | 参数、边界、网格与验收项 |
 | 查旧目录约定 | [archive/](archive/simulations-layout-v1.md) | 仅供追溯，不作为当前规范 |
 

@@ -1,0 +1,37 @@
+[project]
+name = "microfab-blueprints"
+version = "0.1.0"
+description = "Standalone photonic-crystal manufacturing blueprint generator"
+readme = "README.md"
+requires-python = ">=3.12"
+dependencies = [
+    "ezdxf>=1.4.3",
+    "matplotlib>=3.10.9",
+    "numpy>=2.4.6",
+    "shapely>=2.1.2",
+]
+
+[project.scripts]
+blueprint-generate = "blueprint_core.cli:main"
+
+[build-system]
+requires = ["setuptools>=77"]
+build-backend = "setuptools.build_meta"
+
+[tool.setuptools]
+packages = [
+    "blueprint_core",
+    "blueprint_core.fabrication",
+    "blueprint_core.geometry",
+    "blueprint_core.output",
+    "blueprint_core.quality",
+]
+package-dir = {blueprint_core = "workflow"}
+
+[dependency-groups]
+dev = [
+    "pytest>=9.1.1",
+]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]

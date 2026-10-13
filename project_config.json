@@ -6,7 +6,7 @@
     "objective": "Design and fabricate a waveguide-integrated metasurface to control radiated light (direction, polarization, phase/wavefront, efficiency).",
     "status": "phase_2_simulation_started",
     "created": "2026-08-04",
-    "updated": "2026-10-10",
+    "updated": "2026-10-13",
     "single_source_of_truth": true,
     "primary_paper": {
       "title": "Leaky-wave metasurfaces for integrated photonics",
@@ -183,13 +183,27 @@
     "src": "L02 reproduction core modules (config/backend/workspace pipeline)",
     "configs": "schemas / seeds / calibrated",
     "experiments": "Per-paper tracks (l01_huang_2023, l02_guo_2020)",
+    "blueprints": "Standalone finite-hexagonal photonic-crystal triangular-air-hole DXF generator for EBL/etch engineering previews",
     "scripts": "CLI grouped by responsibility: simulation / postprocess / literature",
     "tests": "unit / regression / integration",
     "docs": "README hub; architecture; guides; decisions; categorized reports; templates; archive",
     "references": "references.bib and paper/asset policy",
     "literature": "Papers (PDF) and reading notes",
     "artifacts": "Large artifact index and storage policy",
-    "fabrication": "Layouts, process flows, test records"
+    "fabrication": "Process references, process flows, and test records; executable layout generation lives in blueprints/"
+  },
+  "blueprint_workflow": {
+    "path": "blueprints",
+    "layout_type_zh": "有限六角光子晶体三角空气孔 EBL/刻蚀 DXF 工程版图",
+    "layout_type_en": "Finite-hexagonal photonic-crystal triangular-air-hole EBL/etch DXF engineering layout",
+    "geometry": "triangular hexagonal lattice; six triangular air holes per unit cell; finite cavity/cladding shells; six segmented outer etch windows; polygonal seven-segment parameter marker",
+    "release_status": "engineering_preview",
+    "track_binding": null,
+    "source_trace": null,
+    "unvalidated_interfaces": ["exposure dose", "layout polarity", "production DRC thresholds", "process gain closed-loop calibration"],
+    "entrypoint": "blueprints/main/run_blueprint.py",
+    "config": "blueprints/main/parameter.json",
+    "documentation": "blueprints/README.md"
   },
   "substrate_spec": {
     "material": "Corning HPFS 7980, standard grade 0-AA",
@@ -268,7 +282,10 @@
     "docs/reports/design/2026-08-25_L01超表面波导综合分析与初步结构.md",
     "literature/文献清单.md",
     "references/references.bib",
-    "artifacts/README.md"
+    "artifacts/README.md",
+    "blueprints/README.md",
+    "blueprints/main/parameter.json",
+    "blueprints/main/run_blueprint.py"
   ],
   "simulation_cases": [
     {"id": "case_001", "title": "Slab waveguide mode analysis (TM0/TE0 effective index)", "status": "completed", "path": "experiments/l01_huang_2023/case_001_slab_mode"},
