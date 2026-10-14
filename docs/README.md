@@ -13,6 +13,7 @@
 | 跟进最新工艺研讨 | [2026-09-28 研讨纪要](reports/consultation/2026-09-28_片上光波导与超表面工艺研讨纪要.md) | MOT/光镊目标、Si/Si₃N₄与1064/852 nm路线、加工/仿真/测试待办与负责人 |
 | 准备加工/设备咨询 | [EBL 与仿真设备咨询清单](reports/consultation/2026-09-14_EBL加工与仿真设备咨询问题清单.md) | 防充电、邻近效应、PMMA、写场拼接、软件许可与计算资源 |
 | 查设计分析 | [reports/design/](reports/README.md#design设计分析) | 结构、参数和设计论证 |
+| 查元胞形状与版图扩展 | [七类形状说明](reports/design/2026-10-14_超表面元胞形状分类与版图工作流扩展说明.md) | 基本轮廓、超胞组合、文献依据、原创示意图及工作流接口建议 |
 | 查仿真结果 | [reports/simulation/](reports/README.md#simulation仿真与结果) | COMSOL 模型、结果与复现说明 |
 | 查加工汇报 | [reports/fabrication/](reports/README.md#fabrication加工与汇报) | 工艺提纲、讲稿和汇报材料 |
 | 查文献统计 | [reports/literature/](reports/README.md#literature文献分析) | 文献案例统计与专题汇总 |

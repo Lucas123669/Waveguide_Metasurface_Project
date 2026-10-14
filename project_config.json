@@ -6,7 +6,7 @@
     "objective": "Design and fabricate a waveguide-integrated metasurface to control radiated light (direction, polarization, phase/wavefront, efficiency).",
     "status": "phase_2_simulation_started",
     "created": "2026-08-04",
-    "updated": "2026-10-13",
+    "updated": "2026-10-14",
     "single_source_of_truth": true,
     "primary_paper": {
       "title": "Leaky-wave metasurfaces for integrated photonics",
@@ -203,7 +203,14 @@
     "unvalidated_interfaces": ["exposure dose", "layout polarity", "production DRC thresholds", "process gain closed-loop calibration"],
     "entrypoint": "blueprints/main/run_blueprint.py",
     "config": "blueprints/main/parameter.json",
-    "documentation": "blueprints/README.md"
+    "documentation": "blueprints/README.md",
+    "shape_taxonomy": {
+      "status": "documentation_and_extension_plan",
+      "categories": ["circle", "rectangle", "ellipse", "triangle", "trapezoid", "ring", "special"],
+      "classification_basis": "Top-view primitive outline; feature role, composition, lattice, aperture and 3-D processing are independent labels",
+      "documentation": "docs/reports/design/2026-10-14_超表面元胞形状分类与版图工作流扩展说明.md",
+      "implemented_geometry": "six_triangular_holes_fourier_v1 only; categories do not imply runtime support"
+    }
   },
   "substrate_spec": {
     "material": "Corning HPFS 7980, standard grade 0-AA",

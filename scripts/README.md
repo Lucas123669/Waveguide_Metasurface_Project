@@ -35,6 +35,7 @@
 | 脚本 | 用途 |
 | --- | --- |
 | `maintenance/check_docs.ps1` | 一键体检：JSON 合法性、全库相对链接、汇报稿结构计数、图片孤儿检测、术语残留、Git 状态；支持 sparse checkout，有阻断项时退出码为 1 |
+| `maintenance/render_metasurface_shape_taxonomy.py` | 重绘七类平面轮廓与元胞/超胞组合的原创 PNG/SVG 示意图；需 Matplotlib/NumPy 与中文字体，只生成说明图，不生成加工版图 |
 
 ```powershell
 # 本机无 pwsh 且执行策略为 Restricted，需显式 bypass（详见 docs/guides/AI_文档更新与推送工作流.md）
