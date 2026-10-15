@@ -1,0 +1,41 @@
+{
+  "description": "Independent equation consistency checks; not experimental verification, not author code.",
+  "sources": {
+    "UW02": "10.1002/lpor.202502703 equations 34-37, page 14 error analysis",
+    "UW03": "10.1021/acs.nanolett.5c02789 equations 4-5 and SI equations S12-S15"
+  },
+  "caveats": [
+    "A is the same background defined in equations 34-35; a different code normalization may change the interpretation.",
+    "A common intensity offset can cancel in four-step phase differences; this does not validate DoLP or absolute intensity.",
+    "The incoherent and analyzer examples are different observation models, illustrating the missing cross term.",
+    "No device simulation, author dataset, water propagation or reconstructed point cloud was tested."
+  ],
+  "checks": {
+    "UW02_ideal_H_rank": 3,
+    "UW02_ideal_H_singular_values": [
+      1.9999999999999998,
+      0.9999999999999999,
+      0.9999999999999999,
+      1.7553869260535861e-16
+    ],
+    "UW02_null_vector_residual": 0.0,
+    "UW02_subtract_A_max_recovery_error": 4.440892098500626e-16,
+    "UW02_published_subtract_2A_max_recovery_error": 1.0000000000000004,
+    "UW02_common_offset_four_step_phase_difference_max_rad": 0.0,
+    "UW03_test_theta_phi_kx_rad": [
+      0.7853981633974483,
+      1.0471975511965976,
+      0.0
+    ],
+    "UW03_main_eq4_intensity_test": 0.25000000000000017,
+    "UW03_coherent_analyzer_intensity_test": 0.5000000000000002,
+    "UW03_SI12_squared_test": 0.5000000000000002,
+    "UW03_SI13_published_test": 1.0000000000000004,
+    "UW03_SI15_test": 0.5000000000000002,
+    "UW02_sin_squared_1_to_1p5_degree_leakage_percent": [
+      0.030458649045213494,
+      0.06852326227130631
+    ]
+  },
+  "assertions_passed": true
+}

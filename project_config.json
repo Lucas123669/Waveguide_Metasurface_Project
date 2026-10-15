@@ -6,7 +6,7 @@
     "objective": "Design and fabricate a waveguide-integrated metasurface to control radiated light (direction, polarization, phase/wavefront, efficiency).",
     "status": "phase_2_simulation_started",
     "created": "2026-08-04",
-    "updated": "2026-10-14",
+    "updated": "2026-10-15",
     "single_source_of_truth": true,
     "primary_paper": {
       "title": "Leaky-wave metasurfaces for integrated photonics",
@@ -81,6 +81,20 @@
     "evidence_level": "Meeting decision for the collaboration demo; process parameters and procurement remain subject to platform confirmation and test coupons.",
     "note": "This plan does not replace the 1550 nm parameters used in the L01/L02 paper-reproduction tracks.",
     "record": "docs/reports/consultation/2026-09-28_片上光波导与超表面工艺研讨纪要.md"
+  },
+  "literature_groups": {
+    "underwater": {
+      "name": "水下项目组",
+      "index": "literature/水下项目组/README.md",
+      "manifest": "literature/水下项目组/manifest.json",
+      "paper_ids": ["UW01", "UW02", "UW03"],
+      "canonical_close_reading_notes": 3,
+      "public_pdfs": 1,
+      "copyright_withheld_pdfs": 2,
+      "status": "Literature close reading completed; no new device simulation or underwater measurement accepted.",
+      "evidence_boundary": "UW01 main text only; UW02 main text with independent algebra checks; UW03 main text plus previously supplied SI S1-S6. Three transfer candidates, not underwater-validated devices.",
+      "distribution_policy": "Public repository: user confirmed DOI links and notes for UW01/UW02; unmodified CC-BY-4.0 publisher PDF for UW03. No Wiley PDF or full-text extraction uploaded."
+    }
   },
   "literature_taxonomy": {
     "version": 2,
