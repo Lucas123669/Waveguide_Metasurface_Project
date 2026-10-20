@@ -17,6 +17,8 @@
 | 学习超表面设计并迁移到 SiN | [Q1-18 平面光学超表面教程精读报告](docs/reports/literature/2026-10-09_Q1-18_平面光学超表面教程精读报告.md)（逐章解读、公式核验、SiN/双波长执行计划） |
 | 采购 HPFS 7980 衬底 | [面积推导与采购建议](docs/reports/fabrication/2026-09-21_HPFS7980衬底面积与采购建议.md) |
 | 生成微纳加工 DXF 版图 | [有限六角光子晶体三角空气孔版图工作流](blueprints/README.md) |
+| 选择版图路线 / 交给其他 AI | [版图工作流总览](docs/guides/版图生成工作流.md) · [可复制接手提示词](docs/guides/AI_版图工作流接手提示词.md) |
+| 生成圆柱超透镜 DXF/GDS | [独立圆柱相位库版图工作流](metalens_blueprints/README.md)（MATLAB/CST CSV 接口；工程预览） |
 | 按元胞形状选择版图扩展路线 | [七类形状、超胞组合与工作流扩展说明](docs/reports/design/2026-10-14_超表面元胞形状分类与版图工作流扩展说明.md)（含原创示意图） |
 | 按任务、材料、波段查文献 | [文献多维分类索引](literature/多维分类索引.md) |
 | 查水下项目组的偏振结构光文献 | [UW01–UW03 精读专题](literature/水下项目组/README.md)（双通道融合、四路并行投影、TiO₂ 三步移相；水下迁移待验证） |
@@ -41,6 +43,7 @@
 - **L02**：15 个 supercell、周期 897.331 nm 的模型得到 `+45.0147°` 角谱峰；结果与配置已归档。
 - **材料与制备**：已形成玻璃基 Si 起步路线，以及 SiN、TiO₂、PMMA 的分阶段迁移方案；HPFS 7980 常规研发片建议 20×20×0.5 mm，整片设备路线采用 D100；见 [fabrication 报告](docs/reports/fabrication/)。
 - **DXF 版图工作流**：新增独立的有限六角光子晶体三角空气孔版图生成器，覆盖几何构建、SEM 修正接口、dose 接口、DRC、DXF 回读及 PNG 预览；当前仅为 `engineering_preview`，尚未绑定 L01/L02，剂量、极性和生产 DRC 阈值待标定。
+- **圆柱版图路线（2026-10-20 整理）**：独立 `metalens_blueprints/` 已实现外部相位库选态、正方晶格聚焦、完整轮廓口径筛选、DXF/可选层级 GDS 与追溯报告，强制工程预览；矩形 Python 示例、XLSX 库与圆环/椭圆/PB 扩展尚未接入，不代表新增光学或加工结果。
 - **合作演示路线（2026-09-28）**：先做 MOT、后拓展光镊；近期集中 Si/Si₃N₄，按 1064 nm → 852 nm 推进，TiO₂ 暂缓。工艺口头建议仍需平台确认与试片；见 [研讨纪要](docs/reports/consultation/2026-09-28_片上光波导与超表面工艺研讨纪要.md)。
 - **文献库**：使用“稳定编号 + 多维标签”；Q1-13 至 Q1-17 覆盖全参量 Jones 矩阵、级联 qBIC 光谱路由、EBL/PMMA、多模容差与单向辐射；新增 Q1-18 教程精读，连接相位/非局域/设计/聚焦/全息与 SiN 1064→852 nm 路线，含原文公式与材料案例核验，不代表新增器件结果。
 - **待补原文**：以 [文献清单](literature/文献清单.md) 和各专题 README 的状态为准，不在本页重复维护数量。
@@ -57,6 +60,7 @@ Waveguide_Metasurface_Project/
 ├── configs/                   # schemas / seeds / calibrated
 ├── experiments/               # 按论文拆分的复现轨道
 ├── blueprints/                # 独立 DXF 微纳加工版图生成器
+├── metalens_blueprints/       # 独立圆柱超透镜相位库与 DXF/GDS 工作流
 ├── scripts/                   # simulation / postprocess / literature
 ├── tests/                     # unit / regression / integration
 ├── docs/                      # 指南、决策、报告与模板

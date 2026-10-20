@@ -43,6 +43,7 @@ fabrication/            工艺参考、工艺卡和表征记录
 - `experiments/` 是运行证据源，`docs/reports/` 只解释它，不复制结果数据。
 - `literature/` 保存 PDF 和笔记；`references/` 保存规范化 BibTeX 与许可策略。
 - `blueprints/` 是无 COMSOL 依赖的独立版图项目；当前是有限六角光子晶体三角空气孔 `engineering_preview`，未绑定 L01/L02。
+- `metalens_blueprints/` 是独立圆柱超透镜入口，通过本地依赖复用 `blueprint_core` 中性基础工具；仅正方晶格、圆形口径、单波长轴上聚焦的工程预览。版图任务先读[工作流总览](版图生成工作流.md)，可直接复制[AI接手提示词](AI_版图工作流接手提示词.md)；矩形程序和Excel相位库尚未接入。
 - 历史 `resolved_config.json` 和 `run_manifest.json` 不因目录重构回写。
 
 ## 4. 实验轨道

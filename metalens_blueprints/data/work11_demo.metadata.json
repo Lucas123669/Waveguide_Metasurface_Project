@@ -1,0 +1,13 @@
+{
+  "schema_version": 1,
+  "wavelength_nm": 1550,
+  "period_um": 0.8,
+  "pillar_height_um": 0.94,
+  "pillar_material": "a-Si: constant eps_r=12, lossless demonstration model",
+  "substrate_material": "fused silica: constant eps_r=2.085; 1 um finite slab, not bulk wafer",
+  "incidence": "normal",
+  "polarization": "co_polarized",
+  "phase_convention": "physical_transmission_phase_deg",
+  "validation_status": "unverified_import",
+  "provenance": "User-supplied issue 11 input/phase_library/optimized_12phase_highT.csv; model conditions from issue 10 design_optical_nanopost_1550.m. CSV source labels say simulated, but original CST projects/spectra are not supplied; not independently verified. CST metasurface workshop educational example."
+}

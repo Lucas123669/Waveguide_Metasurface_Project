@@ -1,0 +1,25 @@
+{
+  "schema_version": 1,
+  "project": {"name": "independent_cylindrical_metalens", "release_status": "engineering_preview"},
+  "geometry": {
+    "kind": "phase_library_metalens_v1", "length_unit": "um",
+    "wavelength_nm": 1550, "period_um": 0.8,
+    "aperture_diameter_um": 100, "focal_length_um": 100,
+    "phase_sign": -1, "phase_offset_deg": -26.187541,
+    "circle_vertices": 64, "boundary_vertices": 1024,
+    "max_candidate_sites": 1000000, "max_quantization_error_deg": 31,
+    "dxf_layer": "PILLAR",
+    "phase_library": {
+      "format": "matlab_work11", "csv_path": "../data/work11_demo.csv",
+      "csv_sha256": "286981a79aae89f10d5c19cbf9fbd6d8157df877d9b84c7e28236de6b208f232",
+      "metadata_path": "../data/work11_demo.metadata.json",
+      "metadata_sha256": "e1dc656740002b9e591b10d8c36ff0fec0b40eb5241dc55c186ef650db17c9bd",
+      "allowed_sources": ["simulated"], "min_transmission": 0.89, "max_phase_gap_deg": 62
+    }
+  },
+  "fabrication": {"profile_id": "unassigned", "revision": "1", "provenance": "No device/etch/PEC calibration; demonstration input only", "grid_nm": 1, "edge_bias_nm": 0, "join_style": "miter", "miter_limit": 5},
+  "dose": {"kind": "unassigned", "value": null, "unit": null},
+  "layout": {"rotation_deg": 0, "mirror_x": false, "mirror_y": false, "translation_um": [0, 0], "polarity": "unspecified", "etch_layer": "PILLAR"},
+  "drc": {"min_hole_width_nm": null, "min_edge_nm": null, "min_bridge_nm": null, "boundary_clearance_nm": null, "fail_on_warning": false},
+  "export": {"output_root": ".out", "overwrite": false, "dpi": 180, "dxf_version": "R2010", "gds": {"enabled": true, "layer": 1, "datatype": 0}}
+}

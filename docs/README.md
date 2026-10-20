@@ -7,6 +7,7 @@
 | 任务 | 首选入口 | 内容 |
 | --- | --- | --- |
 | 接手项目 | [AI 接手指南](guides/AI_接手指南.md) | 当前状态、工作约定、下一动作 |
+| 选择版图路线 / 交接 AI | [工作流总览](guides/版图生成工作流.md) · [接手提示词](guides/AI_版图工作流接手提示词.md) | 两条已实现入口、相位库合同、外部示例与待实现边界 |
 | **改文档并推送** | [AI 文档更新与推送工作流](guides/AI_文档更新与推送工作流.md) | 改哪几个文件、12 条口径自查、体检脚本、提交流程、SSH 443 回退、DoD 清单 |
 | 理解代码 | [架构说明](architecture.md) | config → design → backend → result 数据流 |
 | 查历史选择 | [decisions/](decisions/README.md) | 带日期的决策、环境和工艺结论 |
@@ -20,6 +21,7 @@
 | 查文献分类与编号 | [文献多维分类](../literature/多维分类索引.md) | 材料、波段、主题、用途和期刊级别的独立视图 |
 | 查项目更新 | [更新日志](../CHANGELOG.md) | 只记录结构、口径与重要结果变化 |
 | 生成 DXF 工程版图 | [blueprints 工作流](../blueprints/README.md) | 有限六角光子晶体三角空气孔版图、SEM 修正接口、DRC 与预览 |
+| 生成圆柱 DXF/GDS | [metalens_blueprints 工作流](../metalens_blueprints/README.md) | 独立相位库选态、正方晶格轴上聚焦与工程预览 |
 | 查 DXF 接入决策 | [2026-10-13 决策记录](decisions/2026-10-13_DXF版图工作流接入与类型标注.md) | 版图类型、目录边界、工程预览与生产版边界 |
 | 新建仿真参数 | [仿真参数模板](templates/仿真参数模板.md) | 参数、边界、网格与验收项 |
 | 查旧目录约定 | [archive/](archive/simulations-layout-v1.md) | 仅供追溯，不作为当前规范 |

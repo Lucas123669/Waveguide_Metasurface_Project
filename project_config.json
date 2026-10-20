@@ -6,7 +6,7 @@
     "objective": "Design and fabricate a waveguide-integrated metasurface to control radiated light (direction, polarization, phase/wavefront, efficiency).",
     "status": "phase_2_simulation_started",
     "created": "2026-08-04",
-    "updated": "2026-10-15",
+    "updated": "2026-10-20",
     "single_source_of_truth": true,
     "primary_paper": {
       "title": "Leaky-wave metasurfaces for integrated photonics",
@@ -198,6 +198,7 @@
     "configs": "schemas / seeds / calibrated",
     "experiments": "Per-paper tracks (l01_huang_2023, l02_guo_2020)",
     "blueprints": "Standalone finite-hexagonal photonic-crystal triangular-air-hole DXF generator for EBL/etch engineering previews",
+    "metalens_blueprints": "Independent cylindrical metalens DXF/optional GDS workflow; local dependency on blueprint_core; engineering previews only",
     "scripts": "CLI grouped by responsibility: simulation / postprocess / literature",
     "tests": "unit / regression / integration",
     "docs": "README hub; architecture; guides; decisions; categorized reports; templates; archive",
@@ -223,8 +224,33 @@
       "categories": ["circle", "rectangle", "ellipse", "triangle", "trapezoid", "ring", "special"],
       "classification_basis": "Top-view primitive outline; feature role, composition, lattice, aperture and 3-D processing are independent labels",
       "documentation": "docs/reports/design/2026-10-14_超表面元胞形状分类与版图工作流扩展说明.md",
-      "implemented_geometry": "six_triangular_holes_fourier_v1 only; categories do not imply runtime support"
+      "implemented_geometry": "blueprints: six_triangular_holes_fourier_v1; independent metalens_blueprints: phase_library_metalens_v1 (cylinders on square lattice); other categories do not imply runtime support"
     }
+  },
+  "layout_workflows": {
+    "updated": "2026-10-20",
+    "overview": "docs/guides/版图生成工作流.md",
+    "ai_handoff_prompts": "docs/guides/AI_版图工作流接手提示词.md",
+    "triangular_air_holes": {"status": "implemented_engineering_preview", "canonical_record": "blueprint_workflow"},
+    "cylindrical_metalens": {
+      "path": "metalens_blueprints",
+      "status": "implemented_engineering_preview",
+      "entrypoint": "metalens_blueprints/main/run_metalens.py",
+      "config": "metalens_blueprints/main/parameter.json",
+      "documentation": "metalens_blueprints/README.md",
+      "shared_core": "blueprints (microfab-blueprints / blueprint_core local dependency)",
+      "scope": "cylinders; square lattice; circular aperture; single-wavelength on-axis focusing",
+      "outputs": ["DXF", "optional hierarchical GDS", "preview.png", "layout_report.json"],
+      "release_status": "engineering_preview",
+      "track_binding": null,
+      "default_library_validation": "unverified_import",
+      "validation_boundary": "2026-10-16 historical tests: 27 metalens and 99 shared-route tests passed; Python runtime unavailable during 2026-10-20 documentation review; no new full-device optical or fabrication validation."
+    },
+    "external_inputs": {
+      "rectangular_phase_map_python": {"status": "reviewed_not_integrated", "source_filename": "phase_map_rectangular_pillars_example.zip", "redistributed": false, "note": "Bundled 16-state rectangle library is synthetic demo; no DXF exporter or production calibration."},
+      "diameter_phase_xlsx": {"status": "reviewed_blocked_missing_physical_conditions_and_transmission", "source_filename": "单元相位库_直径与相位.xlsx", "redistributed": false, "note": "55 states, diameter 200-470 nm, phase rad; not compatible with rectangular L/W library or automatic default-period substitution."}
+    },
+    "not_implemented": ["XLSX adapter", "arbitrary phase-map input", "concentric-ring placement", "rectangular pillars", "elliptical pillars", "rotated/PB or Jones-channel layout"]
   },
   "substrate_spec": {
     "material": "Corning HPFS 7980, standard grade 0-AA",

@@ -1,0 +1,25 @@
+[project]
+name = "metalens-blueprints"
+version = "0.1.0"
+description = "Independent phase-library driven cylindrical metalens layout workflow"
+requires-python = ">=3.12"
+dependencies = ["microfab-blueprints>=0.1.0"]
+
+[project.scripts]
+metalens-generate = "metalens_workflow.cli:main"
+
+[build-system]
+requires = ["setuptools>=77"]
+build-backend = "setuptools.build_meta"
+
+[tool.setuptools]
+packages = ["metalens_workflow"]
+
+[tool.uv.sources]
+microfab-blueprints = {path = "../blueprints", editable = true}
+
+[dependency-groups]
+dev = ["pytest>=9.1.1"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
