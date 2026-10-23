@@ -16,6 +16,7 @@
 | 查看近期文献筛选与项目影响 | [2026-09-14 文献筛选报告](docs/reports/literature/2026-09-14_近期相关文献筛选与项目影响.md) |
 | 学习超表面设计并迁移到 SiN | [Q1-18 平面光学超表面教程精读报告](docs/reports/literature/2026-10-09_Q1-18_平面光学超表面教程精读报告.md)（逐章解读、公式核验、SiN/双波长执行计划） |
 | 采购 HPFS 7980 衬底 | [面积推导与采购建议](docs/reports/fabrication/2026-09-21_HPFS7980衬底面积与采购建议.md) |
+| 查看单面 a-Si / Cr 制备流程图 | [两种 Cr 硬掩膜方案](docs/reports/fabrication/2026-10-22_单面非晶硅_Cr硬掩膜两种工艺方案.md)（后沉积 lift-off / 预沉积刻蚀转移；待平台确认） |
 | 生成微纳加工 DXF 版图 | [有限六角光子晶体三角空气孔版图工作流](blueprints/README.md) |
 | 选择版图路线 / 交给其他 AI | [版图工作流总览](docs/guides/版图生成工作流.md) · [可复制接手提示词](docs/guides/AI_版图工作流接手提示词.md) |
 | 生成圆柱超透镜 DXF/GDS | [独立圆柱相位库版图工作流](metalens_blueprints/README.md)（MATLAB/CST CSV 接口；工程预览） |
