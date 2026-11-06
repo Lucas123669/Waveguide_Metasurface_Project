@@ -14,6 +14,7 @@
 | 进入论文复现轨道 | [实验轨道](experiments/README.md) |
 | 咨询 EBL 加工与仿真设备 | [问题清单与回填表](docs/reports/consultation/2026-09-14_EBL加工与仿真设备咨询问题清单.md) |
 | 查看近期文献筛选与项目影响 | [2026-09-14 文献筛选报告](docs/reports/literature/2026-09-14_近期相关文献筛选与项目影响.md) |
+| 查 SiN 超表面研究路线 | [SiN 超表面器件调研](docs/reports/literature/2026-10-08_SiN超表面器件调研.md)（时间线、课题组、设计与工艺证据） |
 | 学习超表面设计并迁移到 SiN | [Q1-18 平面光学超表面教程精读报告](docs/reports/literature/2026-10-09_Q1-18_平面光学超表面教程精读报告.md)（逐章解读、公式核验、SiN/双波长执行计划） |
 | 采购 HPFS 7980 衬底 | [面积推导与采购建议](docs/reports/fabrication/2026-09-21_HPFS7980衬底面积与采购建议.md) |
 | 查看单面 a-Si / Cr 制备流程图 | [两种 Cr 硬掩膜方案](docs/reports/fabrication/2026-10-22_单面非晶硅_Cr硬掩膜两种工艺方案.md)（后沉积 lift-off / 预沉积刻蚀转移；待平台确认） |
