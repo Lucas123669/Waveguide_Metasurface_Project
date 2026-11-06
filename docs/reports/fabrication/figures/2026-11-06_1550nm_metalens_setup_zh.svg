@@ -1,0 +1,115 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1720" height="510" viewBox="0 0 1720 510" role="img" aria-labelledby="title desc">
+<title id="title">1550 nm 超透镜焦斑表征光路</title>
+<desc id="desc">光纤准直器输出直径 3.7 mm 的准直光束。两片焦距为 300 mm 和 30 mm 的正透镜共焦放置，输出标称直径为 370 μm 的准直光束。超透镜形成真实焦面，近红外物镜和管镜将焦面成像到近红外相机。</desc>
+<defs>
+  <linearGradient id="glass"><stop stop-color="#eaf6fd"/><stop offset=".53" stop-color="#b6dcf3"/><stop offset="1" stop-color="#f6fcff"/></linearGradient>
+  <linearGradient id="body" x2="0" y2="1"><stop stop-color="#60798f"/><stop offset=".49" stop-color="#d5e3ed"/><stop offset="1" stop-color="#7c95a9"/></linearGradient>
+  <linearGradient id="dark" x2="0" y2="1"><stop stop-color="#52697f"/><stop offset=".51" stop-color="#a7b9c8"/><stop offset="1" stop-color="#3f5669"/></linearGradient>
+  <marker id="dim" markerWidth="9" markerHeight="9" refX="7.1" refY="4.5" orient="auto-start-reverse" markerUnits="userSpaceOnUse"><path d="M1 1L7 4.5L1 8" fill="none" stroke="#557089" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></marker>
+  <marker id="rayArrow" markerWidth="9" markerHeight="9" refX="8" refY="4.5" orient="auto" markerUnits="userSpaceOnUse"><path d="M0 0L9 4.5L0 9Z" fill="#18825f"/></marker>
+</defs>
+<style>
+  text{font-family:"Microsoft YaHei","Microsoft YaHei UI","SimHei","Segoe UI",Arial,sans-serif;fill:#172e43}
+  .title{font-size:36px;font-weight:700}
+  .subtitle{font-size:19px;fill:#557089}
+  .section{font-size:16px;font-weight:700;letter-spacing:1.7px;fill:#2b5777}
+  .label{font-size:20px;font-weight:650}
+  .note{font-size:16px;fill:#526c81}
+  .detail{font-size:17px;fill:#36536b}
+  .beamtext{font-size:19px;font-weight:700;fill:#12674a}
+  .device{stroke:#426681;stroke-width:2;stroke-linejoin:round}
+  .ray{fill:none;stroke:#18825f;stroke-width:2;stroke-linejoin:round;stroke-linecap:round}
+  .guide{fill:none;stroke:#7390a5;stroke-width:1.25;stroke-dasharray:4 5}
+  .callout{fill:none;stroke:#7a93a5;stroke-width:1.25;stroke-linecap:round}
+</style>
+<rect width="1720" height="510" fill="white"/>
+<rect x="42" y="115" width="827" height="316" rx="16" fill="#f4f8fb"/>
+<rect x="885" y="115" width="793" height="316" rx="16" fill="#f4f8fb"/>
+<text x="42" y="56" class="title">1550 nm 超透镜焦斑表征</text>
+<text x="44" y="88" class="subtitle">光束缩束与焦面成像</text>
+<text x="66" y="145" class="section">01  照明与缩束</text>
+<text x="908" y="145" class="section">02  焦面成像</text>
+
+<!-- Reference axis and nominal telescope separation -->
+<path d="M71 280H1650" stroke="#b7c8d5" stroke-width="1.3" stroke-dasharray="6 7"/>
+<path d="M430 194V166 M738 214V166" class="guide"/>
+<path d="M431 174H737" stroke="#557089" stroke-width="1.3" marker-start="url(#dim)" marker-end="url(#dim)"/>
+<rect x="472" y="161" width="224" height="26" rx="6" fill="#f4f8fb"/>
+<text x="584" y="180" text-anchor="middle" class="detail">标称间距 330 mm</text>
+
+<!-- Laser and delivery fiber -->
+<g class="device">
+  <rect x="68" y="246" width="99" height="68" rx="10" fill="#d6e9f7"/>
+  <rect x="78" y="256" width="12" height="48" rx="4" fill="#6b9bbe" stroke="none"/>
+  <path d="M103 283H114L121 272L128 288L135 279H150" fill="none" stroke="#285b80" stroke-width="2.3"/>
+  <rect x="167" y="272" width="12" height="16" rx="3" fill="#a0bbcf"/>
+</g>
+<path d="M179 280C194 280 190 252 210 252C229 252 228 280 210 280C196 280 195 265 208 265C223 265 228 280 244 280" fill="none" stroke="#2c78a6" stroke-width="2.4" stroke-linecap="round"/>
+<g class="device">
+  <path d="M244 261H252V299H244Z" fill="#7e9ab0"/>
+  <rect x="252" y="226" width="36" height="108" rx="5" fill="url(#body)"/>
+  <path d="M282 227V333" stroke="#7592aa" stroke-width="1"/>
+</g>
+
+<!-- Refractive elements and device -->
+<path d="M430 193C404 216 404 344 430 367C456 344 456 216 430 193Z" fill="url(#glass)" class="device"/>
+<path d="M738 216C720 231 720 329 738 344C756 329 756 231 738 216Z" fill="url(#glass)" class="device"/>
+<rect x="942" y="232" width="13" height="96" rx="2" fill="#cde3f2" class="device"/>
+<path d="M955 261h5v5h-5m0 7h5v5h-5m0 7h5v5h-5m0 7h5v5h-5" fill="#52738a" stroke="#52738a" stroke-width="1"/>
+<g class="device">
+  <path d="M1048 255L1087 235H1115V325H1087L1048 305Z" fill="url(#body)"/>
+  <rect x="1085" y="229" width="93" height="102" rx="6" fill="url(#dark)"/>
+  <path d="M1164 230V330" stroke="#425d73"/>
+  <path d="M1048 256V304" stroke="#78b9d8" stroke-width="3.4"/>
+</g>
+<path d="M1328 206C1306 223 1306 337 1328 354C1350 337 1350 223 1328 206Z" fill="url(#glass)" class="device"/>
+<g class="device">
+  <rect x="1576" y="253" width="19" height="54" rx="3" fill="#99bdd4"/>
+  <path d="M1595 246H1609L1620 229H1651V331H1620L1609 314H1595Z" fill="url(#dark)"/>
+  <path d="M1623 230V330" stroke="#557089" stroke-width="1"/>
+</g>
+
+<!-- Outer rays and the axis ray, split at the opaque objective housing -->
+<path class="ray" d="M288 235H430L738 284.5H955L970.5 280L1048 257.5
+                     M288 257.5H430L738 282.25H955L970.5 280L1048 268.75
+                     M288 280H1048
+                     M288 302.5H430L738 277.75H955L970.5 280L1048 291.25
+                     M288 325H430L738 275.5H955L970.5 280L1048 302.5"/>
+<path class="ray" d="M1178 257.5H1328L1576 280
+                     M1178 268.75H1328L1576 280
+                     M1178 280H1576
+                     M1178 291.25H1328L1576 280
+                     M1178 302.5H1328L1576 280"/>
+<path d="M332 235H350 M815 280H833 M1210 257.5H1228" class="ray" marker-end="url(#rayArrow)"/>
+
+<!-- Measurement labels -->
+<text x="348" y="212" text-anchor="middle" class="beamtext">直径 3.7 mm</text>
+<path d="M348 219V230" class="callout"/>
+<text x="816" y="235" text-anchor="middle" class="beamtext">直径 370 μm</text>
+<text x="816" y="255" text-anchor="middle" class="note">准直光束</text>
+<path d="M816 260V272" class="callout"/>
+
+<path d="M710 291V329H697" class="callout"/>
+<circle cx="710" cy="280" r="3.8" fill="#18825f"/>
+<text x="690" y="335" text-anchor="end" class="note">两片缩束透镜的共焦点</text>
+<path d="M970.5 289V332H1007V335" class="callout"/>
+<circle cx="970.5" cy="280" r="3.8" fill="#18825f"/>
+<text x="1007" y="357" text-anchor="middle" class="note">超透镜真实焦面</text>
+<path d="M1576 287V343H1556" class="callout"/>
+<circle cx="1576" cy="280" r="3.8" fill="#18825f"/>
+<text x="1549" y="349" text-anchor="end" class="note">焦面的放大像</text>
+
+<g text-anchor="middle">
+  <text x="117" y="385" class="label">激光器</text><text x="117" y="408" class="detail">1550 nm</text>
+  <text x="266" y="385" class="label">光纤准直器</text>
+  <text x="430" y="385" class="label">透镜 L1</text><text x="430" y="408" class="detail">f₁ = +300 mm</text>
+  <text x="738" y="385" class="label">透镜 L2</text><text x="738" y="408" class="detail">f₂ = +30 mm</text>
+  <text x="950" y="395" class="label">超透镜</text>
+  <text x="1126" y="395" class="label">近红外物镜</text>
+  <text x="1328" y="395" class="label">管镜</text>
+  <text x="1610" y="395" class="label">近红外相机</text>
+</g>
+<path d="M42 455H1678" stroke="#dbe5ed"/>
+<text x="44" y="480" class="note">标称束径比  f₂/f₁ = 0.10</text>
+<text x="1676" y="480" text-anchor="end" class="note">示意图，未按比例绘制</text>
+</svg>
