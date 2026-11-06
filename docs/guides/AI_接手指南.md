@@ -11,6 +11,7 @@
 4. 进入 `experiments/l01_huang_2023/` 或 `experiments/l02_guo_2020/` 的轨道 README。
 5. 查看 `docs/decisions/` 最新记录，以及与任务对应的 `docs/reports/<category>/`。
 6. **要动手改文档时，先读 [`AI_文档更新与推送工作流.md`](AI_文档更新与推送工作流.md)**：它给出"改哪几个文件 → 12 条口径自查 → 一键体检脚本 → 提交与推送（含 SSH 443 回退）→ 完成判定"的完整步骤。提交前请跑：`powershell -NoProfile -ExecutionPolicy Bypass -File scripts\maintenance\check_docs.ps1`。
+7. **要批量入库文献并推送时，用项目技能 [文献入库技能](../../.cursor/skills/literature-repo-intake/SKILL.md)**：先 `git fetch` 再从远端领号，然后一次性批量改索引、跑体检、提交，最后用脚本推送并核验远端 SHA。
 
 ## 2. 项目一句话
 

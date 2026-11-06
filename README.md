@@ -58,6 +58,7 @@ Waveguide_Metasurface_Project/
 ├── README.md                  # 当前入口
 ├── CHANGELOG.md               # 影响使用方式的项目级变更
 ├── project_config.json        # 机器可读单一状态源
+├── .cursor/skills/            # AI 技能（文献入库与推送流程）
 ├── src/gwm_workflow/          # L02 复现核心模块
 ├── configs/                   # schemas / seeds / calibrated
 ├── experiments/               # 按论文拆分的复现轨道

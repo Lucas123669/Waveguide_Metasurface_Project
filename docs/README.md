@@ -9,6 +9,7 @@
 | 接手项目 | [AI 接手指南](guides/AI_接手指南.md) | 当前状态、工作约定、下一动作 |
 | 选择版图路线 / 交接 AI | [工作流总览](guides/版图生成工作流.md) · [接手提示词](guides/AI_版图工作流接手提示词.md) | 两条已实现入口、相位库合同、外部示例与待实现边界 |
 | **改文档并推送** | [AI 文档更新与推送工作流](guides/AI_文档更新与推送工作流.md) | 改哪几个文件、12 条口径自查、体检脚本、提交流程、SSH 443 回退、DoD 清单 |
+| **入库文献并推送** | [文献入库技能](../.cursor/skills/literature-repo-intake/SKILL.md) | 识别论文 → 从远端领号 → 归档 PDF → 写笔记 → 一次批量同步索引 → 体检 → 提交推送（HTTPS 优先、SSH 回退、远端 SHA 核验） |
 | 理解代码 | [架构说明](architecture.md) | config → design → backend → result 数据流 |
 | 查历史选择 | [decisions/](decisions/README.md) | 带日期的决策、环境和工艺结论 |
 | 跟进最新工艺研讨 | [2026-09-28 研讨纪要](reports/consultation/2026-09-28_片上光波导与超表面工艺研讨纪要.md) | MOT/光镊目标、Si/Si₃N₄与1064/852 nm路线、加工/仿真/测试待办与负责人 |
