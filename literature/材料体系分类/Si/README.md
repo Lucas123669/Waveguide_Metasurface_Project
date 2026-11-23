@@ -26,6 +26,7 @@
 | F-20 | Q1 · 中科院一区(OA) | CMOS-compatible a-Si metalenses on a 12-inch glass wafer for fingerprint imaging | 12 in a-Si 940 nm metalens(F08 案例 C44) | PDF 待浏览器下载(落地页见 [下载清单](../../../scripts/literature/manifests/f08_download_manifest.json))· 笔记待补 |
 | F-23 | Q1 · 中科院一区 Top | Large-scale metasurfaces based on grayscale nanosphere lithography | DMD 灰度纳米球大面积 metalens(F08 案例 C54) | [PDF](pdfs/F_23_Zheng_2021_Grayscale_Nanosphere_Lithography_ACSPhotonics.pdf) · [笔记](阅读笔记_F_23_Zheng_2021.md) |
 | F-27 | Q1 · 中科院一区 Top(OA) | Decoupling optical function and geometrical form using conformal flexible metasurfaces | 共形柔性 a-Si/PDMS(F08 案例 C65) | [PDF](pdfs/F_27_Kamali_2016_Conformal_Flexible_Metasurface_NatCommun.pdf) · [笔记](阅读笔记_F_27_Kamali_2016.md) |
+| F-28 | 待独立核验（OA，CC BY 4.0） | Nanoscale precision brings experimental metalens efficiencies on par with theoretical promises | 940 nm a-Si 圆柱超透镜，EBL / ICP-RIE、柱径偏差与焦斑 / 效率校准 | [PDF](pdfs/F_28_Johansen_2024_Nanoscale_Precision_Metalens_Efficiency_CommunPhys.pdf) · [笔记](阅读笔记_F_28_Johansen_2024.md) |
 
 ## 1550 nm 专题文献
 
