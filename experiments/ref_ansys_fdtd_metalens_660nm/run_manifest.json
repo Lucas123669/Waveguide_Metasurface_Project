@@ -1,0 +1,67 @@
+{
+  "schema_version": 1,
+  "name": "ansys_fdtd_metalens_660nm",
+  "date": "2026-11-24",
+  "purpose": "free-space metalens FDTD reference case",
+  "evidence": "local simulation",
+  "software": "Ansys Lumerical FDTD 2026 R1",
+  "version": "8.35.4413",
+  "tutorial": "https://optics.ansys.com/hc/en-us/articles/360042097313-Small-Scale-Metalens-Field-Propagation",
+  "local_solved_fsp_sha256": "509598d6d4689a6a291a1436bf979696982569272118268aaee78db5a24461ec",
+  "nominal_aperture_diameter_um": 22,
+  "target_focal_distance_um": 100,
+  "pillar_count": 3125,
+  "focal_distance_from_pillar_top_um": 76.87194330379377,
+  "archived_files": [
+    {
+      "path": "figures/unit_cell_check.png",
+      "bytes": 274915,
+      "sha256": "b9c0f7ba9572fdd67bd62f39447ac63b87a99a82a4a0a9ddcf1361947617b09a"
+    },
+    {
+      "path": "figures/field_comparison.png",
+      "bytes": 104595,
+      "sha256": "6c455c24d33df0ebcef6b86d357dfaa5a86a467b53dff0b7e905cab9a08c3e48"
+    },
+    {
+      "path": "figures/phase_library.png",
+      "bytes": 137697,
+      "sha256": "1c62f00cc75997ed1bb76408242ed99e47b806125489e445ea97e6f42f5b285c"
+    },
+    {
+      "path": "figures/lens_design.png",
+      "bytes": 540423,
+      "sha256": "9f4c1715dde27ea9e506bbc3867944c30ec98d585376bab1e1d7b15c1cb5f31b"
+    },
+    {
+      "path": "figures/focus_review.png",
+      "bytes": 285208,
+      "sha256": "54a0bcb8bf8dcaf38bac978d0fd6311832e8dda5f55253eecc7002d5eed520df"
+    },
+    {
+      "path": "focusing_fields.npz",
+      "bytes": 191158,
+      "sha256": "2f0578b802aff6180437ea0b868a7a6b8b7150e1ae7bd73d360fccfb64047eaa"
+    },
+    {
+      "path": "phase_library.json",
+      "bytes": 5219,
+      "sha256": "c673b27a5111c77cb3724029099ce0835c089b5e3d7bb1879bc31b299cf289a6"
+    },
+    {
+      "path": "lens_design.json",
+      "bytes": 470017,
+      "sha256": "74416c878542033f82b3c867df09476c67564372e7bdde2f7ed1261132378c2c"
+    },
+    {
+      "path": "focus_metrics.json",
+      "bytes": 2378,
+      "sha256": "140cca3c45d67341de524cb3f692865e0474ac6f8cbc3a57d5870f8b73ce0030"
+    },
+    {
+      "path": "README.md",
+      "bytes": 1345,
+      "sha256": "a73673b22fdb9fc7be24a5bb76cb2d30d4db660c9cddc3c065d10adc2e9ae89a"
+    }
+  ]
+}

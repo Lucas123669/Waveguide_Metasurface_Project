@@ -10,6 +10,7 @@
 | **改文档并推送到 GitHub** | [AI 文档更新与推送工作流](docs/guides/AI_文档更新与推送工作流.md)（🔧 附一键体检脚本 `scripts/maintenance/check_docs.ps1`） |
 | 了解文档体系 | [文档中心](docs/README.md) |
 | 运行仿真或后处理 | [脚本入口](scripts/README.md) |
+| 复现圆柱超透镜 FDTD | [660 nm 小口径超透镜六步流程](docs/reports/simulation/2026-11-24_Ansys_FDTD_小口径超透镜.md) · [结果图和数据](experiments/ref_ansys_fdtd_metalens_660nm/README.md) |
 | 选择 seed / calibrated 参数 | [配置说明](configs/README.md) |
 | 进入论文复现轨道 | [实验轨道](experiments/README.md) |
 | 咨询 EBL 加工与仿真设备 | [问题清单与回填表](docs/reports/consultation/2026-09-14_EBL加工与仿真设备咨询问题清单.md) |

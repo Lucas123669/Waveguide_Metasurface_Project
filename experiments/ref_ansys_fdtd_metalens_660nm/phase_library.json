@@ -1,0 +1,192 @@
+{
+  "schema_version": 1,
+  "wavelength_nm": 660,
+  "height_nm": 1300,
+  "period_nm": 350,
+  "FDTD_version": "8.35.4413",
+  "pillar_optical_model": {
+    "n": 2.04,
+    "k": 0
+  },
+  "substrate": "SiO2 (Glass) - Palik",
+  "mesh_refinement": "conformal variant 0",
+  "source_gaussian_pulse_fwhm_fs": 40,
+  "phase_origin_radius_nm": 50,
+  "phase_definition": "unwrap(arg(S21_Gn)) - unwrap(arg(S21_Gn)) at radius 50 nm",
+  "inverse_phase_range_rad": [
+    0,
+    6.283185307179586
+  ],
+  "inverse_radius_range_nm": [
+    50,
+    135.87801719097575
+  ],
+  "pillar_neighborhood_mesh_max_step_nm": 10,
+  "samples_for_inverse": [
+    {
+      "radius_nm": 50,
+      "phase_rad_relative": 0,
+      "transmission_power_fraction": 0.9698126994738503,
+      "reflection_power_fraction": 0.03018589659020987,
+      "S21_zero_order": {
+        "real": 1.063655774554419,
+        "imag": 0.5300477451410072
+      }
+    },
+    {
+      "radius_nm": 60,
+      "phase_rad_relative": 0.3350184103059793,
+      "transmission_power_fraction": 0.9765815412473162,
+      "reflection_power_fraction": 0.023417161935078923,
+      "S21_zero_order": {
+        "real": 0.8331408043207698,
+        "imag": 0.8532572388830558
+      }
+    },
+    {
+      "radius_nm": 70,
+      "phase_rad_relative": 0.7883087521451317,
+      "transmission_power_fraction": 0.9876639257046446,
+      "reflection_power_fraction": 0.012335092148789806,
+      "S21_zero_order": {
+        "real": 0.37746298946050394,
+        "imag": 1.1383462606656207
+      }
+    },
+    {
+      "radius_nm": 80,
+      "phase_rad_relative": 1.3622329632936279,
+      "transmission_power_fraction": 0.9922666122345184,
+      "reflection_power_fraction": 0.007732456008282873,
+      "S21_zero_order": {
+        "real": -0.30176024310679095,
+        "imag": 1.1635953126760166
+      }
+    },
+    {
+      "radius_nm": 90,
+      "phase_rad_relative": 2.0723425682430547,
+      "transmission_power_fraction": 0.9780660814842497,
+      "reflection_power_fraction": 0.021931583063208304,
+      "S21_zero_order": {
+        "real": -0.9802985114768099,
+        "imag": 0.6806968804926876
+      }
+    },
+    {
+      "radius_nm": 100,
+      "phase_rad_relative": 2.893332654794475,
+      "transmission_power_fraction": 0.9687343900108198,
+      "reflection_power_fraction": 0.03126144051647595,
+      "S21_zero_order": {
+        "real": -1.16064193618001,
+        "imag": -0.2522978388401299
+      }
+    },
+    {
+      "radius_nm": 110,
+      "phase_rad_relative": 3.810860744759372,
+      "transmission_power_fraction": 0.9848426764722308,
+      "reflection_power_fraction": 0.015152741565953365,
+      "S21_zero_order": {
+        "real": -0.509252468687671,
+        "imag": -1.083911401049234
+      }
+    },
+    {
+      "radius_nm": 120,
+      "phase_rad_relative": 4.7775206420773,
+      "transmission_power_fraction": 0.9845074594056504,
+      "reflection_power_fraction": 0.01548701955805043,
+      "S21_zero_order": {
+        "real": 0.6026671888610349,
+        "imag": -1.0346526438115466
+      }
+    },
+    {
+      "radius_nm": 130,
+      "phase_rad_relative": 5.734365247466529,
+      "transmission_power_fraction": 0.9695436213374576,
+      "reflection_power_fraction": 0.030446841558523507,
+      "S21_zero_order": {
+        "real": 1.1837995437184823,
+        "imag": -0.10266940799024027
+      }
+    },
+    {
+      "radius_nm": 135,
+      "phase_rad_relative": 6.202303545761867,
+      "transmission_power_fraction": 0.9608484151714134,
+      "reflection_power_fraction": 0.03914214833541385,
+      "S21_zero_order": {
+        "real": 1.0978934584893505,
+        "imag": 0.4403290899206274
+      }
+    },
+    {
+      "radius_nm": 140,
+      "phase_rad_relative": 6.662896813462201,
+      "transmission_power_fraction": 0.9478117163933792,
+      "reflection_power_fraction": 0.05218001089413149,
+      "S21_zero_order": {
+        "real": 0.7824011280151402,
+        "imag": 0.8764263841878825
+      }
+    }
+  ],
+  "endpoint_check_only": {
+    "radius_nm": 150,
+    "phase_rad_relative": 7.527724972740837,
+    "transmission_power_fraction": 0.9246961614059683,
+    "reflection_power_fraction": 0.07523899869228823,
+    "S21_zero_order": {
+      "real": -0.15739209163721596,
+      "imag": 1.1497129429514168
+    }
+  },
+  "mesh_check": [
+    {
+      "radius_nm": 50,
+      "delta_relative_phase_rad": 0,
+      "delta_transmission_pp": -0.03353491476706383
+    },
+    {
+      "radius_nm": 100,
+      "delta_relative_phase_rad": -0.0021510697012629976,
+      "delta_transmission_pp": 0.017951072854316408
+    },
+    {
+      "radius_nm": 140,
+      "delta_relative_phase_rad": -0.006921374881102338,
+      "delta_transmission_pp": 0.14593368982399602
+    }
+  ],
+  "official_saved_curve": {
+    "radius_nm": [
+      50,
+      59.99999999999999,
+      69.99999999999999,
+      80,
+      90,
+      100,
+      110,
+      120.00000000000001,
+      130,
+      139.99999999999997,
+      150
+    ],
+    "phase_rad_relative": [
+      0,
+      0.23158727008914642,
+      0.5090653307087303,
+      0.9635785515067681,
+      1.5090357596261676,
+      2.198583059955666,
+      3.1273052978781126,
+      4.08386819106638,
+      4.963746927229142,
+      5.884283209423388,
+      6.936337535405286
+    ]
+  }
+}
