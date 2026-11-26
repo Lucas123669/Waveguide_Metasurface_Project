@@ -6,7 +6,7 @@
 
 ![整片 FDTD 焦点、焦平面光斑与半高全宽](../../../experiments/ref_ansys_fdtd_metalens_660nm/figures/focus_review.png)
 
-汇报时可直接使用[六页复现汇报稿](2026-11-26_Ansys_FDTD_超透镜复现汇报.md)，其中列出各页的配图、口播和数值核验边界。
+[官方方法对照与汇报稿](2026-11-26_Ansys_FDTD_超透镜复现汇报.md)按输入、输出和适用场景比较了 RCWA/FDTD 单元建库、三种整片场算法及 OpticStudio POP。
 
 ## 1. 固定复现参数
 
