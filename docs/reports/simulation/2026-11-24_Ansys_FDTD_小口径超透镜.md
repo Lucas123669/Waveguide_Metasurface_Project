@@ -6,6 +6,8 @@
 
 ![整片 FDTD 焦点、焦平面光斑与半高全宽](../../../experiments/ref_ansys_fdtd_metalens_660nm/figures/focus_review.png)
 
+汇报时可直接使用[六页复现汇报稿](2026-11-26_Ansys_FDTD_超透镜复现汇报.md)，其中列出各页的配图、口播和数值核验边界。
+
 ## 1. 固定复现参数
 
 从 Ansys 教程附件取得 `unit_cell_fdtd.fsp` 和 `full_lens.fsp`，分别建立单元与整片工作副本。运行前核对 FDTD CPU 资源、材料、监视器输出和单位。教程预存的 FDTD 数据可用于对照。

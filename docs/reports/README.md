@@ -22,6 +22,7 @@
 | --- | --- |
 | [reproduction_plan.md](simulation/reproduction_plan.md) | L02 复现阶段与验收项 |
 | [660 nm 小口径超透镜 FDTD 复现](simulation/2026-11-24_Ansys_FDTD_小口径超透镜.md) | 从周期单元、相位库到整片聚焦，附本机结果图和测量数据 |
+| [Ansys FDTD 超透镜复现汇报](simulation/2026-11-26_Ansys_FDTD_超透镜复现汇报.md) | 六页讲稿与原图，涵盖单元相位、整片排布、焦距偏移与实验表征衔接 |
 | [paper_parameter_register.md](simulation/paper_parameter_register.md) | 论文参数来源等级与登记 |
 | [comsol_model_tree.md](simulation/comsol_model_tree.md) | 稳定 COMSOL tag / model tree 约定 |
 | [comsol_structure_program.md](simulation/comsol_structure_program.md) | 结构构建脚本和输出说明 |
